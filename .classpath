@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-13">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/vaggelisbarb/Επιφάνεια εργασίας/voiceJars/en_us.jar"/>
+	<classpathentry kind="lib" path="/home/vaggelisbarb/Επιφάνεια εργασίας/voiceJars/cmulex.jar"/>
+	<classpathentry kind="lib" path="/home/vaggelisbarb/Επιφάνεια εργασίας/voiceJars/cmutimelex.jar"/>
+	<classpathentry kind="lib" path="/home/vaggelisbarb/Επιφάνεια εργασίας/voiceJars/cmu_time_awb.jar"/>
+	<classpathentry kind="lib" path="/home/vaggelisbarb/Επιφάνεια εργασίας/voiceJars/freetts.jar"/>
+	<classpathentry kind="lib" path="/home/vaggelisbarb/Επιφάνεια εργασίας/voiceJars/cmu_us_kal.jar"/>
+	<classpathentry kind="lib" path="/home/vaggelisbarb/Επιφάνεια εργασίας/voiceJars/mbrola.jar"/>
+	<classpathentry kind="lib" path="/home/vaggelisbarb/Επιφάνεια εργασίας/voiceJars/freetts-jsapi10.jar"/>
+	<classpathentry kind="lib" path="/home/vaggelisbarb/Επιφάνεια εργασίας/voiceJars/cmudict04.jar"/>
+	<classpathentry kind="lib" path="/home/vaggelisbarb/Επιφάνεια εργασίας/voiceJars/jsapi.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
