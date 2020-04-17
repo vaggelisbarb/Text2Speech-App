@@ -38,18 +38,15 @@ public class MainAppGUI {
 
 	private JFrame frmTextToSpeech;
 	JMenuBar menuBar;
-	JMenu menuFile, submenu;
+	JMenu menuFile;
 	private JMenu menuEdit;
 	JMenuItem menuItem;
 	private JMenuItem mntmNewFile;
 	private JMenuItem mntmSaveFile;
 	private JMenuItem mntmSaveFileAs;
 	private JMenuItem mntmOpenFile;
-	JRadioButtonMenuItem rbMenuItem;
-	private JRadioButtonMenuItem rbMenuItem_1;
 	JCheckBoxMenuItem cbMenuItem;
 	private JCheckBoxMenuItem cbMenuItem_1;
-	private JLabel versionLabel;
 	
 	private JMenu menuSpeech;
 	private JMenuItem mntmTextHighlight; 
@@ -75,6 +72,7 @@ public class MainAppGUI {
 	
 	
 	 private String path = null;
+	 private JMenuItem editMenuItem;
 	 
 	/**
 	 * Launch the application.
@@ -104,13 +102,14 @@ public class MainAppGUI {
 	 */
 	private void initialize() {
 		frmTextToSpeech = new JFrame();
+		frmTextToSpeech.setResizable(false);
+		frmTextToSpeech.setModalExclusionType(ModalExclusionType.APPLICATION_EXCLUDE);
 		//frmTextToSpeech.setExtendedState(frmTextToSpeech.MAXIMIZED_BOTH);
 		frmTextToSpeech.setVisible(true);
 		frmTextToSpeech.setBackground(Color.WHITE);
-		frmTextToSpeech.setResizable(false);
 		frmTextToSpeech.setTitle("Text to Speech Editor");
 		frmTextToSpeech.setFont(new Font("League Spartan Semibold", Font.PLAIN, 17));
-		frmTextToSpeech.setBounds(500, 500, 731, 490);
+		frmTextToSpeech.setBounds(500, 500, 900, 600);
 		frmTextToSpeech.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmTextToSpeech.getContentPane().setLayout(null);
 		
@@ -179,22 +178,7 @@ public class MainAppGUI {
 		        KeyEvent.VK_4, ActionEvent.ALT_MASK));
 		mntmSaveFile.setMnemonic(KeyEvent.VK_D);
 		menuFile.add(mntmSaveFile);
-
-		//a group of radio button menu items
-		menuFile.addSeparator();
 		ButtonGroup group = new ButtonGroup();
-		rbMenuItem = new JRadioButtonMenuItem("A radio button menu item");
-		rbMenuItem.setFont(new Font("League Spartan Semibold", Font.PLAIN, 15));
-		rbMenuItem.setSelected(true);
-		rbMenuItem.setMnemonic(KeyEvent.VK_R);
-		group.add(rbMenuItem);
-		menuFile.add(rbMenuItem);
-
-		rbMenuItem_1 = new JRadioButtonMenuItem("Another one");
-		rbMenuItem_1.setFont(new Font("League Spartan Semibold", Font.PLAIN, 15));
-		rbMenuItem_1.setMnemonic(KeyEvent.VK_O);
-		group.add(rbMenuItem_1);
-		menuFile.add(rbMenuItem_1);
 
 		//a group of check box menu items
 		menuFile.addSeparator();
@@ -207,21 +191,6 @@ public class MainAppGUI {
 		cbMenuItem_1.setFont(new Font("League Spartan Semibold", Font.PLAIN, 15));
 		cbMenuItem_1.setMnemonic(KeyEvent.VK_H);
 		menuFile.add(cbMenuItem_1);
-
-		//a submenu
-		menuFile.addSeparator();
-		submenu = new JMenu("A submenu");
-		submenu.setFont(new Font("League Spartan Semibold", Font.PLAIN, 15));
-		submenu.setMnemonic(KeyEvent.VK_S);
-
-		menuItem = new JMenuItem("An item in the submenu");
-		menuItem.setAccelerator(KeyStroke.getKeyStroke(
-		        KeyEvent.VK_2, ActionEvent.ALT_MASK));
-		submenu.add(menuItem);
-
-		menuItem = new JMenuItem("Another item");
-		submenu.add(menuItem);
-		menuFile.add(submenu);
 
 		// SECOND TOP MENU BAR
 			
@@ -242,20 +211,12 @@ public class MainAppGUI {
 		mntmTextHighlight.setFont(new Font("League Spartan Semibold", Font.PLAIN, 15));
 		mntmTextHighlight.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_F2, 0));
 		mntmTextHighlight.getAccessibleContext().setAccessibleDescription("This doesn't really do anything");
+		
+		editMenuItem = new JMenuItem("Edit Document");
+		editMenuItem.setIcon(new ImageIcon("/home/vaggelisbarb/eclipse-workspace/Text2SpeechEditor/ImageSource/edit.png"));
+		editMenuItem.setFont(new Font("League Spartan Semibold", Font.PLAIN, 15));
+		menuEdit.add(editMenuItem);
 		menuEdit.add(mntmTextHighlight);
-		
-		
-		
-		versionLabel = new JLabel("v.0 Version");
-		versionLabel.setForeground(new Color(255, 0, 0));
-		versionLabel.setFont(new Font("League Spartan Bold", Font.PLAIN, 17));
-		versionLabel.setFocusable(false);
-		versionLabel.setVerticalTextPosition(SwingConstants.TOP);
-		versionLabel.setVerticalAlignment(SwingConstants.TOP);
-		versionLabel.setHorizontalTextPosition(SwingConstants.CENTER);
-		versionLabel.setHorizontalAlignment(SwingConstants.CENTER);
-		versionLabel.setBounds(12, 397, 707, 30);
-		frmTextToSpeech.getContentPane().add(versionLabel);
 		
 		
 		
@@ -414,19 +375,14 @@ public class MainAppGUI {
 		pitchSlider.setMajorTickSpacing(50);
 		pitchSubmenu.add(pitchSlider);
 		
-		
-		
-		JLabel titleLabel = new JLabel("TEXT2SPEECH");
-		titleLabel.setHorizontalAlignment(SwingConstants.CENTER);
-		titleLabel.setVerticalAlignment(SwingConstants.BOTTOM);
-		titleLabel.setForeground(Color.BLACK);
-		titleLabel.setFont(new Font("League Spartan Semibold", Font.BOLD, 26));
-		titleLabel.setBounds(12, 12, 707, 30);
-		frmTextToSpeech.getContentPane().add(titleLabel);
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setIcon(new ImageIcon("/home/vaggelisbarb/Εικόνες/text2speechLogo.png"));
+		lblNewLabel.setBounds(626, 12, 262, 122);
+		frmTextToSpeech.getContentPane().add(lblNewLabel);
 		
 		JLabel appBackground = new JLabel("");
 		appBackground.setIcon(new ImageIcon("/home/vaggelisbarb/eclipse-workspace/Text2SpeechEditor/ImageSource/AI-Programming.png"));
-		appBackground.setBounds(-63, -51, 945, 622);
+		appBackground.setBounds(-45, -24, 945, 600);
 		frmTextToSpeech.getContentPane().add(appBackground);
 	}
 }
