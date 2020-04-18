@@ -12,12 +12,20 @@ import text2speechapis.TextToSpeechAPI;
  */
 public class Document {
 	
+	private String author;
+	private String title;
+	private String creationDate;
+	private String saveDate;
+	
 	private EncodingStrategy encodingStrategy;
 	private TextToSpeechAPI audioManager;
 	
+
+	public Document() { }
+
 	
 	/**
-	 * @param encodingStrategy
+	 * @param encodingStrategy 
 	 * @param audioManager
 	 */
 	public Document(EncodingStrategy encodingStrategy, TextToSpeechAPI audioManager) {
@@ -26,7 +34,8 @@ public class Document {
 		this.audioManager = audioManager;
 	}
 	
-	
+
+
 	public void playContents() {
 		// TODO
 	}

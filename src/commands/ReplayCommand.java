@@ -8,14 +8,21 @@ import java.awt.event.ActionListener;
 
 /**
  * @author vaggelisbarb
- * Class responsible for saving a document file
+ *
  */
-public class SaveDocument implements ActionListener{
+public class ReplayCommand implements ActionListener{
+	private ReplayManager replaymanager;
+	
+	
+	public ReplayCommand(ReplayManager replaymanager) {
+		this.replaymanager = replaymanager;
+	}
+
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
 		
 	}
-	
+
 }

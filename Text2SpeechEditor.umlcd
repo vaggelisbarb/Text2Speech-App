@@ -1,0 +1,2088 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_QuzU4ICzEeq4BIv9FegE_w">
+  <modelElement href="Text2SpeechEditor.uml#_OLKTcICzEeq4BIv9FegE_w"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_UtafgICzEeq4BIv9FegE_w" targetItem="_UtibUICzEeq4BIv9FegE_w" sourceItem="_UrWqAICzEeq4BIv9FegE_w"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_UuZW8ICzEeq4BIv9FegE_w" targetItem="_UuZ-AICzEeq4BIv9FegE_w" sourceItem="_UuYv4ICzEeq4BIv9FegE_w"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_UucaQICzEeq4BIv9FegE_w" targetItem="_UudBUICzEeq4BIv9FegE_w" sourceItem="_UubzMICzEeq4BIv9FegE_w"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_UugEoYCzEeq4BIv9FegE_w" targetItem="_UugrsICzEeq4BIv9FegE_w" sourceItem="_UugEoICzEeq4BIv9FegE_w"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_UujH8ICzEeq4BIv9FegE_w" targetItem="_UujH8YCzEeq4BIv9FegE_w" sourceItem="_Uuig4ICzEeq4BIv9FegE_w"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_UulkMYCzEeq4BIv9FegE_w" targetItem="_UumLQICzEeq4BIv9FegE_w" sourceItem="_UulkMICzEeq4BIv9FegE_w"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Uup1oICzEeq4BIv9FegE_w" targetItem="_UuqcsICzEeq4BIv9FegE_w" sourceItem="_UupOkICzEeq4BIv9FegE_w"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Uu4fIICzEeq4BIv9FegE_w" targetItem="_Uu5GMICzEeq4BIv9FegE_w" sourceItem="_Uus48ICzEeq4BIv9FegE_w"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Uu9XoYCzEeq4BIv9FegE_w" targetItem="_Uu9-sICzEeq4BIv9FegE_w" sourceItem="_Uu9XoICzEeq4BIv9FegE_w"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_UvAa8ICzEeq4BIv9FegE_w" targetItem="_UvBCAICzEeq4BIv9FegE_w" sourceItem="_Uu_z4ICzEeq4BIv9FegE_w"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_UvYOYICzEeq4BIv9FegE_w" targetItem="_UvaDkICzEeq4BIv9FegE_w" sourceItem="_UvC3MICzEeq4BIv9FegE_w"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_UveVAICzEeq4BIv9FegE_w" targetItem="_Uvh_YICzEeq4BIv9FegE_w" sourceItem="_Uvdt8ICzEeq4BIv9FegE_w"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_UwN74ICzEeq4BIv9FegE_w" targetItem="_UwS0YICzEeq4BIv9FegE_w" sourceItem="_UvzsMICzEeq4BIv9FegE_w"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Uw7tkICzEeq4BIv9FegE_w" targetItem="_Uw-J0ICzEeq4BIv9FegE_w" sourceItem="_Uw54YICzEeq4BIv9FegE_w"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_UxtJoYCzEeq4BIv9FegE_w" targetItem="_Uxu-0ICzEeq4BIv9FegE_w" sourceItem="_UxtJoICzEeq4BIv9FegE_w"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_Uxz3UICzEeq4BIv9FegE_w" sourceAnchor="180.0,0.0" targetAnchor="137.0,82.0" dashed="true" superClass="_UwS0YICzEeq4BIv9FegE_w" subClass="_UyhpAICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R5UnQICzEeq4BIv9FegE_w"/>
+    <bendpoints xmi:id="_VY7hsICzEeq4BIv9FegE_w" sourceY="-23" targetX="-442" targetY="24"/>
+    <bendpoints xmi:id="_VY7hsYCzEeq4BIv9FegE_w" sourceX="442" sourceY="-23" targetY="24"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_UyNf8ICzEeq4BIv9FegE_w" targetItem="_UyhpAICzEeq4BIv9FegE_w" sourceItem="_Ux0eYICzEeq4BIv9FegE_w"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_UyOHAICzEeq4BIv9FegE_w" sourceAnchor="193.0,0.0" targetAnchor="180.0,83.0" superClass="_UyhpAICzEeq4BIv9FegE_w" subClass="_Uvh_YICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R5PuwICzEeq4BIv9FegE_w"/>
+    <bendpoints xmi:id="_VY5sgICzEeq4BIv9FegE_w" sourceY="-36" targetX="-182" targetY="37"/>
+    <bendpoints xmi:id="_VY6TkICzEeq4BIv9FegE_w" sourceX="182" sourceY="-36" targetY="37"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_UyOuEICzEeq4BIv9FegE_w" sourceAnchor="193.0,0.0" targetAnchor="180.0,83.0" superClass="_UyhpAICzEeq4BIv9FegE_w" subClass="_Uw-J0ICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R5Q84ICzEeq4BIv9FegE_w"/>
+    <bendpoints xmi:id="_VY66oICzEeq4BIv9FegE_w" sourceY="-23" targetX="221" targetY="37"/>
+    <bendpoints xmi:id="_VY66oYCzEeq4BIv9FegE_w" sourceX="-221" sourceY="-23" targetY="37"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_U4GskICzEeq4BIv9FegE_w" targetItem="_U4VWEICzEeq4BIv9FegE_w" sourceItem="_U2e78ICzEeq4BIv9FegE_w"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_U47zAICzEeq4BIv9FegE_w" targetItem="_U5fzsICzEeq4BIv9FegE_w" sourceItem="_U4qGMICzEeq4BIv9FegE_w"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_U5SYUICzEeq4BIv9FegE_w" targetItem="_U5fz3YCzEeq4BIv9FegE_w" sourceItem="_U5CgsICzEeq4BIv9FegE_w"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_U5cwYICzEeq4BIv9FegE_w" source="_U5fzsICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8da0YCzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_U5cwYYCzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R8eB4ICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_U5cwYoCzEeq4BIv9FegE_w" text=""/>
+    <sourceRole xmi:id="_U5cwY4CzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R8da0oCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_U5cwZICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_U5cwZYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_U5cwZoCzEeq4BIv9FegE_w" aggregationKind="NONE" name="vm" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7NdoICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_U5cwZ4CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_U5cwaICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_U5fMoICzEeq4BIv9FegE_w" source="_U5fzsICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8eo8ICzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_U5fMoYCzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R8fQAICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_U5fMooCzEeq4BIv9FegE_w" text=""/>
+    <sourceRole xmi:id="_U5fMo4CzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R8eo8YCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_U5fMpICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_U5fMpYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_U5fMpoCzEeq4BIv9FegE_w" aggregationKind="NONE" name="voice" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7OrwYCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_U5fMp4CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_U5fMqICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_U6QBoICzEeq4BIv9FegE_w" targetItem="_U6UTEICzEeq4BIv9FegE_w" sourceItem="_U54OMICzEeq4BIv9FegE_w"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_U6QosICzEeq4BIv9FegE_w" sourceAnchor="122.0,0.0" targetAnchor="109.0,148.0" dashed="true" superClass="_U6UTEICzEeq4BIv9FegE_w" subClass="_U4VWEICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R5eYQICzEeq4BIv9FegE_w"/>
+    <bendpoints xmi:id="_VY8IwICzEeq4BIv9FegE_w" sourceY="-27" targetX="-26" targetY="966"/>
+    <bendpoints xmi:id="_VY8IwYCzEeq4BIv9FegE_w" sourceX="26" sourceY="-27" targetY="966"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_U6RPwICzEeq4BIv9FegE_w" sourceAnchor="315.0,0.0" targetAnchor="109.0,148.0" dashed="true" superClass="_U6UTEICzEeq4BIv9FegE_w" subClass="_U5fzsICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R5ipsICzEeq4BIv9FegE_w"/>
+    <bendpoints xmi:id="_VY8v0ICzEeq4BIv9FegE_w" sourceY="-17" targetX="442" targetY="966"/>
+    <bendpoints xmi:id="_VY8v0YCzEeq4BIv9FegE_w" sourceX="-442" sourceY="-17" targetY="966"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_U60CUICzEeq4BIv9FegE_w" targetItem="_U613gICzEeq4BIv9FegE_w" sourceItem="_U6ddAICzEeq4BIv9FegE_w"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_U7bGUICzEeq4BIv9FegE_w" sourceAnchor="435.0,214.0" targetAnchor="150.0,0.0" target="_UwS0YICzEeq4BIv9FegE_w" source="_U8tfwICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8X7QICzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_U8mLAICzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R8YiUICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_U8k84ICzEeq4BIv9FegE_w" text="">
+      <visualProperties xmi:id="_VY_zIICzEeq4BIv9FegE_w" position="-20.5,-10.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_U8lj8ICzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R8X7QYCzEeq4BIv9FegE_w"/>
+      <visualProperties xmi:id="_VY-lAICzEeq4BIv9FegE_w" position="4.0,5.5"/>
+      <visibility xmi:id="_U8rDgYCzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_U8rDgICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_U8lj8YCzEeq4BIv9FegE_w" aggregationKind="NONE" name="encodingStrategy" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7H-EICzEeq4BIv9FegE_w"/>
+      <visualProperties xmi:id="_VZAaMICzEeq4BIv9FegE_w" position="-175.0,-58.0"/>
+      <visibility xmi:id="_U8rDg4CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_U8rDgoCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_U7h0AICzEeq4BIv9FegE_w" sourceAnchor="0.0,107.0" targetAnchor="218.0,74.0" target="_U6UTEICzEeq4BIv9FegE_w" source="_U8tfwICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8YiUYCzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_U8mLBICzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R8ZwcICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_U8mLAYCzEeq4BIv9FegE_w" text="">
+      <visualProperties xmi:id="_VZC2cICzEeq4BIv9FegE_w" position="51.5,-10.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_U8mLAoCzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R8YiUoCzEeq4BIv9FegE_w"/>
+      <visualProperties xmi:id="_VZBBQICzEeq4BIv9FegE_w" position="-23.0,12.5"/>
+      <visibility xmi:id="_U8rDhoCzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_U8rDhYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_U8mLA4CzEeq4BIv9FegE_w" aggregationKind="NONE" name="audioManager" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7JMMICzEeq4BIv9FegE_w"/>
+      <visualProperties xmi:id="_VZEEkICzEeq4BIv9FegE_w" position="5.0,-65.49999999999989"/>
+      <visibility xmi:id="_U8rDiICzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_U8rDh4CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_U78qwICzEeq4BIv9FegE_w" targetItem="_U8tfwICzEeq4BIv9FegE_w" sourceItem="_U74ZUICzEeq4BIv9FegE_w"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_U8pOUYCzEeq4BIv9FegE_w" targetItem="_U8tf6ICzEeq4BIv9FegE_w" sourceItem="_U8pOUICzEeq4BIv9FegE_w"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_U9Q5YICzEeq4BIv9FegE_w" sourceAnchor="451.0,0.0" targetAnchor="150.0,82.0" target="_UwS0YICzEeq4BIv9FegE_w" source="_U-clIICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8bloICzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_U906EoCzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R8cMsICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_U90TAoCzEeq4BIv9FegE_w" text="">
+      <visualProperties xmi:id="_VZF5wICzEeq4BIv9FegE_w" position="-20.5,-83.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_U906EICzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R8bloYCzEeq4BIv9FegE_w"/>
+      <visualProperties xmi:id="_VZFSsICzEeq4BIv9FegE_w" position="-22.0,-73.0"/>
+      <visibility xmi:id="_U96ZoYCzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_U96ZoICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_U906EYCzEeq4BIv9FegE_w" aggregationKind="NONE" name="encodingStrategy" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7LocYCzEeq4BIv9FegE_w"/>
+      <visualProperties xmi:id="_VZGg0ICzEeq4BIv9FegE_w" position="7.0,5.0"/>
+      <visibility xmi:id="_U97AsYCzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_U97AsICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_U9zE4ICzEeq4BIv9FegE_w" sourceAnchor="438.0,0.0" targetAnchor="122.0,148.0" target="_U6UTEICzEeq4BIv9FegE_w" source="_U-clIICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8czwICzEeq4BIv9FegE_w"/>
+    <bendpoints xmi:id="_VY998ICzEeq4BIv9FegE_w" sourceY="-15" targetX="832" targetY="758"/>
+    <bendpoints xmi:id="_VY998YCzEeq4BIv9FegE_w" sourceX="-832" sourceY="-15" targetY="758"/>
+    <stereotypes xmi:id="_U91hIYCzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R8da0ICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_U906E4CzEeq4BIv9FegE_w" text="">
+      <visualProperties xmi:id="_VZHu8ICzEeq4BIv9FegE_w" position="-124.5,-10.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_U906FICzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R8czwYCzEeq4BIv9FegE_w"/>
+      <visualProperties xmi:id="_VZHH4ICzEeq4BIv9FegE_w" position="-461.0,-2.4999999999997726"/>
+      <visibility xmi:id="_U97nwYCzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_U97nwICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_U91hIICzEeq4BIv9FegE_w" aggregationKind="NONE" name="audioManager" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7MPgYCzEeq4BIv9FegE_w"/>
+      <visualProperties xmi:id="_VZIWAICzEeq4BIv9FegE_w" position="5.0,692.5"/>
+      <visibility xmi:id="_U9814ICzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_U98O0ICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_U90TAYCzEeq4BIv9FegE_w" targetItem="_U-clIICzEeq4BIv9FegE_w" sourceItem="_U90TAICzEeq4BIv9FegE_w"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_U-QX4ICzEeq4BIv9FegE_w" source="_U-clIICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8ZwcYCzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_U-QX4YCzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R8a-kICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_U-QX4oCzEeq4BIv9FegE_w" text=""/>
+    <sourceRole xmi:id="_U-QX44CzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R8ZwcoCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_U-QX5ICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_U-QX5YCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_U-QX5oCzEeq4BIv9FegE_w" aggregationKind="NONE" name="words" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7KaUICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_U-QX54CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_U-QX6ICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_U_yo8ICzEeq4BIv9FegE_w" targetItem="_VBjjhoCzEeq4BIv9FegE_w" sourceItem="_U_UH0ICzEeq4BIv9FegE_w"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_U_0eIYCzEeq4BIv9FegE_w" targetItem="_VBjjjICzEeq4BIv9FegE_w" sourceItem="_U_0eIICzEeq4BIv9FegE_w"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_U_2TUICzEeq4BIv9FegE_w" targetItem="_VBjjkoCzEeq4BIv9FegE_w" sourceItem="_U_1sQICzEeq4BIv9FegE_w"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VAX3wICzEeq4BIv9FegE_w" source="_VBhHSYCzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8fQAYCzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_VAX3wYCzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R8f3EICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_VAX3woCzEeq4BIv9FegE_w" text=""/>
+    <sourceRole xmi:id="_VAX3w4CzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R8fQAoCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VAX3xICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VAX3xYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_VAX3xoCzEeq4BIv9FegE_w" aggregationKind="NONE" name="frmTextToSpeech" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7Qg8ICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VAX3x4CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VAX3yICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VAqLoICzEeq4BIv9FegE_w" source="_VBhHSYCzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8f3EYCzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_VAqLoYCzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R8hFMICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_VAqLooCzEeq4BIv9FegE_w" text=""/>
+    <sourceRole xmi:id="_VAqLo4CzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R8geIICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VAqLpICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VAqLpYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_VAqLpoCzEeq4BIv9FegE_w" aggregationKind="NONE" name="menuBar" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7RvEYCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VAqLp4CzEeq4BIv9FegE_w" label="~"/>
+      <cardinality xmi:id="_VAqLqICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VAsA0ICzEeq4BIv9FegE_w" source="_VBhHSYCzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8hFMYCzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_VAsA0YCzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R8iTUICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_VAsA0oCzEeq4BIv9FegE_w" text=""/>
+    <sourceRole xmi:id="_VAsA04CzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R8hFMoCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VAsA1ICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VAsA1YCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_VAsA1oCzEeq4BIv9FegE_w" aggregationKind="NONE" name="menuFile" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7SWIYCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VAsA14CzEeq4BIv9FegE_w" label="~"/>
+      <cardinality xmi:id="_VAsA2ICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VA1x0ICzEeq4BIv9FegE_w" source="_VBhHSYCzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8iTUYCzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_VA1x0YCzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R8i6YICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_VA1x0oCzEeq4BIv9FegE_w" text=""/>
+    <sourceRole xmi:id="_VA1x04CzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R8iTUoCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VA1x1ICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VA1x1YCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_VA1x1oCzEeq4BIv9FegE_w" aggregationKind="NONE" name="menuEdit" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7TkQICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VA1x14CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VA1x2ICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VA2_8ICzEeq4BIv9FegE_w" source="_VBhHSYCzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8jhcICzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_VA2_8YCzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R8kIgICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_VA2_8oCzEeq4BIv9FegE_w" text=""/>
+    <sourceRole xmi:id="_VA2_84CzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R8jhcYCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VA2_9ICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VA2_9YCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_VA2_9oCzEeq4BIv9FegE_w" aggregationKind="NONE" name="menuItem" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7ULUYCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VA2_94CzEeq4BIv9FegE_w" label="~"/>
+      <cardinality xmi:id="_VA2_-ICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VA8fgICzEeq4BIv9FegE_w" source="_VBhHSYCzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8kIgYCzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_VA8fgYCzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R8lWoICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_VA8fgoCzEeq4BIv9FegE_w" text=""/>
+    <sourceRole xmi:id="_VA8fg4CzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R8kIgoCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VA8fhICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VA8fhYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_VA8fhoCzEeq4BIv9FegE_w" aggregationKind="NONE" name="mntmNewFile" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7UyYYCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VA8fh4CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VA8fiICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VA9toICzEeq4BIv9FegE_w" source="_VBhHSYCzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8l9sICzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_VA9toYCzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R8mkwICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_VA9tooCzEeq4BIv9FegE_w" text=""/>
+    <sourceRole xmi:id="_VA9to4CzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R8l9sYCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VA9tpICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VA9tpYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_VA9tpoCzEeq4BIv9FegE_w" aggregationKind="NONE" name="mntmSaveFile" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7XOoICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VA9tp4CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VA9tqICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VA-7wICzEeq4BIv9FegE_w" source="_VBhHSYCzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8mkwYCzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_VA-7wYCzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R8ny4ICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_VA-7woCzEeq4BIv9FegE_w" text=""/>
+    <sourceRole xmi:id="_VA-7w4CzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R8mkwoCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VA-7xICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VA-7xYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_VA-7xoCzEeq4BIv9FegE_w" aggregationKind="NONE" name="mntmSaveFileAs" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7X1sYCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VA-7x4CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VA-7yICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VBAw8ICzEeq4BIv9FegE_w" source="_VBhHSYCzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8ny4YCzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_VBAw8YCzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R8pBAICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_VBAw8oCzEeq4BIv9FegE_w" text=""/>
+    <sourceRole xmi:id="_VBAw84CzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R8ny4oCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBAw9ICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VBAw9YCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_VBAw9oCzEeq4BIv9FegE_w" aggregationKind="NONE" name="mntmOpenFile" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7YcwYCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBAw94CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBAw-ICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VBB_EICzEeq4BIv9FegE_w" source="_VBhHSYCzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8pBAYCzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_VBB_EYCzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R8poEICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_VBB_EoCzEeq4BIv9FegE_w" text=""/>
+    <sourceRole xmi:id="_VBB_E4CzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R8pBAoCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBB_FICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VBB_FYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_VBB_FoCzEeq4BIv9FegE_w" aggregationKind="NONE" name="cbMenuItem" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7ZD0YCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBB_F4CzEeq4BIv9FegE_w" label="~"/>
+      <cardinality xmi:id="_VBB_GICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VBGQgICzEeq4BIv9FegE_w" source="_VBhHSYCzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8poEYCzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_VBGQgYCzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R8q2MICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_VBGQgoCzEeq4BIv9FegE_w" text=""/>
+    <sourceRole xmi:id="_VBGQg4CzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R8poEoCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBGQhICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VBGQhYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_VBGQhoCzEeq4BIv9FegE_w" aggregationKind="NONE" name="cbMenuItem_1" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7aR8ICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBGQh4CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBGQiICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VBHeoICzEeq4BIv9FegE_w" source="_VBhHSYCzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8q2MYCzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_VBHeoYCzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R8sEUICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_VBHeooCzEeq4BIv9FegE_w" text=""/>
+    <sourceRole xmi:id="_VBHeo4CzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R8q2MoCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBHepICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VBHepYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_VBHepoCzEeq4BIv9FegE_w" aggregationKind="NONE" name="menuSpeech" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7a5AICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBHep4CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBHeqICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VBIswICzEeq4BIv9FegE_w" source="_VBhHSYCzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8sEUYCzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_VBIswYCzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R8srYICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_VBIswoCzEeq4BIv9FegE_w" text=""/>
+    <sourceRole xmi:id="_VBIsw4CzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R8sEUoCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBIsxICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VBIsxYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_VBIsxoCzEeq4BIv9FegE_w" aggregationKind="NONE" name="mntmTextHighlight" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7bgEYCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBIsx4CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBIsyICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VBJ64ICzEeq4BIv9FegE_w" source="_VBhHSYCzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8srYYCzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_VBJ64YCzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R8t5gICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_VBJ64oCzEeq4BIv9FegE_w" text=""/>
+    <sourceRole xmi:id="_VBJ644CzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R8srYoCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBJ65ICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VBJ65YCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_VBJ65oCzEeq4BIv9FegE_w" aggregationKind="NONE" name="reverseText2speech_MenuItem" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7cHIYCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBJ654CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBJ66ICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VBLwEICzEeq4BIv9FegE_w" source="_VBhHSYCzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8t5gYCzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_VBLwEYCzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R8vHoICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_VBLwEoCzEeq4BIv9FegE_w" text=""/>
+    <sourceRole xmi:id="_VBLwE4CzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R8t5goCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBLwFICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VBLwFYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_VBLwFoCzEeq4BIv9FegE_w" aggregationKind="NONE" name="reverseHighlight2speech_MenuItem_1" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7cuMYCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBLwF4CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBLwGICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VBRPoICzEeq4BIv9FegE_w" source="_VBhHSYCzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8vHoYCzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_VBRPoYCzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R8vusICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_VBRPooCzEeq4BIv9FegE_w" text=""/>
+    <sourceRole xmi:id="_VBRPo4CzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R8vHooCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBRPpICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VBRPpYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_VBRPpoCzEeq4BIv9FegE_w" aggregationKind="NONE" name="menuEncoding" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7fKcICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBRPp4CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBRPqICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VBSdwICzEeq4BIv9FegE_w" source="_VBhHSYCzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8wVwICzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_VBSdwYCzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R8w80ICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_VBSdwoCzEeq4BIv9FegE_w" text=""/>
+    <sourceRole xmi:id="_VBSdw4CzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R8wVwYCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBSdxICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VBSdxYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_VBSdxoCzEeq4BIv9FegE_w" aggregationKind="NONE" name="textEncode_MenuItem_1" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7fxgYCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBSdx4CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBSdyICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VBTE0ICzEeq4BIv9FegE_w" source="_VBhHSYCzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8w80YCzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_VBTE0YCzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R8yK8ICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_VBTE0oCzEeq4BIv9FegE_w" text=""/>
+    <sourceRole xmi:id="_VBTE04CzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R8w80oCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBTE1ICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VBTE1YCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_VBTE1oCzEeq4BIv9FegE_w" aggregationKind="NONE" name="text2speech_MenuItem_2" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7g_oICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBTE14CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBTE2ICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VBUS8ICzEeq4BIv9FegE_w" source="_VBhHSYCzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8yK8YCzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_VBUS8YCzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R8yyAICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_VBUS8oCzEeq4BIv9FegE_w" text=""/>
+    <sourceRole xmi:id="_VBUS84CzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R8yK8oCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBUS9ICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VBUS9YCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_VBUS9oCzEeq4BIv9FegE_w" aggregationKind="NONE" name="atbshaMenuItem" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7hmsICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBUS94CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBUS-ICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VBU6AICzEeq4BIv9FegE_w" source="_VBhHSYCzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8zZEICzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_VBU6AYCzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R80AIICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_VBU6AoCzEeq4BIv9FegE_w" text=""/>
+    <sourceRole xmi:id="_VBU6A4CzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R8zZEYCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBU6BICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VBU6BYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_VBU6BoCzEeq4BIv9FegE_w" aggregationKind="NONE" name="rot13MenuItem" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7iNwICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBU6B4CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBVhEICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VBWIIICzEeq4BIv9FegE_w" source="_VBhHSYCzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R80nMICzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_VBWIIYCzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R81OQICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_VBWIIoCzEeq4BIv9FegE_w" text=""/>
+    <sourceRole xmi:id="_VBWII4CzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R80nMYCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBWIJICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VBWIJYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_VBWIJoCzEeq4BIv9FegE_w" aggregationKind="NONE" name="menuSettings" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7i00ICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBWIJ4CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBWIKICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VBXWQICzEeq4BIv9FegE_w" source="_VBhHSYCzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R81OQYCzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_VBXWQYCzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R82cYICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_VBXWQoCzEeq4BIv9FegE_w" text=""/>
+    <sourceRole xmi:id="_VBXWQ4CzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R81OQoCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBXWRICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VBXWRYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_VBXWRoCzEeq4BIv9FegE_w" aggregationKind="NONE" name="volumeSubmenu" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7jb4ICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBXWR4CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBXWSICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VBZLcICzEeq4BIv9FegE_w" source="_VBhHSYCzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R82cYYCzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_VBZLcYCzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R83DcICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_VBZLcoCzEeq4BIv9FegE_w" text=""/>
+    <sourceRole xmi:id="_VBZLc4CzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R82cYoCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBZLdICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VBZLdYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_VBZLdoCzEeq4BIv9FegE_w" aggregationKind="NONE" name="mntmDefaultVolume" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7kC8ICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBZLd4CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBZLeICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VBZygICzEeq4BIv9FegE_w" source="_VBhHSYCzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R83qgICzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_VBZygYCzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R84RkICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_VBZygoCzEeq4BIv9FegE_w" text=""/>
+    <sourceRole xmi:id="_VBZyg4CzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R83qgYCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBZyhICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VBZyhYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_VBZyhoCzEeq4BIv9FegE_w" aggregationKind="NONE" name="volumeSlider" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7kqAICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBZyh4CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBZyiICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VBaZkICzEeq4BIv9FegE_w" source="_VBhHSYCzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R84RkYCzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_VBaZkYCzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R85fsICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_VBaZkoCzEeq4BIv9FegE_w" text=""/>
+    <sourceRole xmi:id="_VBaZk4CzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R84RkoCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBaZlICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VBaZlYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_VBaZloCzEeq4BIv9FegE_w" aggregationKind="NONE" name="rateSubmenu" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7lREICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBaZl4CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBaZmICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VBbnsICzEeq4BIv9FegE_w" source="_VBhHSYCzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R85fsYCzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_VBbnsYCzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R86t0ICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_VBbnsoCzEeq4BIv9FegE_w" text=""/>
+    <sourceRole xmi:id="_VBbns4CzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R85fsoCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBbntICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VBbntYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_VBbntoCzEeq4BIv9FegE_w" aggregationKind="NONE" name="rateSlider" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7l4IYCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBbnt4CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBbnuICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VBcOwICzEeq4BIv9FegE_w" source="_VBhHSYCzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R87U4ICzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_VBcOwYCzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R88jAICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_VBcOwoCzEeq4BIv9FegE_w" text=""/>
+    <sourceRole xmi:id="_VBcOw4CzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R87U4YCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBcOxICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VBcOxYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_VBcOxoCzEeq4BIv9FegE_w" aggregationKind="NONE" name="mntmDefaultRate" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7mfMYCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBcOx4CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBcOyICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VBc10ICzEeq4BIv9FegE_w" source="_VBhHSYCzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R88jAYCzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_VBc10YCzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R89xIICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_VBc10oCzEeq4BIv9FegE_w" text=""/>
+    <sourceRole xmi:id="_VBc104CzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R88jAoCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBc11ICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VBc11YCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_VBc11oCzEeq4BIv9FegE_w" aggregationKind="NONE" name="pitchSubmenu" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7nGQYCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBc114CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBc12ICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VBeD8ICzEeq4BIv9FegE_w" source="_VBhHSYCzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R89xIYCzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_VBeD8YCzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R8-YMICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_VBeD8oCzEeq4BIv9FegE_w" text=""/>
+    <sourceRole xmi:id="_VBeD84CzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R89xIoCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBeD9ICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VBeD9YCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_VBeD9oCzEeq4BIv9FegE_w" aggregationKind="NONE" name="mntmDefaultPitch" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7ntUYCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBeD94CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBeD-ICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VBf5IICzEeq4BIv9FegE_w" source="_VBhHSYCzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8-_QICzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_VBf5IYCzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R8_mUICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_VBf5IoCzEeq4BIv9FegE_w" text=""/>
+    <sourceRole xmi:id="_VBf5I4CzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R8-_QYCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBf5JICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VBf5JYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_VBf5JoCzEeq4BIv9FegE_w" aggregationKind="NONE" name="pitchSlider" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7pigICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBf5J4CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBf5KICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VBhHQICzEeq4BIv9FegE_w" source="_VBhHSYCzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R9ANYICzEeq4BIv9FegE_w"/>
+    <stereotypes xmi:id="_VBhHQYCzEeq4BIv9FegE_w" name="Reference">
+      <modelElement href="Text2SpeechEditor.uml#_R9A0cICzEeq4BIv9FegE_w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_VBhHQoCzEeq4BIv9FegE_w" text=""/>
+    <sourceRole xmi:id="_VBhHQ4CzEeq4BIv9FegE_w" aggregationKind="NONE" name="">
+      <modelElement href="Text2SpeechEditor.uml#_R9ANYYCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBhHRICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VBhHRYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_VBhHRoCzEeq4BIv9FegE_w" aggregationKind="NONE" name="editMenuItem" navigable="true">
+      <modelElement href="Text2SpeechEditor.uml#_R7rXsYCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBhHR4CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBhHSICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_UrWqAICzEeq4BIv9FegE_w" sourceConnectionVisual="_UtafgICzEeq4BIv9FegE_w" text="@author vaggelisbarb&#xA;Factory class is responsible for creating the objects of 'commands Package'. This is the only class seen by ' view Package's ' classes." item="_UtibUICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8HckICzEeq4BIv9FegE_w"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_UuYv4ICzEeq4BIv9FegE_w" sourceConnectionVisual="_UuZW8ICzEeq4BIv9FegE_w" text="@author vaggelisbarb&#xA;Class responsible for editing document" item="_UuZ-AICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8HckYCzEeq4BIv9FegE_w"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_UubzMICzEeq4BIv9FegE_w" sourceConnectionVisual="_UucaQICzEeq4BIv9FegE_w" text="@author vaggelisbarb&#xA;Class responsible for encoding a document file with the preferred encoding style" item="_UudBUICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8HckoCzEeq4BIv9FegE_w"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_UugEoICzEeq4BIv9FegE_w" sourceConnectionVisual="_UugEoYCzEeq4BIv9FegE_w" text="@author vaggelisbarb&#xA;Class responsible for encoding a SINGLE LINE with the selected encoding style" item="_UugrsICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8IDoICzEeq4BIv9FegE_w"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Uuig4ICzEeq4BIv9FegE_w" sourceConnectionVisual="_UujH8ICzEeq4BIv9FegE_w" text="@author vaggelisbarb&#xA;Class responsible for highlighting a specific text of the document" item="_UujH8YCzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8IDoYCzEeq4BIv9FegE_w"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_UulkMICzEeq4BIv9FegE_w" sourceConnectionVisual="_UulkMYCzEeq4BIv9FegE_w" text="@author vaggelisbarb&#xA;Class responsible for transforming a SINGLE LINE of a document into audio" item="_UumLQICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8IDooCzEeq4BIv9FegE_w"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_UupOkICzEeq4BIv9FegE_w" sourceConnectionVisual="_Uup1oICzEeq4BIv9FegE_w" text="@author vaggelisbarb&#xA;Class responsible for creating a new document file" item="_UuqcsICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8IDo4CzEeq4BIv9FegE_w"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Uus48ICzEeq4BIv9FegE_w" sourceConnectionVisual="_Uu4fIICzEeq4BIv9FegE_w" text="@author vaggelisbarb&#xA;Class responsible for opening a document file" item="_Uu5GMICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8IDpICzEeq4BIv9FegE_w"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Uu9XoICzEeq4BIv9FegE_w" sourceConnectionVisual="_Uu9XoYCzEeq4BIv9FegE_w" text="@author vaggelisbarb&#xA;Class responsible for saving a document file" item="_Uu9-sICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8IDpYCzEeq4BIv9FegE_w"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Uu_z4ICzEeq4BIv9FegE_w" sourceConnectionVisual="_UvAa8ICzEeq4BIv9FegE_w" text="@author vaggelisbarb&#xA;Class responsible for transforming a document file to audio" item="_UvBCAICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8IDpoCzEeq4BIv9FegE_w"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_UvC3MICzEeq4BIv9FegE_w" sourceConnectionVisual="_UvYOYICzEeq4BIv9FegE_w" text="@author vaggelisbarb&#xA;Class responsible for tuning the audio. The settings of the main application GUI." item="_UvaDkICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8IqsICzEeq4BIv9FegE_w"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Uvdt8ICzEeq4BIv9FegE_w" sourceConnectionVisual="_UveVAICzEeq4BIv9FegE_w" text="@author vaggelisbarb&#xA; *" item="_Uvh_YICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8IqsYCzEeq4BIv9FegE_w"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_UvzsMICzEeq4BIv9FegE_w" sourceConnectionVisual="_UwN74ICzEeq4BIv9FegE_w" text="@author vaggelisbarb&#xA; *" item="_UwS0YICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8IqsoCzEeq4BIv9FegE_w"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Uw54YICzEeq4BIv9FegE_w" sourceConnectionVisual="_Uw7tkICzEeq4BIv9FegE_w" text="@author vaggelisbarb&#xA; *" item="_Uw-J0ICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8Iqs4CzEeq4BIv9FegE_w"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_UxtJoICzEeq4BIv9FegE_w" sourceConnectionVisual="_UxtJoYCzEeq4BIv9FegE_w" text="@author vaggelisbarb&#xA; *" item="_Uxu-0ICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8IqtICzEeq4BIv9FegE_w"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Ux0eYICzEeq4BIv9FegE_w" sourceConnectionVisual="_UyNf8ICzEeq4BIv9FegE_w" text="@author vaggelisbarb&#xA; *" item="_UyhpAICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8JRwICzEeq4BIv9FegE_w"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_U2e78ICzEeq4BIv9FegE_w" sourceConnectionVisual="_U4GskICzEeq4BIv9FegE_w" text="@author vaggelisbarb&#xA; *" item="_U4VWEICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8JRxICzEeq4BIv9FegE_w"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_U4qGMICzEeq4BIv9FegE_w" sourceConnectionVisual="_U47zAICzEeq4BIv9FegE_w" text="@author vaggelisbarb&#xA; *" item="_U5fzsICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8J40ICzEeq4BIv9FegE_w"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_U5CgsICzEeq4BIv9FegE_w" sourceConnectionVisual="_U5SYUICzEeq4BIv9FegE_w" text="Constructor&#xA;&#x9; * &#xA;&#x9; * @param vm&#xA;&#x9; * @param voice" item="_U5fz3YCzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8J40YCzEeq4BIv9FegE_w"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_U54OMICzEeq4BIv9FegE_w" sourceConnectionVisual="_U6QBoICzEeq4BIv9FegE_w" text="@author vaggelisbarb&#xA;Interface responsible for text to audio transformation." item="_U6UTEICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8J40oCzEeq4BIv9FegE_w"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_U6ddAICzEeq4BIv9FegE_w" sourceConnectionVisual="_U60CUICzEeq4BIv9FegE_w" text="@author vaggelisbarb&#xA; *" item="_U613gICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8J404CzEeq4BIv9FegE_w"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_U74ZUICzEeq4BIv9FegE_w" sourceConnectionVisual="_U78qwICzEeq4BIv9FegE_w" text="@author vaggelisbarb&#xA;Class responsible for document objects. A document object consists of multiple lines. Each line is an Line object." item="_U8tfwICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8JRwYCzEeq4BIv9FegE_w"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_U8pOUICzEeq4BIv9FegE_w" sourceConnectionVisual="_U8pOUYCzEeq4BIv9FegE_w" text="@param encodingStrategy&#xA;&#x9; * @param audioManager" item="_U8tf6ICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8JRwoCzEeq4BIv9FegE_w"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_U90TAICzEeq4BIv9FegE_w" sourceConnectionVisual="_U90TAYCzEeq4BIv9FegE_w" text="@author vaggelisbarb&#xA;Class responsible for each line of the document." item="_U-clIICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8JRw4CzEeq4BIv9FegE_w"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_U_UH0ICzEeq4BIv9FegE_w" sourceConnectionVisual="_U_yo8ICzEeq4BIv9FegE_w" text="Launch the application." item="_VBjjhoCzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8Kf4ICzEeq4BIv9FegE_w"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_U_0eIICzEeq4BIv9FegE_w" sourceConnectionVisual="_U_0eIYCzEeq4BIv9FegE_w" text="Create the application." item="_VBjjjICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8Kf4YCzEeq4BIv9FegE_w"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_U_1sQICzEeq4BIv9FegE_w" sourceConnectionVisual="_U_2TUICzEeq4BIv9FegE_w" text="Initialize the contents of the frame." item="_VBjjkoCzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_R8Kf4oCzEeq4BIv9FegE_w"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_UtibUICzEeq4BIv9FegE_w" comments="_UrWqAICzEeq4BIv9FegE_w" targetConnectionVisual="_UtafgICzEeq4BIv9FegE_w" name="CommandsFactory">
+    <modelElement href="Text2SpeechEditor.uml#_RxEqMICzEeq4BIv9FegE_w"/>
+    <visualProperties xmi:id="_UtibUYCzEeq4BIv9FegE_w" position="576.0,1668.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_UtibUoCzEeq4BIv9FegE_w" label="+"/>
+    <operations xmi:id="_UtibU4CzEeq4BIv9FegE_w" name="createCommand">
+      <modelElement href="Text2SpeechEditor.uml#_RxL-8ICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_UtibVICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_UtibVYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_UtjCYICzEeq4BIv9FegE_w">
+        <modelElement href="Text2SpeechEditor.uml#_R6x_0ICzEeq4BIv9FegE_w"/>
+        <type xmi:id="_UtjCYYCzEeq4BIv9FegE_w" name="ActionListener">
+          <modelElement href="Text2SpeechEditor.uml#_R5LdUICzEeq4BIv9FegE_w"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_UtjCYoCzEeq4BIv9FegE_w" name="com">
+        <modelElement href="Text2SpeechEditor.uml#_RxMmAICzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_UtjCY4CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_UtjCZICzEeq4BIv9FegE_w" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_UuZ-AICzEeq4BIv9FegE_w" comments="_UuYv4ICzEeq4BIv9FegE_w" targetConnectionVisual="_UuZW8ICzEeq4BIv9FegE_w" name="EditDocument">
+    <modelElement href="Text2SpeechEditor.uml#_RxQ3cICzEeq4BIv9FegE_w"/>
+    <visualProperties xmi:id="_UuZ-AYCzEeq4BIv9FegE_w" position="11.0,1787.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_UuZ-AoCzEeq4BIv9FegE_w" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_UudBUICzEeq4BIv9FegE_w" comments="_UubzMICzEeq4BIv9FegE_w" targetConnectionVisual="_UucaQICzEeq4BIv9FegE_w" name="EncodeDocument">
+    <modelElement href="Text2SpeechEditor.uml#_RxSFkICzEeq4BIv9FegE_w"/>
+    <visualProperties xmi:id="_UudBUYCzEeq4BIv9FegE_w" position="1581.0,1670.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_UudBUoCzEeq4BIv9FegE_w" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_UugrsICzEeq4BIv9FegE_w" comments="_UugEoICzEeq4BIv9FegE_w" targetConnectionVisual="_UugEoYCzEeq4BIv9FegE_w" name="EncodeLine">
+    <modelElement href="Text2SpeechEditor.uml#_RxTTsICzEeq4BIv9FegE_w"/>
+    <visualProperties xmi:id="_UugrsYCzEeq4BIv9FegE_w" position="1282.0,1787.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_UugrsoCzEeq4BIv9FegE_w" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_UujH8YCzEeq4BIv9FegE_w" comments="_Uuig4ICzEeq4BIv9FegE_w" targetConnectionVisual="_UujH8ICzEeq4BIv9FegE_w" name="HighlightText">
+    <modelElement href="Text2SpeechEditor.uml#_RxUh0ICzEeq4BIv9FegE_w"/>
+    <visualProperties xmi:id="_UujH8oCzEeq4BIv9FegE_w" position="1080.0,1787.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_UujH84CzEeq4BIv9FegE_w" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_UumLQICzEeq4BIv9FegE_w" comments="_UulkMICzEeq4BIv9FegE_w" targetConnectionVisual="_UulkMYCzEeq4BIv9FegE_w" name="LineToSpeech">
+    <modelElement href="Text2SpeechEditor.uml#_RxVv8ICzEeq4BIv9FegE_w"/>
+    <visualProperties xmi:id="_UumLQYCzEeq4BIv9FegE_w" position="220.0,1787.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_UumLQoCzEeq4BIv9FegE_w" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_UuqcsICzEeq4BIv9FegE_w" comments="_UupOkICzEeq4BIv9FegE_w" targetConnectionVisual="_Uup1oICzEeq4BIv9FegE_w" name="NewDocument">
+    <modelElement href="Text2SpeechEditor.uml#_RxW-EICzEeq4BIv9FegE_w"/>
+    <visualProperties xmi:id="_UuqcsYCzEeq4BIv9FegE_w" position="439.0,1787.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_UuqcsoCzEeq4BIv9FegE_w" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Uu5GMICzEeq4BIv9FegE_w" comments="_Uus48ICzEeq4BIv9FegE_w" targetConnectionVisual="_Uu4fIICzEeq4BIv9FegE_w" name="OpenDocument">
+    <modelElement href="Text2SpeechEditor.uml#_RxYMMICzEeq4BIv9FegE_w"/>
+    <visualProperties xmi:id="_Uu5GMYCzEeq4BIv9FegE_w" position="1824.0,1670.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Uu5GMoCzEeq4BIv9FegE_w" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Uu9-sICzEeq4BIv9FegE_w" comments="_Uu9XoICzEeq4BIv9FegE_w" targetConnectionVisual="_Uu9XoYCzEeq4BIv9FegE_w" name="SaveDocument">
+    <modelElement href="Text2SpeechEditor.uml#_RxaBYICzEeq4BIv9FegE_w"/>
+    <visualProperties xmi:id="_Uu9-sYCzEeq4BIv9FegE_w" position="657.0,1787.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Uu9-soCzEeq4BIv9FegE_w" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_UvBCAICzEeq4BIv9FegE_w" comments="_Uu_z4ICzEeq4BIv9FegE_w" targetConnectionVisual="_UvAa8ICzEeq4BIv9FegE_w" name="TextToSpeech">
+    <modelElement href="Text2SpeechEditor.uml#_RxbPgICzEeq4BIv9FegE_w"/>
+    <visualProperties xmi:id="_UvBCAYCzEeq4BIv9FegE_w" position="870.0,1787.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_UvBCAoCzEeq4BIv9FegE_w" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_UvaDkICzEeq4BIv9FegE_w" comments="_UvC3MICzEeq4BIv9FegE_w" targetConnectionVisual="_UvYOYICzEeq4BIv9FegE_w" name="TuneAudio">
+    <modelElement href="Text2SpeechEditor.uml#_RxdEsICzEeq4BIv9FegE_w"/>
+    <visualProperties xmi:id="_UvaDkYCzEeq4BIv9FegE_w" position="1469.0,1787.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_UvaDkoCzEeq4BIv9FegE_w" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Uvh_YICzEeq4BIv9FegE_w" comments="_Uvdt8ICzEeq4BIv9FegE_w" targetConnectionVisual="_UveVAICzEeq4BIv9FegE_w" name="AtBashEncoding" generalizations="_UyOHAICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_Rxe54ICzEeq4BIv9FegE_w"/>
+    <visualProperties xmi:id="_Uvh_YYCzEeq4BIv9FegE_w" position="190.0,786.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Uvh_YoCzEeq4BIv9FegE_w" label="+"/>
+    <operations xmi:id="_Uvh_Y4CzEeq4BIv9FegE_w" name="encode">
+      <modelElement href="Text2SpeechEditor.uml#_RxgIAICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_Uvh_ZICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_Uvh_ZYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Uvh_ZoCzEeq4BIv9FegE_w">
+        <modelElement href="Text2SpeechEditor.uml#_RxhWIICzEeq4BIv9FegE_w"/>
+        <type xmi:id="_Uvh_Z4CzEeq4BIv9FegE_w" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Uvh_aICzEeq4BIv9FegE_w" name="txt">
+        <modelElement href="Text2SpeechEditor.uml#_RxgvEICzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_Uvh_aYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_Uvh_aoCzEeq4BIv9FegE_w" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Uvh_a4CzEeq4BIv9FegE_w" name="mapCharacter">
+      <modelElement href="Text2SpeechEditor.uml#_Rxh9MICzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_Uvh_bICzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_RxjyYICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Uvh_bYCzEeq4BIv9FegE_w" name="Annotations">
+        <modelElement href="Text2SpeechEditor.uml#_RxmOoICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_Uvh_boCzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_Uvh_b4CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Uvh_cICzEeq4BIv9FegE_w">
+        <modelElement href="Text2SpeechEditor.uml#_RxjLUICzEeq4BIv9FegE_w"/>
+        <type xmi:id="_Uvh_cYCzEeq4BIv9FegE_w" name="char">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Uvh_coCzEeq4BIv9FegE_w" name="txtChar">
+        <modelElement href="Text2SpeechEditor.uml#_RxikQICzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_Uvh_c4CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_Uvh_dICzEeq4BIv9FegE_w" name="char">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_UwS0YICzEeq4BIv9FegE_w" comments="_UvzsMICzEeq4BIv9FegE_w" targetConnectionVisual="_UwN74ICzEeq4BIv9FegE_w" name="EncodingStrategy" associationsIn="_U7bGUICzEeq4BIv9FegE_w _U9Q5YICzEeq4BIv9FegE_w" subclassedBy="_Uxz3UICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_RxpR8ICzEeq4BIv9FegE_w"/>
+    <visualProperties xmi:id="_UwS0YYCzEeq4BIv9FegE_w" position="870.0,501.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_UwS0YoCzEeq4BIv9FegE_w" label="+"/>
+    <operations xmi:id="_UwS0Y4CzEeq4BIv9FegE_w" name="encode">
+      <modelElement href="Text2SpeechEditor.uml#_RxrHIICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_UwS0ZICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_UwS0ZYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_UwS0ZoCzEeq4BIv9FegE_w">
+        <modelElement href="Text2SpeechEditor.uml#_RxruMYCzEeq4BIv9FegE_w"/>
+        <type xmi:id="_UwS0Z4CzEeq4BIv9FegE_w" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_UwS0aICzEeq4BIv9FegE_w" name="type">
+        <modelElement href="Text2SpeechEditor.uml#_RxruMICzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_UwS0aYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_UwS0aoCzEeq4BIv9FegE_w" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Uw-J0ICzEeq4BIv9FegE_w" comments="_Uw54YICzEeq4BIv9FegE_w" targetConnectionVisual="_Uw7tkICzEeq4BIv9FegE_w" name="Rot13Encoding" generalizations="_UyOuEICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_RxsVQICzEeq4BIv9FegE_w"/>
+    <visualProperties xmi:id="_Uw-J0YCzEeq4BIv9FegE_w" position="593.0,773.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Uw-J0oCzEeq4BIv9FegE_w" label="+"/>
+    <operations xmi:id="_Uw-J04CzEeq4BIv9FegE_w" name="encode">
+      <modelElement href="Text2SpeechEditor.uml#_RxuKcICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_Uw-J1ICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_Uw-J1YCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Uw-J1oCzEeq4BIv9FegE_w">
+        <modelElement href="Text2SpeechEditor.uml#_RxuxgYCzEeq4BIv9FegE_w"/>
+        <type xmi:id="_Uw-J14CzEeq4BIv9FegE_w" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Uw-J2ICzEeq4BIv9FegE_w" name="txt">
+        <modelElement href="Text2SpeechEditor.uml#_RxuxgICzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_Uw-J2YCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_Uw-J2oCzEeq4BIv9FegE_w" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Uw-J24CzEeq4BIv9FegE_w" name="mapCharacter">
+      <modelElement href="Text2SpeechEditor.uml#_Rxv_oICzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_Uw-J3ICzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_Rxx00ICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Uw-J3YCzEeq4BIv9FegE_w" name="Annotations">
+        <modelElement href="Text2SpeechEditor.uml#_Rxyb4ICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_Uw-J3oCzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_Uw-J34CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Uw-J4ICzEeq4BIv9FegE_w">
+        <modelElement href="Text2SpeechEditor.uml#_RxwmsICzEeq4BIv9FegE_w"/>
+        <type xmi:id="_Uw-J4YCzEeq4BIv9FegE_w" name="char">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Uw-J4oCzEeq4BIv9FegE_w" name="txtChar">
+        <modelElement href="Text2SpeechEditor.uml#_Rxv_oYCzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_Uw-J44CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_Uw-J5ICzEeq4BIv9FegE_w" name="char">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Uxu-0ICzEeq4BIv9FegE_w" comments="_UxtJoICzEeq4BIv9FegE_w" targetConnectionVisual="_UxtJoYCzEeq4BIv9FegE_w" name="StrategiesFactory">
+    <modelElement href="Text2SpeechEditor.uml#_Rx0REICzEeq4BIv9FegE_w"/>
+    <visualProperties xmi:id="_Uxu-0YCzEeq4BIv9FegE_w" position="1188.0,1460.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Uxu-0oCzEeq4BIv9FegE_w" label="+"/>
+    <operations xmi:id="_Uxu-04CzEeq4BIv9FegE_w" name="createStrategy">
+      <modelElement href="Text2SpeechEditor.uml#_Rx2GQICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_Uxu-1ICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_Uxu-1YCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Uxu-1oCzEeq4BIv9FegE_w">
+        <modelElement href="Text2SpeechEditor.uml#_R5Rj8ICzEeq4BIv9FegE_w"/>
+        <type xmi:id="_Uxu-14CzEeq4BIv9FegE_w" name="EncodingStrategy">
+          <modelElement href="Text2SpeechEditor.uml#_RxpR8ICzEeq4BIv9FegE_w"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Uxu-2ICzEeq4BIv9FegE_w" name="encodeType">
+        <modelElement href="Text2SpeechEditor.uml#_Rx2GQYCzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_Uxu-2YCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_Uxu-2oCzEeq4BIv9FegE_w" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_UyhpAICzEeq4BIv9FegE_w" comments="_Ux0eYICzEeq4BIv9FegE_w" targetConnectionVisual="_UyNf8ICzEeq4BIv9FegE_w" name="TemplateEncoding" abstractClass="true" generalizations="_Uxz3UICzEeq4BIv9FegE_w" subclassedBy="_UyOHAICzEeq4BIv9FegE_w _UyOuEICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_Rx4igICzEeq4BIv9FegE_w"/>
+    <visualProperties xmi:id="_UyhpAYCzEeq4BIv9FegE_w" position="385.0,630.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_UyhpAoCzEeq4BIv9FegE_w" label="+"/>
+    <operations xmi:id="_UyhpA4CzEeq4BIv9FegE_w" name="encode">
+      <modelElement href="Text2SpeechEditor.uml#_Rx6-wICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_UyhpBICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_UyhpBYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_UyhpBoCzEeq4BIv9FegE_w">
+        <modelElement href="Text2SpeechEditor.uml#_Rx7l0ICzEeq4BIv9FegE_w"/>
+        <type xmi:id="_UyhpB4CzEeq4BIv9FegE_w" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_UyhpCICzEeq4BIv9FegE_w" name="txt">
+        <modelElement href="Text2SpeechEditor.uml#_Rx6-wYCzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_UyhpCYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_UyhpCoCzEeq4BIv9FegE_w" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_UyhpC4CzEeq4BIv9FegE_w" abstractOperation="true" name="mapCharacter">
+      <modelElement href="Text2SpeechEditor.uml#_Rx8z8ICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_UyhpDICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_UyhpDYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_UyhpDoCzEeq4BIv9FegE_w">
+        <modelElement href="Text2SpeechEditor.uml#_Rx9bAICzEeq4BIv9FegE_w"/>
+        <type xmi:id="_UyhpD4CzEeq4BIv9FegE_w" name="char">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_UyhpEICzEeq4BIv9FegE_w" name="txtChar">
+        <modelElement href="Text2SpeechEditor.uml#_Rx8z8YCzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_UyhpEYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_UyhpEoCzEeq4BIv9FegE_w" name="char">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_U4VWEICzEeq4BIv9FegE_w" comments="_U2e78ICzEeq4BIv9FegE_w" targetConnectionVisual="_U4GskICzEeq4BIv9FegE_w" name="FakeTextToSpeechAPI" generalizations="_U6QosICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_RybVEICzEeq4BIv9FegE_w"/>
+    <visualProperties xmi:id="_U4VWEYCzEeq4BIv9FegE_w" position="14.0,1206.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_U4VWEoCzEeq4BIv9FegE_w" label="+"/>
+    <operations xmi:id="_U4VWE4CzEeq4BIv9FegE_w" name="play">
+      <modelElement href="Text2SpeechEditor.uml#_RydKQICzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_U4VWFICzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_RyeYYICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <stereotypes xmi:id="_U4VWFYCzEeq4BIv9FegE_w" name="Annotations">
+        <modelElement href="Text2SpeechEditor.uml#_Rye_cICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_U4VWFoCzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_U4VWF4CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <parameters xmi:id="_U4VWGICzEeq4BIv9FegE_w" name="text">
+        <modelElement href="Text2SpeechEditor.uml#_RydKQYCzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_U4VWGYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_U4VWGoCzEeq4BIv9FegE_w" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_U4VWG4CzEeq4BIv9FegE_w" name="setVolume">
+      <modelElement href="Text2SpeechEditor.uml#_RyfmgICzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_U4VWHICzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_Ryg0oICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <stereotypes xmi:id="_U4VWHYCzEeq4BIv9FegE_w" name="Annotations">
+        <modelElement href="Text2SpeechEditor.uml#_RyhbsICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_U4VWHoCzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_U4VWH4CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <parameters xmi:id="_U4VWIICzEeq4BIv9FegE_w" name="vol">
+        <modelElement href="Text2SpeechEditor.uml#_RyfmgYCzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_U4VWIYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_U4VWIoCzEeq4BIv9FegE_w" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_U4VWI4CzEeq4BIv9FegE_w" name="setPitch">
+      <modelElement href="Text2SpeechEditor.uml#_RyiCwICzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_U4VWJICzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_RyjQ4ICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <stereotypes xmi:id="_U4VWJYCzEeq4BIv9FegE_w" name="Annotations">
+        <modelElement href="Text2SpeechEditor.uml#_Ryj38ICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_U4VWJoCzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_U4VWJ4CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <parameters xmi:id="_U4VWKICzEeq4BIv9FegE_w" name="pitch">
+        <modelElement href="Text2SpeechEditor.uml#_RyiCwYCzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_U4VWKYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_U4VWKoCzEeq4BIv9FegE_w" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_U4VWK4CzEeq4BIv9FegE_w" name="setRate">
+      <modelElement href="Text2SpeechEditor.uml#_Rym7QICzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_U4VWLICzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_RyoJYICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <stereotypes xmi:id="_U4VWLYCzEeq4BIv9FegE_w" name="Annotations">
+        <modelElement href="Text2SpeechEditor.uml#_RypXgICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_U4VWLoCzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_U4VWL4CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <parameters xmi:id="_U4VWMICzEeq4BIv9FegE_w" name="rate">
+        <modelElement href="Text2SpeechEditor.uml#_RyniUICzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_U4VWMYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_U4VWMoCzEeq4BIv9FegE_w" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_U5fzsICzEeq4BIv9FegE_w" comments="_U4qGMICzEeq4BIv9FegE_w" targetConnectionVisual="_U47zAICzEeq4BIv9FegE_w" name="FreeTTSAdapter" associationsOut="_U5cwYICzEeq4BIv9FegE_w _U5fMoICzEeq4BIv9FegE_w" generalizations="_U6RPwICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_RyqloICzEeq4BIv9FegE_w"/>
+    <visualProperties xmi:id="_U5fzsYCzEeq4BIv9FegE_w" position="289.0,1196.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_U5fzsoCzEeq4BIv9FegE_w" label="+"/>
+    <attributes xmi:id="_U5fzs4CzEeq4BIv9FegE_w" name="vm">
+      <modelElement href="Text2SpeechEditor.uml#_R7NdoICzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_U5fztICzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7OrwICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_U5fztYCzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_U5fztoCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_U5fzt4CzEeq4BIv9FegE_w" name="VoiceManager">
+        <modelElement href="Text2SpeechEditor.uml#_R5g0gYCzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_U5fzuICzEeq4BIv9FegE_w" name="voice">
+      <modelElement href="Text2SpeechEditor.uml#_R7OrwYCzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_U5fzuYCzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7P54ICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_U5fzuoCzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_U5fzu4CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_U5fzvICzEeq4BIv9FegE_w" name="Voice">
+        <modelElement href="Text2SpeechEditor.uml#_R5fmYICzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_U5fzvYCzEeq4BIv9FegE_w" name="play">
+      <modelElement href="Text2SpeechEditor.uml#_RyuQAICzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_U5fzvoCzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_RyveIICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <stereotypes xmi:id="_U5fzv4CzEeq4BIv9FegE_w" name="Annotations">
+        <modelElement href="Text2SpeechEditor.uml#_RywsQICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_U5fzwICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_U5fzwYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <parameters xmi:id="_U5fzwoCzEeq4BIv9FegE_w" name="text">
+        <modelElement href="Text2SpeechEditor.uml#_Ryu3EICzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_U5fzw4CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_U5fzxICzEeq4BIv9FegE_w" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_U5fzxYCzEeq4BIv9FegE_w" name="setVolume">
+      <modelElement href="Text2SpeechEditor.uml#_Ryx6YICzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_U5fzxoCzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_Ry0WoICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <stereotypes xmi:id="_U5fzx4CzEeq4BIv9FegE_w" name="Annotations">
+        <modelElement href="Text2SpeechEditor.uml#_Ry09sICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_U5fzyICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_U5fzyYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <parameters xmi:id="_U5fzyoCzEeq4BIv9FegE_w" name="vol">
+        <modelElement href="Text2SpeechEditor.uml#_RyzIgICzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_U5fzy4CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_U5fzzICzEeq4BIv9FegE_w" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_U5fzzYCzEeq4BIv9FegE_w" name="setPitch">
+      <modelElement href="Text2SpeechEditor.uml#_Ry2L0ICzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_U5fzzoCzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_Ry52MICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <stereotypes xmi:id="_U5fzz4CzEeq4BIv9FegE_w" name="Annotations">
+        <modelElement href="Text2SpeechEditor.uml#_Ry7EUICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_U5fz0ICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_U5fz0YCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <parameters xmi:id="_U5fz0oCzEeq4BIv9FegE_w" name="pitch">
+        <modelElement href="Text2SpeechEditor.uml#_Ry2L0YCzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_U5fz04CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_U5fz1ICzEeq4BIv9FegE_w" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_U5fz1YCzEeq4BIv9FegE_w" name="setRate">
+      <modelElement href="Text2SpeechEditor.uml#_Ry7rYICzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_U5fz1oCzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_Ry85gICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <stereotypes xmi:id="_U5fz14CzEeq4BIv9FegE_w" name="Annotations">
+        <modelElement href="Text2SpeechEditor.uml#_Ry-HoICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_U5fz2ICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_U5fz2YCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <parameters xmi:id="_U5fz2oCzEeq4BIv9FegE_w" name="rate">
+        <modelElement href="Text2SpeechEditor.uml#_Ry8ScICzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_U5fz24CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_U5fz3ICzEeq4BIv9FegE_w" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_U5fz3YCzEeq4BIv9FegE_w" comments="_U5CgsICzEeq4BIv9FegE_w" targetConnectionVisual="_U5SYUICzEeq4BIv9FegE_w" name="FreeTTSAdapter">
+      <modelElement href="Text2SpeechEditor.uml#_R624UICzEeq4BIv9FegE_w"/>
+      <keywords xmi:id="_U5fz3oCzEeq4BIv9FegE_w" keyword="create"/>
+      <visibility xmi:id="_U5fz34CzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_U5fz4ICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_U5fz4YCzEeq4BIv9FegE_w">
+        <modelElement href="Text2SpeechEditor.uml#_R63fYoCzEeq4BIv9FegE_w"/>
+        <type xmi:id="_U5fz4oCzEeq4BIv9FegE_w" name="FreeTTSAdapter">
+          <modelElement href="Text2SpeechEditor.uml#_RyqloICzEeq4BIv9FegE_w"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_U5fz44CzEeq4BIv9FegE_w" name="vm">
+        <modelElement href="Text2SpeechEditor.uml#_R624UYCzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_U5fz5ICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_U5fz5YCzEeq4BIv9FegE_w" name="VoiceManager">
+          <modelElement href="Text2SpeechEditor.uml#_R5g0gYCzEeq4BIv9FegE_w"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_U5fz5oCzEeq4BIv9FegE_w" name="voice">
+        <modelElement href="Text2SpeechEditor.uml#_R624UoCzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_U5fz54CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_U5fz6ICzEeq4BIv9FegE_w" name="Voice">
+          <modelElement href="Text2SpeechEditor.uml#_R5fmYICzEeq4BIv9FegE_w"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_U6UTEICzEeq4BIv9FegE_w" comments="_U54OMICzEeq4BIv9FegE_w" targetConnectionVisual="_U6QBoICzEeq4BIv9FegE_w" name="TextToSpeechAPI" associationsIn="_U7h0AICzEeq4BIv9FegE_w _U9zE4ICzEeq4BIv9FegE_w" subclassedBy="_U6QosICzEeq4BIv9FegE_w _U6RPwICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_RzE1UICzEeq4BIv9FegE_w"/>
+    <visualProperties xmi:id="_U6UTEYCzEeq4BIv9FegE_w" position="53.0,65.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_U6UTEoCzEeq4BIv9FegE_w" label="+"/>
+    <operations xmi:id="_U6UTE4CzEeq4BIv9FegE_w" name="play">
+      <modelElement href="Text2SpeechEditor.uml#_RzGqgICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_U6UTFICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_U6UTFYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <parameters xmi:id="_U6U6IICzEeq4BIv9FegE_w" name="text">
+        <modelElement href="Text2SpeechEditor.uml#_RzGqgYCzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_U6U6IYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_U6U6IoCzEeq4BIv9FegE_w" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_U6U6I4CzEeq4BIv9FegE_w" name="setVolume">
+      <modelElement href="Text2SpeechEditor.uml#_RzH4oICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_U6U6JICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_U6U6JYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <parameters xmi:id="_U6U6JoCzEeq4BIv9FegE_w" name="vol">
+        <modelElement href="Text2SpeechEditor.uml#_RzH4oYCzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_U6U6J4CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_U6U6KICzEeq4BIv9FegE_w" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_U6U6KYCzEeq4BIv9FegE_w" name="setPitch">
+      <modelElement href="Text2SpeechEditor.uml#_RzIfsICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_U6U6KoCzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_U6U6K4CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <parameters xmi:id="_U6U6LICzEeq4BIv9FegE_w" name="pitch">
+        <modelElement href="Text2SpeechEditor.uml#_RzJGwICzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_U6U6LYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_U6U6LoCzEeq4BIv9FegE_w" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_U6U6L4CzEeq4BIv9FegE_w" name="setRate">
+      <modelElement href="Text2SpeechEditor.uml#_RzJt0ICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_U6U6MICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_U6U6MYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <parameters xmi:id="_U6U6MoCzEeq4BIv9FegE_w" name="rate">
+        <modelElement href="Text2SpeechEditor.uml#_RzJt0YCzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_U6U6M4CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_U6U6NICzEeq4BIv9FegE_w" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_U613gICzEeq4BIv9FegE_w" comments="_U6ddAICzEeq4BIv9FegE_w" targetConnectionVisual="_U60CUICzEeq4BIv9FegE_w" name="TextToSpeechAPIFactory">
+    <modelElement href="Text2SpeechEditor.uml#_RzK78ICzEeq4BIv9FegE_w"/>
+    <visualProperties xmi:id="_U613gYCzEeq4BIv9FegE_w" position="1095.0,1668.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_U613goCzEeq4BIv9FegE_w" label="+"/>
+    <operations xmi:id="_U613g4CzEeq4BIv9FegE_w" name="createTTSAPI">
+      <modelElement href="Text2SpeechEditor.uml#_RzMKEICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_U613hICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_U613hYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_U613hoCzEeq4BIv9FegE_w">
+        <modelElement href="Text2SpeechEditor.uml#_R5mUEICzEeq4BIv9FegE_w"/>
+        <type xmi:id="_U613h4CzEeq4BIv9FegE_w" name="TextToSpeechAPI">
+          <modelElement href="Text2SpeechEditor.uml#_RzE1UICzEeq4BIv9FegE_w"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_U613iICzEeq4BIv9FegE_w" name="api">
+        <modelElement href="Text2SpeechEditor.uml#_RzMxIICzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_U613iYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_U613ioCzEeq4BIv9FegE_w" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_U8tfwICzEeq4BIv9FegE_w" comments="_U74ZUICzEeq4BIv9FegE_w" targetConnectionVisual="_U78qwICzEeq4BIv9FegE_w" name="Document" associationsOut="_U7bGUICzEeq4BIv9FegE_w _U7h0AICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_Rx-pIICzEeq4BIv9FegE_w"/>
+    <visualProperties xmi:id="_U8tfwYCzEeq4BIv9FegE_w" position="585.0,32.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_U8tfwoCzEeq4BIv9FegE_w" label="+"/>
+    <attributes xmi:id="_U8tfw4CzEeq4BIv9FegE_w" name="encodingStrategy">
+      <modelElement href="Text2SpeechEditor.uml#_R7H-EICzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_U8tfxICzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7IlIICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_U8tfxYCzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_U8tfxoCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_U8tfx4CzEeq4BIv9FegE_w" name="EncodingStrategy">
+        <modelElement href="Text2SpeechEditor.uml#_RxpR8ICzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_U8tfyICzEeq4BIv9FegE_w" name="audioManager">
+      <modelElement href="Text2SpeechEditor.uml#_R7JMMICzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_U8tfyYCzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7JMMYCzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_U8tfyoCzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_U8tfy4CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_U8tfzICzEeq4BIv9FegE_w" name="TextToSpeechAPI">
+        <modelElement href="Text2SpeechEditor.uml#_RzE1UICzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_U8tfzYCzEeq4BIv9FegE_w" name="playContents">
+      <modelElement href="Text2SpeechEditor.uml#_RyCTgICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_U8tfzoCzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_U8tfz4CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_U8tf0ICzEeq4BIv9FegE_w" name="playReverseContents">
+      <modelElement href="Text2SpeechEditor.uml#_RyDhoICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_U8tf0YCzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_U8tf0oCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_U8tf04CzEeq4BIv9FegE_w" name="playEncodedContents">
+      <modelElement href="Text2SpeechEditor.uml#_RyDhoYCzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_U8tf1ICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_U8tf1YCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_U8tf1oCzEeq4BIv9FegE_w" name="playLine">
+      <modelElement href="Text2SpeechEditor.uml#_RyEvwICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_U8tf14CzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_U8tf2ICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <parameters xmi:id="_U8tf2YCzEeq4BIv9FegE_w" name="numLine">
+        <modelElement href="Text2SpeechEditor.uml#_RyEvwYCzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_U8tf2oCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_U8tf24CzEeq4BIv9FegE_w" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_U8tf3ICzEeq4BIv9FegE_w" name="playReverseLine">
+      <modelElement href="Text2SpeechEditor.uml#_RyF94ICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_U8tf3YCzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_U8tf3oCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <parameters xmi:id="_U8tf34CzEeq4BIv9FegE_w" name="numLine">
+        <modelElement href="Text2SpeechEditor.uml#_RyGk8ICzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_U8tf4ICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_U8tf4YCzEeq4BIv9FegE_w" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_U8tf4oCzEeq4BIv9FegE_w" name="playEncodedLine">
+      <modelElement href="Text2SpeechEditor.uml#_RyHMAICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_U8tf44CzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_U8tf5ICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <parameters xmi:id="_U8tf5YCzEeq4BIv9FegE_w" name="numLine">
+        <modelElement href="Text2SpeechEditor.uml#_RyHzEICzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_U8tf5oCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_U8tf54CzEeq4BIv9FegE_w" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_U8tf6ICzEeq4BIv9FegE_w" comments="_U8pOUICzEeq4BIv9FegE_w" targetConnectionVisual="_U8pOUYCzEeq4BIv9FegE_w" name="Document">
+      <modelElement href="Text2SpeechEditor.uml#_R5WccICzEeq4BIv9FegE_w"/>
+      <keywords xmi:id="_U8tf6YCzEeq4BIv9FegE_w" keyword="create"/>
+      <visibility xmi:id="_U8tf6oCzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_U8tf64CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_U8tf7ICzEeq4BIv9FegE_w">
+        <modelElement href="Text2SpeechEditor.uml#_R5XDgoCzEeq4BIv9FegE_w"/>
+        <type xmi:id="_U8tf7YCzEeq4BIv9FegE_w" name="Document">
+          <modelElement href="Text2SpeechEditor.uml#_Rx-pIICzEeq4BIv9FegE_w"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_U8tf7oCzEeq4BIv9FegE_w" name="encodingStrategy">
+        <modelElement href="Text2SpeechEditor.uml#_R5WccYCzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_U8tf74CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_U8tf8ICzEeq4BIv9FegE_w" name="EncodingStrategy">
+          <modelElement href="Text2SpeechEditor.uml#_RxpR8ICzEeq4BIv9FegE_w"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_U8tf8YCzEeq4BIv9FegE_w" name="audioManager">
+        <modelElement href="Text2SpeechEditor.uml#_R5WccoCzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_U8tf8oCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_U8tf84CzEeq4BIv9FegE_w" name="TextToSpeechAPI">
+          <modelElement href="Text2SpeechEditor.uml#_RzE1UICzEeq4BIv9FegE_w"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_U8tf9ICzEeq4BIv9FegE_w" name="tuneEncodingStrategy">
+      <modelElement href="Text2SpeechEditor.uml#_R5XqkICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_U8tf9YCzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_U8tf9oCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <parameters xmi:id="_U8tf94CzEeq4BIv9FegE_w" name="strategy">
+        <modelElement href="Text2SpeechEditor.uml#_R5XqkYCzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_U8tf-ICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_U8tf-YCzEeq4BIv9FegE_w" name="EncodingStrategy">
+          <modelElement href="Text2SpeechEditor.uml#_RxpR8ICzEeq4BIv9FegE_w"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_U-clIICzEeq4BIv9FegE_w" comments="_U90TAICzEeq4BIv9FegE_w" targetConnectionVisual="_U90TAYCzEeq4BIv9FegE_w" name="Line" associationsOut="_U9Q5YICzEeq4BIv9FegE_w _U9zE4ICzEeq4BIv9FegE_w _U-QX4ICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_RyOgwICzEeq4BIv9FegE_w"/>
+    <visualProperties xmi:id="_U-clIYCzEeq4BIv9FegE_w" position="569.0,986.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_U-clIoCzEeq4BIv9FegE_w" label="+"/>
+    <attributes xmi:id="_U-clI4CzEeq4BIv9FegE_w" name="words">
+      <modelElement href="Text2SpeechEditor.uml#_R7KaUICzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_U-clJICzEeq4BIv9FegE_w" name="Generics">
+        <modelElement href="Text2SpeechEditor.uml#_R7LBYICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <stereotypes xmi:id="_U-clJYCzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7LocICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_U-clJoCzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_U-clJ4CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_U-clKICzEeq4BIv9FegE_w" name="ArrayList">
+        <modelElement href="Text2SpeechEditor.uml#_R5Y4sICzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_U-clKYCzEeq4BIv9FegE_w" name="encodingStrategy">
+      <modelElement href="Text2SpeechEditor.uml#_R7LocYCzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_U-clKoCzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7MPgICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_U-clK4CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_U-clLICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_U-clLYCzEeq4BIv9FegE_w" name="EncodingStrategy">
+        <modelElement href="Text2SpeechEditor.uml#_RxpR8ICzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_U-clLoCzEeq4BIv9FegE_w" name="audioManager">
+      <modelElement href="Text2SpeechEditor.uml#_R7MPgYCzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_U-clL4CzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7M2kICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_U-clMICzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_U-clMYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_U-clMoCzEeq4BIv9FegE_w" name="TextToSpeechAPI">
+        <modelElement href="Text2SpeechEditor.uml#_RzE1UICzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_U-clM4CzEeq4BIv9FegE_w" name="playLine">
+      <modelElement href="Text2SpeechEditor.uml#_RySLIICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_U-clNICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_U-clNYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_U-clNoCzEeq4BIv9FegE_w" name="playReverseLine">
+      <modelElement href="Text2SpeechEditor.uml#_RySyMICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_U-clN4CzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_U-clOICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_U-clOYCzEeq4BIv9FegE_w" name="playEncodedLine">
+      <modelElement href="Text2SpeechEditor.uml#_RyTZQICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_U-clOoCzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_U-clO4CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_U-clPICzEeq4BIv9FegE_w" name="tuneEncodingStrategy">
+      <modelElement href="Text2SpeechEditor.uml#_R5dKIICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_U-clPYCzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_U-clPoCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <parameters xmi:id="_U-clP4CzEeq4BIv9FegE_w" name="strategy">
+        <modelElement href="Text2SpeechEditor.uml#_R5dKIYCzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_U-clQICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_U-clQYCzEeq4BIv9FegE_w" name="EncodingStrategy">
+          <modelElement href="Text2SpeechEditor.uml#_RxpR8ICzEeq4BIv9FegE_w"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_U-clQoCzEeq4BIv9FegE_w" name="Line">
+      <modelElement href="Text2SpeechEditor.uml#_R6zN8ICzEeq4BIv9FegE_w"/>
+      <keywords xmi:id="_U-clQ4CzEeq4BIv9FegE_w" keyword="create"/>
+      <visibility xmi:id="_U-clRICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_U-clRYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_U-clRoCzEeq4BIv9FegE_w">
+        <modelElement href="Text2SpeechEditor.uml#_R6z1A4CzEeq4BIv9FegE_w"/>
+        <type xmi:id="_U-clR4CzEeq4BIv9FegE_w" name="Line">
+          <modelElement href="Text2SpeechEditor.uml#_RyOgwICzEeq4BIv9FegE_w"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_U-clSICzEeq4BIv9FegE_w" name="words">
+        <modelElement href="Text2SpeechEditor.uml#_R6zN8YCzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_U-clSYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_U-clSoCzEeq4BIv9FegE_w" name="ArrayList">
+          <modelElement href="Text2SpeechEditor.uml#_R5Y4sICzEeq4BIv9FegE_w"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_U-clS4CzEeq4BIv9FegE_w" name="encodingStrategy">
+        <modelElement href="Text2SpeechEditor.uml#_R6zN8oCzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_U-clTICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_U-clTYCzEeq4BIv9FegE_w" name="EncodingStrategy">
+          <modelElement href="Text2SpeechEditor.uml#_RxpR8ICzEeq4BIv9FegE_w"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_U-clToCzEeq4BIv9FegE_w" name="audioManager">
+        <modelElement href="Text2SpeechEditor.uml#_R6z1AICzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_U-clT4CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_U-clUICzEeq4BIv9FegE_w" name="TextToSpeechAPI">
+          <modelElement href="Text2SpeechEditor.uml#_RzE1UICzEeq4BIv9FegE_w"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_VBhHSYCzEeq4BIv9FegE_w" name="MainAppGUI" associationsOut="_VAX3wICzEeq4BIv9FegE_w _VAqLoICzEeq4BIv9FegE_w _VAsA0ICzEeq4BIv9FegE_w _VA1x0ICzEeq4BIv9FegE_w _VA2_8ICzEeq4BIv9FegE_w _VA8fgICzEeq4BIv9FegE_w _VA9toICzEeq4BIv9FegE_w _VA-7wICzEeq4BIv9FegE_w _VBAw8ICzEeq4BIv9FegE_w _VBB_EICzEeq4BIv9FegE_w _VBGQgICzEeq4BIv9FegE_w _VBHeoICzEeq4BIv9FegE_w _VBIswICzEeq4BIv9FegE_w _VBJ64ICzEeq4BIv9FegE_w _VBLwEICzEeq4BIv9FegE_w _VBRPoICzEeq4BIv9FegE_w _VBSdwICzEeq4BIv9FegE_w _VBTE0ICzEeq4BIv9FegE_w _VBUS8ICzEeq4BIv9FegE_w _VBU6AICzEeq4BIv9FegE_w _VBWIIICzEeq4BIv9FegE_w _VBXWQICzEeq4BIv9FegE_w _VBZLcICzEeq4BIv9FegE_w _VBZygICzEeq4BIv9FegE_w _VBaZkICzEeq4BIv9FegE_w _VBbnsICzEeq4BIv9FegE_w _VBcOwICzEeq4BIv9FegE_w _VBc10ICzEeq4BIv9FegE_w _VBeD8ICzEeq4BIv9FegE_w _VBf5IICzEeq4BIv9FegE_w _VBhHQICzEeq4BIv9FegE_w">
+    <modelElement href="Text2SpeechEditor.uml#_RzOmUICzEeq4BIv9FegE_w"/>
+    <visualProperties xmi:id="_VBhuUICzEeq4BIv9FegE_w" position="1537.0,30.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_VBhuUYCzEeq4BIv9FegE_w" label="+"/>
+    <attributes xmi:id="_VBhuUoCzEeq4BIv9FegE_w" name="frmTextToSpeech">
+      <modelElement href="Text2SpeechEditor.uml#_R7Qg8ICzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VBhuU4CzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7RvEICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VBhuVICzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBhuVYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_VBhuVoCzEeq4BIv9FegE_w" name="JFrame">
+        <modelElement href="Text2SpeechEditor.uml#_R5pXYICzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_VBhuV4CzEeq4BIv9FegE_w" name="menuBar">
+      <modelElement href="Text2SpeechEditor.uml#_R7RvEYCzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VBhuWICzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7SWIICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VBhuWYCzEeq4BIv9FegE_w" label="~"/>
+      <cardinality xmi:id="_VBhuWoCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_VBhuW4CzEeq4BIv9FegE_w" name="JMenuBar">
+        <modelElement href="Text2SpeechEditor.uml#_R6AjwICzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_VBhuXICzEeq4BIv9FegE_w" name="menuFile">
+      <modelElement href="Text2SpeechEditor.uml#_R7SWIYCzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VBhuXYCzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7S9MICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VBhuXoCzEeq4BIv9FegE_w" label="~"/>
+      <cardinality xmi:id="_VBhuX4CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_VBhuYICzEeq4BIv9FegE_w" name="JMenu">
+        <modelElement href="Text2SpeechEditor.uml#_R5sasICzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_VBiVYICzEeq4BIv9FegE_w" name="menuEdit">
+      <modelElement href="Text2SpeechEditor.uml#_R7TkQICzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VBiVYYCzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7ULUICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VBiVYoCzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBiVY4CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_VBiVZICzEeq4BIv9FegE_w" name="JMenu">
+        <modelElement href="Text2SpeechEditor.uml#_R5sasICzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_VBiVZYCzEeq4BIv9FegE_w" name="menuItem">
+      <modelElement href="Text2SpeechEditor.uml#_R7ULUYCzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VBiVZoCzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7UyYICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VBiVZ4CzEeq4BIv9FegE_w" label="~"/>
+      <cardinality xmi:id="_VBiVaICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_VBiVaYCzEeq4BIv9FegE_w" name="JMenuItem">
+        <modelElement href="Text2SpeechEditor.uml#_R6Bx4ICzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_VBiVaoCzEeq4BIv9FegE_w" name="mntmNewFile">
+      <modelElement href="Text2SpeechEditor.uml#_R7UyYYCzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VBiVa4CzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7WnkICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VBiVbICzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBiVbYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_VBiVboCzEeq4BIv9FegE_w" name="JMenuItem">
+        <modelElement href="Text2SpeechEditor.uml#_R6Bx4ICzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_VBiVb4CzEeq4BIv9FegE_w" name="mntmSaveFile">
+      <modelElement href="Text2SpeechEditor.uml#_R7XOoICzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VBiVcICzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7X1sICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VBiVcYCzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBiVcoCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_VBiVc4CzEeq4BIv9FegE_w" name="JMenuItem">
+        <modelElement href="Text2SpeechEditor.uml#_R6Bx4ICzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_VBiVdICzEeq4BIv9FegE_w" name="mntmSaveFileAs">
+      <modelElement href="Text2SpeechEditor.uml#_R7X1sYCzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VBiVdYCzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7YcwICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VBiVdoCzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBiVd4CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_VBiVeICzEeq4BIv9FegE_w" name="JMenuItem">
+        <modelElement href="Text2SpeechEditor.uml#_R6Bx4ICzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_VBiVeYCzEeq4BIv9FegE_w" name="mntmOpenFile">
+      <modelElement href="Text2SpeechEditor.uml#_R7YcwYCzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VBiVeoCzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7ZD0ICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VBiVe4CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBiVfICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_VBiVfYCzEeq4BIv9FegE_w" name="JMenuItem">
+        <modelElement href="Text2SpeechEditor.uml#_R6Bx4ICzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_VBiVfoCzEeq4BIv9FegE_w" name="cbMenuItem">
+      <modelElement href="Text2SpeechEditor.uml#_R7ZD0YCzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VBiVf4CzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7Zq4ICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VBiVgICzEeq4BIv9FegE_w" label="~"/>
+      <cardinality xmi:id="_VBiVgYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_VBiVgoCzEeq4BIv9FegE_w" name="JCheckBoxMenuItem">
+        <modelElement href="Text2SpeechEditor.uml#_R509kICzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_VBiVg4CzEeq4BIv9FegE_w" name="cbMenuItem_1">
+      <modelElement href="Text2SpeechEditor.uml#_R7aR8ICzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VBiVhICzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7aR8YCzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VBiVhYCzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBiVhoCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_VBiVh4CzEeq4BIv9FegE_w" name="JCheckBoxMenuItem">
+        <modelElement href="Text2SpeechEditor.uml#_R509kICzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_VBiViICzEeq4BIv9FegE_w" name="menuSpeech">
+      <modelElement href="Text2SpeechEditor.uml#_R7a5AICzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VBiViYCzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7bgEICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VBiVioCzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBiVi4CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_VBiVjICzEeq4BIv9FegE_w" name="JMenu">
+        <modelElement href="Text2SpeechEditor.uml#_R5sasICzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_VBiVjYCzEeq4BIv9FegE_w" name="mntmTextHighlight">
+      <modelElement href="Text2SpeechEditor.uml#_R7bgEYCzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VBiVjoCzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7cHIICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VBiVj4CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBiVkICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_VBiVkYCzEeq4BIv9FegE_w" name="JMenuItem">
+        <modelElement href="Text2SpeechEditor.uml#_R6Bx4ICzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_VBiVkoCzEeq4BIv9FegE_w" name="reverseText2speech_MenuItem">
+      <modelElement href="Text2SpeechEditor.uml#_R7cHIYCzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VBiVk4CzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7cuMICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VBiVlICzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBiVlYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_VBiVloCzEeq4BIv9FegE_w" name="JMenuItem">
+        <modelElement href="Text2SpeechEditor.uml#_R6Bx4ICzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_VBiVl4CzEeq4BIv9FegE_w" name="reverseHighlight2speech_MenuItem_1">
+      <modelElement href="Text2SpeechEditor.uml#_R7cuMYCzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VBiVmICzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7ejYICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VBiVmYCzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBiVmoCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_VBiVm4CzEeq4BIv9FegE_w" name="JMenuItem">
+        <modelElement href="Text2SpeechEditor.uml#_R6Bx4ICzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_VBiVnICzEeq4BIv9FegE_w" name="menuEncoding">
+      <modelElement href="Text2SpeechEditor.uml#_R7fKcICzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VBiVnYCzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7fxgICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VBiVnoCzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBiVn4CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_VBiVoICzEeq4BIv9FegE_w" name="JMenu">
+        <modelElement href="Text2SpeechEditor.uml#_R5sasICzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_VBiVoYCzEeq4BIv9FegE_w" name="textEncode_MenuItem_1">
+      <modelElement href="Text2SpeechEditor.uml#_R7fxgYCzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VBiVooCzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7gYkICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VBiVo4CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBiVpICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_VBiVpYCzEeq4BIv9FegE_w" name="JMenuItem">
+        <modelElement href="Text2SpeechEditor.uml#_R6Bx4ICzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_VBiVpoCzEeq4BIv9FegE_w" name="text2speech_MenuItem_2">
+      <modelElement href="Text2SpeechEditor.uml#_R7g_oICzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VBiVp4CzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7g_oYCzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VBiVqICzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBiVqYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_VBiVqoCzEeq4BIv9FegE_w" name="JMenuItem">
+        <modelElement href="Text2SpeechEditor.uml#_R6Bx4ICzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_VBiVq4CzEeq4BIv9FegE_w" name="atbshaMenuItem">
+      <modelElement href="Text2SpeechEditor.uml#_R7hmsICzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VBiVrICzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7hmsYCzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VBiVrYCzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBiVroCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_VBiVr4CzEeq4BIv9FegE_w" name="JRadioButtonMenuItem">
+        <modelElement href="Text2SpeechEditor.uml#_R6DAAYCzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_VBiVsICzEeq4BIv9FegE_w" name="rot13MenuItem">
+      <modelElement href="Text2SpeechEditor.uml#_R7iNwICzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VBiVsYCzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7iNwYCzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VBiVsoCzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBiVs4CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_VBiVtICzEeq4BIv9FegE_w" name="JRadioButtonMenuItem">
+        <modelElement href="Text2SpeechEditor.uml#_R6DAAYCzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_VBiVtYCzEeq4BIv9FegE_w" name="menuSettings">
+      <modelElement href="Text2SpeechEditor.uml#_R7i00ICzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VBiVtoCzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7i00YCzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VBiVt4CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBiVuICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_VBiVuYCzEeq4BIv9FegE_w" name="JMenu">
+        <modelElement href="Text2SpeechEditor.uml#_R5sasICzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_VBiVuoCzEeq4BIv9FegE_w" name="volumeSubmenu">
+      <modelElement href="Text2SpeechEditor.uml#_R7jb4ICzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VBiVu4CzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7jb4YCzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VBi8cICzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBi8cYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_VBi8coCzEeq4BIv9FegE_w" name="JMenu">
+        <modelElement href="Text2SpeechEditor.uml#_R5sasICzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_VBi8c4CzEeq4BIv9FegE_w" name="mntmDefaultVolume">
+      <modelElement href="Text2SpeechEditor.uml#_R7kC8ICzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VBi8dICzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7kC8YCzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VBi8dYCzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBi8doCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_VBi8d4CzEeq4BIv9FegE_w" name="JMenuItem">
+        <modelElement href="Text2SpeechEditor.uml#_R6Bx4ICzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_VBi8eICzEeq4BIv9FegE_w" name="volumeSlider">
+      <modelElement href="Text2SpeechEditor.uml#_R7kqAICzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VBi8eYCzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7kqAYCzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VBi8eoCzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBi8e4CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_VBi8fICzEeq4BIv9FegE_w" name="JSlider">
+        <modelElement href="Text2SpeechEditor.uml#_R6MJ8YCzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_VBi8fYCzEeq4BIv9FegE_w" name="rateSubmenu">
+      <modelElement href="Text2SpeechEditor.uml#_R7lREICzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VBi8foCzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7l4IICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VBi8f4CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBi8gICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_VBi8gYCzEeq4BIv9FegE_w" name="JMenu">
+        <modelElement href="Text2SpeechEditor.uml#_R5sasICzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_VBi8goCzEeq4BIv9FegE_w" name="rateSlider">
+      <modelElement href="Text2SpeechEditor.uml#_R7l4IYCzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VBi8g4CzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7mfMICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VBi8hICzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBi8hYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_VBi8hoCzEeq4BIv9FegE_w" name="JSlider">
+        <modelElement href="Text2SpeechEditor.uml#_R6MJ8YCzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_VBi8h4CzEeq4BIv9FegE_w" name="mntmDefaultRate">
+      <modelElement href="Text2SpeechEditor.uml#_R7mfMYCzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VBi8iICzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7nGQICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VBi8iYCzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBi8ioCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_VBi8i4CzEeq4BIv9FegE_w" name="JMenuItem">
+        <modelElement href="Text2SpeechEditor.uml#_R6Bx4ICzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_VBi8jICzEeq4BIv9FegE_w" name="pitchSubmenu">
+      <modelElement href="Text2SpeechEditor.uml#_R7nGQYCzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VBi8jYCzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7ntUICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VBi8joCzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBi8j4CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_VBi8kICzEeq4BIv9FegE_w" name="JMenu">
+        <modelElement href="Text2SpeechEditor.uml#_R5sasICzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_VBi8kYCzEeq4BIv9FegE_w" name="mntmDefaultPitch">
+      <modelElement href="Text2SpeechEditor.uml#_R7ntUYCzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VBi8koCzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7oUYICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VBi8k4CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBi8lICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_VBi8lYCzEeq4BIv9FegE_w" name="JMenuItem">
+        <modelElement href="Text2SpeechEditor.uml#_R6Bx4ICzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_VBi8loCzEeq4BIv9FegE_w" name="pitchSlider">
+      <modelElement href="Text2SpeechEditor.uml#_R7pigICzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VBi8l4CzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7qJkICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VBi8mICzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBi8mYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_VBi8moCzEeq4BIv9FegE_w" name="JSlider">
+        <modelElement href="Text2SpeechEditor.uml#_R6MJ8YCzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_VBi8m4CzEeq4BIv9FegE_w" defaultValue="null" name="path">
+      <modelElement href="Text2SpeechEditor.uml#_R7qJkYCzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VBi8nICzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7rXsICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VBi8nYCzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBi8noCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_VBjjgICzEeq4BIv9FegE_w" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_VBjjgYCzEeq4BIv9FegE_w" name="editMenuItem">
+      <modelElement href="Text2SpeechEditor.uml#_R7rXsYCzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VBjjgoCzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7r-wICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VBjjg4CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBjjhICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_VBjjhYCzEeq4BIv9FegE_w" name="JMenuItem">
+        <modelElement href="Text2SpeechEditor.uml#_R6Bx4ICzEeq4BIv9FegE_w"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_VBjjhoCzEeq4BIv9FegE_w" comments="_U_UH0ICzEeq4BIv9FegE_w" targetConnectionVisual="_U_yo8ICzEeq4BIv9FegE_w" name="main" staticOperation="true">
+      <modelElement href="Text2SpeechEditor.uml#_RzZlcICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBjjh4CzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VBjjiICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <parameters xmi:id="_VBjjiYCzEeq4BIv9FegE_w" name="args">
+        <modelElement href="Text2SpeechEditor.uml#_RzZlcYCzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_VBjjioCzEeq4BIv9FegE_w" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_VBjji4CzEeq4BIv9FegE_w" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_VBjjjICzEeq4BIv9FegE_w" comments="_U_0eIICzEeq4BIv9FegE_w" targetConnectionVisual="_U_0eIYCzEeq4BIv9FegE_w" name="MainAppGUI">
+      <modelElement href="Text2SpeechEditor.uml#_RzcBsICzEeq4BIv9FegE_w"/>
+      <keywords xmi:id="_VBjjjYCzEeq4BIv9FegE_w" keyword="create"/>
+      <visibility xmi:id="_VBjjjoCzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VBjjj4CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_VBjjkICzEeq4BIv9FegE_w">
+        <modelElement href="Text2SpeechEditor.uml#_RzcowoCzEeq4BIv9FegE_w"/>
+        <type xmi:id="_VBjjkYCzEeq4BIv9FegE_w" name="MainAppGUI">
+          <modelElement href="Text2SpeechEditor.uml#_RzOmUICzEeq4BIv9FegE_w"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_VBjjkoCzEeq4BIv9FegE_w" comments="_U_1sQICzEeq4BIv9FegE_w" targetConnectionVisual="_U_2TUICzEeq4BIv9FegE_w" name="initialize">
+      <modelElement href="Text2SpeechEditor.uml#_RzdP0ICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VBjjk4CzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VBjjlICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_VDQMoICzEeq4BIv9FegE_w" name="MyCustomFileChooserRunner">
+    <modelElement href="Text2SpeechEditor.uml#_Rz7w8ICzEeq4BIv9FegE_w"/>
+    <visualProperties xmi:id="_VDQMoYCzEeq4BIv9FegE_w" position="15.0,1668.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_VDQMooCzEeq4BIv9FegE_w" label="+"/>
+    <operations xmi:id="_VDQMo4CzEeq4BIv9FegE_w" name="MyCustomFileChooserScreen" staticOperation="true">
+      <modelElement href="Text2SpeechEditor.uml#_Rz8_EICzEeq4BIv9FegE_w"/>
+      <visibility xmi:id="_VDQMpICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VDQMpYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_VDQMpoCzEeq4BIv9FegE_w">
+        <modelElement href="Text2SpeechEditor.uml#_Rz9mIICzEeq4BIv9FegE_w"/>
+        <type xmi:id="_VDQMp4CzEeq4BIv9FegE_w" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_VDQMqICzEeq4BIv9FegE_w" name="option">
+        <modelElement href="Text2SpeechEditor.uml#_Rz8_EYCzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_VDQMqYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_VDQMqoCzEeq4BIv9FegE_w" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_VD8wMICzEeq4BIv9FegE_w" name="MyFileChooser">
+    <modelElement href="Text2SpeechEditor.uml#_Rz-NMICzEeq4BIv9FegE_w"/>
+    <visualProperties xmi:id="_VD8wMYCzEeq4BIv9FegE_w" position="516.0,1461.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_VD8wMoCzEeq4BIv9FegE_w" label="+"/>
+    <attributes xmi:id="_VD8wM4CzEeq4BIv9FegE_w" name="filterString">
+      <modelElement href="Text2SpeechEditor.uml#_R7tM4ICzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VD8wNICzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7tz8ICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VD8wNYCzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VD8wNoCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_VD8wN4CzEeq4BIv9FegE_w" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_VD8wOICzEeq4BIv9FegE_w" name="MyFileChooser">
+      <modelElement href="Text2SpeechEditor.uml#_R0ACYICzEeq4BIv9FegE_w"/>
+      <keywords xmi:id="_VD8wOYCzEeq4BIv9FegE_w" keyword="create"/>
+      <visibility xmi:id="_VD8wOoCzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VD8wO4CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_VD8wPICzEeq4BIv9FegE_w">
+        <modelElement href="Text2SpeechEditor.uml#_R0BQgYCzEeq4BIv9FegE_w"/>
+        <type xmi:id="_VD8wPYCzEeq4BIv9FegE_w" name="MyFileChooser">
+          <modelElement href="Text2SpeechEditor.uml#_Rz-NMICzEeq4BIv9FegE_w"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_VD8wPoCzEeq4BIv9FegE_w" name="filterString">
+        <modelElement href="Text2SpeechEditor.uml#_R0ApcICzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_VD8wP4CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_VD8wQICzEeq4BIv9FegE_w" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_VD8wQYCzEeq4BIv9FegE_w" name="option">
+        <modelElement href="Text2SpeechEditor.uml#_R0ApcYCzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_VD8wQoCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_VD8wQ4CzEeq4BIv9FegE_w" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_VD8wRICzEeq4BIv9FegE_w" name="approveSelection">
+      <modelElement href="Text2SpeechEditor.uml#_R0B3kICzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VD8wRYCzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R0CeoICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <stereotypes xmi:id="_VD8wRoCzEeq4BIv9FegE_w" name="Annotations">
+        <modelElement href="Text2SpeechEditor.uml#_R0DswICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VD8wR4CzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VD8wSICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_VFExkICzEeq4BIv9FegE_w" name="MyFileFilter">
+    <modelElement href="Text2SpeechEditor.uml#_R0Fh8ICzEeq4BIv9FegE_w"/>
+    <visualProperties xmi:id="_VFExkYCzEeq4BIv9FegE_w" position="10.0,1463.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_VFExkoCzEeq4BIv9FegE_w" label="+"/>
+    <attributes xmi:id="_VFExk4CzEeq4BIv9FegE_w" name="filterString">
+      <modelElement href="Text2SpeechEditor.uml#_R7ubAICzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VFExlICzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7vCEICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VFExlYCzEeq4BIv9FegE_w" label="-"/>
+      <cardinality xmi:id="_VFExloCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <type xmi:id="_VFExl4CzEeq4BIv9FegE_w" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_VFExmICzEeq4BIv9FegE_w" name="MyFileFilter">
+      <modelElement href="Text2SpeechEditor.uml#_R0HXIICzEeq4BIv9FegE_w"/>
+      <keywords xmi:id="_VFExmYCzEeq4BIv9FegE_w" keyword="create"/>
+      <visibility xmi:id="_VFExmoCzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VFExm4CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_VFExnICzEeq4BIv9FegE_w">
+        <modelElement href="Text2SpeechEditor.uml#_R0H-MoCzEeq4BIv9FegE_w"/>
+        <type xmi:id="_VFExnYCzEeq4BIv9FegE_w" name="MyFileFilter">
+          <modelElement href="Text2SpeechEditor.uml#_R0Fh8ICzEeq4BIv9FegE_w"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_VFExnoCzEeq4BIv9FegE_w" name="filterString">
+        <modelElement href="Text2SpeechEditor.uml#_R0HXIYCzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_VFExn4CzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_VFExoICzEeq4BIv9FegE_w" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_VFExoYCzEeq4BIv9FegE_w" name="getDescription">
+      <modelElement href="Text2SpeechEditor.uml#_R0JMUICzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VFExooCzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R0LBgICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <stereotypes xmi:id="_VFExo4CzEeq4BIv9FegE_w" name="Annotations">
+        <modelElement href="Text2SpeechEditor.uml#_R0LokICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VFExpICzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VFExpYCzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_VFExpoCzEeq4BIv9FegE_w">
+        <modelElement href="Text2SpeechEditor.uml#_R0KacICzEeq4BIv9FegE_w"/>
+        <type xmi:id="_VFExp4CzEeq4BIv9FegE_w" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_VFExqICzEeq4BIv9FegE_w" name="accept">
+      <modelElement href="Text2SpeechEditor.uml#_R7CegICzEeq4BIv9FegE_w"/>
+      <stereotypes xmi:id="_VFExqYCzEeq4BIv9FegE_w" name="LegacyStyledElement">
+        <modelElement href="Text2SpeechEditor.uml#_R7DsoICzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <stereotypes xmi:id="_VFExqoCzEeq4BIv9FegE_w" name="Annotations">
+        <modelElement href="Text2SpeechEditor.uml#_R7DsoYCzEeq4BIv9FegE_w"/>
+      </stereotypes>
+      <visibility xmi:id="_VFExq4CzEeq4BIv9FegE_w" label="+"/>
+      <cardinality xmi:id="_VFExrICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_VFExrYCzEeq4BIv9FegE_w">
+        <modelElement href="Text2SpeechEditor.uml#_R7DFkYCzEeq4BIv9FegE_w"/>
+        <type xmi:id="_VFExroCzEeq4BIv9FegE_w" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_VFExr4CzEeq4BIv9FegE_w" name="file">
+        <modelElement href="Text2SpeechEditor.uml#_R7DFkICzEeq4BIv9FegE_w"/>
+        <cardinality xmi:id="_VFExsICzEeq4BIv9FegE_w" label="1" max="1" min="1"/>
+        <type xmi:id="_VFExsYCzEeq4BIv9FegE_w" name="File">
+          <modelElement href="Text2SpeechEditor.uml#_R6iIMICzEeq4BIv9FegE_w"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

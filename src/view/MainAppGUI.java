@@ -9,6 +9,7 @@ import javax.swing.AbstractAction;
 import javax.swing.ButtonGroup;
 import javax.swing.ImageIcon;
 import javax.swing.JCheckBoxMenuItem;
+import javax.swing.JFileChooser;
 
 import java.awt.Font;
 import java.awt.Window.Type;
@@ -19,20 +20,30 @@ import java.awt.Color;
 import javax.swing.SwingConstants;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
 import javax.swing.JRadioButtonMenuItem;
 import javax.swing.KeyStroke;
 import javax.swing.border.BevelBorder;
 import java.awt.Cursor;
 import javax.swing.UIManager;
 import javax.swing.border.MatteBorder;
-
-import view.MyCustomFileChooserRunner;
+import model.Document;
+import commands.CommandsFactory;
+import commands.OpenDocument;
 
 import java.awt.event.InputEvent;
 import javax.swing.JSlider;
 import java.awt.Dimension;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.io.File;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.awt.event.ActionListener;
+import javax.swing.JTextArea;
+import javax.swing.border.SoftBevelBorder;
+import javax.swing.JScrollPane;
+import javax.swing.JEditorPane;
 
 public class MainAppGUI {
 
@@ -70,11 +81,16 @@ public class MainAppGUI {
 	 private JMenuItem mntmDefaultPitch;
 	 private JSlider pitchSlider;
 	
-	
-	 private String path = null;
 	 private JMenuItem editMenuItem;
 	 
-	/**
+	 
+	 // Initializations
+	 private CommandsFactory commandsfactory;
+	 private Document currentDocument;
+	 private JEditorPane textArea;
+	 private JScrollPane scrollPane;
+	 
+	 /**
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
@@ -90,11 +106,46 @@ public class MainAppGUI {
 		});
 	}
 
+	
 	/**
 	 * Create the application.
 	 */
 	public MainAppGUI() {
+		
+		System.out.println("** Main Application GUI loaded **\n");
+		
+		// Creating the CommandsFactory object
+		commandsfactory = new CommandsFactory(this);
+		
+		// Initialize current Document to null
+		currentDocument = new Document();
+		currentDocument = null;
+		
 		initialize();
+	}
+	
+	
+	public void enableDocEdit() {
+		this.textArea.setEditable(true);
+	}
+	
+	/**
+	 * A simple pop up message
+	 * @param message 
+	 */
+	public void popUpMessage(String message) {
+		JOptionPane.showMessageDialog(frmTextToSpeech, message);
+	}
+	
+	
+	/**
+	 * Function to show text on textArea 
+	 * @throws IOException 
+	 * @throws MalformedURLException 
+	 */
+	public void setTextArea(File file) throws MalformedURLException, IOException {
+		this.textArea.setVisible(true);
+		textArea.setPage(file.toURI().toURL());
 	}
 
 	/**
@@ -109,7 +160,7 @@ public class MainAppGUI {
 		frmTextToSpeech.setBackground(Color.WHITE);
 		frmTextToSpeech.setTitle("Text to Speech Editor");
 		frmTextToSpeech.setFont(new Font("League Spartan Semibold", Font.PLAIN, 17));
-		frmTextToSpeech.setBounds(500, 500, 900, 600);
+		frmTextToSpeech.setBounds(500, 500, 900, 602);
 		frmTextToSpeech.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmTextToSpeech.getContentPane().setLayout(null);
 		
@@ -143,17 +194,7 @@ public class MainAppGUI {
 		
 		//a group of JMenuItems
 		mntmOpenFile = new JMenuItem("Load Document");
-		mntmOpenFile.addActionListener(new java.awt.event.ActionListener() {
-
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				// TODO Auto-generated method stub
-				
-				path = MyCustomFileChooserRunner.MyCustomFileChooserScreen("Files");
-			}
-			
-		});
-		
+		mntmOpenFile.addActionListener(commandsfactory.createCommand("OpenDocument"));
 		mntmOpenFile.setIcon(new ImageIcon("/home/vaggelisbarb/eclipse-workspace/Text2SpeechEditor/ImageSource/file.png"));
 		mntmOpenFile.setFont(new Font("League Spartan Semibold", Font.PLAIN, 15));
 		mntmOpenFile.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_L, InputEvent.CTRL_MASK));
@@ -213,6 +254,7 @@ public class MainAppGUI {
 		mntmTextHighlight.getAccessibleContext().setAccessibleDescription("This doesn't really do anything");
 		
 		editMenuItem = new JMenuItem("Edit Document");
+		editMenuItem.addActionListener(commandsfactory.createCommand("EditDocument"));
 		editMenuItem.setIcon(new ImageIcon("/home/vaggelisbarb/eclipse-workspace/Text2SpeechEditor/ImageSource/edit.png"));
 		editMenuItem.setFont(new Font("League Spartan Semibold", Font.PLAIN, 15));
 		menuEdit.add(editMenuItem);
@@ -375,10 +417,22 @@ public class MainAppGUI {
 		pitchSlider.setMajorTickSpacing(50);
 		pitchSubmenu.add(pitchSlider);
 		
-		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("/home/vaggelisbarb/Εικόνες/text2speechLogo.png"));
-		lblNewLabel.setBounds(626, 12, 262, 122);
-		frmTextToSpeech.getContentPane().add(lblNewLabel);
+		JLabel applicationLabel = new JLabel("");
+		applicationLabel.setHorizontalTextPosition(SwingConstants.CENTER);
+		applicationLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		applicationLabel.setIcon(new ImageIcon("/home/vaggelisbarb/Εικόνες/text2speechLogo.png"));
+		applicationLabel.setBounds(307, 12, 285, 122);
+		frmTextToSpeech.getContentPane().add(applicationLabel);
+		
+		scrollPane = new JScrollPane();
+		scrollPane.setBounds(45, 178, 807, 334);
+		frmTextToSpeech.getContentPane().add(scrollPane);
+		
+		textArea = new JEditorPane();
+		textArea.setFont(new Font("League Spartan Semibold", Font.PLAIN, 16));
+		textArea.setVisible(false);
+		textArea.setEditable(false);
+		scrollPane.setViewportView(textArea);
 		
 		JLabel appBackground = new JLabel("");
 		appBackground.setIcon(new ImageIcon("/home/vaggelisbarb/eclipse-workspace/Text2SpeechEditor/ImageSource/AI-Programming.png"));

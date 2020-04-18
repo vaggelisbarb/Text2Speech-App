@@ -1,0 +1,1431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_OLKTcICzEeq4BIv9FegE_w" name="Text2SpeechEditor">
+    <eAnnotations xmi:id="_Q-OQ8ICzEeq4BIv9FegE_w" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_Q-SiYICzEeq4BIv9FegE_w" source="codegen">
+        <details xmi:id="_Q-SiYYCzEeq4BIv9FegE_w" key="codegenDirectory" value="/Text2SpeechEditor/src"/>
+        <details xmi:id="_SwrGAICzEeq4BIv9FegE_w" key="AssociatedSourceCode" value="/Text2SpeechEditor/src/commands/CommandsFactory.java;1671885781/1;/Text2SpeechEditor/src/commands/EditDocument.java;280949214/1;/Text2SpeechEditor/src/commands/EncodeDocument.java;2179799/1;/Text2SpeechEditor/src/commands/EncodeLine.java;4016934239/1;/Text2SpeechEditor/src/commands/HighlightText.java;1957159281/1;/Text2SpeechEditor/src/commands/LineToSpeech.java;2687955172/1;/Text2SpeechEditor/src/commands/NewDocument.java;909485878/1;/Text2SpeechEditor/src/commands/OpenDocument.java;459472807/1;/Text2SpeechEditor/src/commands/SaveDocument.java;3915216098/1;/Text2SpeechEditor/src/commands/TextToSpeech.java;2343691778/1;/Text2SpeechEditor/src/commands/TuneAudio.java;758361561/1;/Text2SpeechEditor/src/encodingstrategies/AtBashEncoding.java;3251368600/1;/Text2SpeechEditor/src/encodingstrategies/EncodingStrategy.java;1351414341/1;/Text2SpeechEditor/src/encodingstrategies/Rot13Encoding.java;464098742/1;/Text2SpeechEditor/src/encodingstrategies/StrategiesFactory.java;16068705/1;/Text2SpeechEditor/src/encodingstrategies/TemplateEncoding.java;1985390955/1;/Text2SpeechEditor/src/model/Document.java;1185827969/1;/Text2SpeechEditor/src/model/Line.java;2897457308/1;/Text2SpeechEditor/src/text2speechapis/FakeTextToSpeechAPI.java;2257977166/1;/Text2SpeechEditor/src/text2speechapis/FreeTTSAdapter.java;1793737140/1;/Text2SpeechEditor/src/text2speechapis/TextToSpeechAPI.java;2613835571/1;/Text2SpeechEditor/src/text2speechapis/TextToSpeechAPIFactory.java;226392018/1;/Text2SpeechEditor/src/view/MainAppGUI.java;1840590213/1;/Text2SpeechEditor/src/view/MyCustomFileChooserRunner.java;2247797855/1;/Text2SpeechEditor/src/view/MyFileChooser.java;184889367/1;/Text2SpeechEditor/src/view/MyFileFilter.java;2356728100/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_Rt2-IICzEeq4BIv9FegE_w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_Rt3lMICzEeq4BIv9FegE_w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_Rt4MQICzEeq4BIv9FegE_w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_Rt4zUICzEeq4BIv9FegE_w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_Rt4zUYCzEeq4BIv9FegE_w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_Rt5aYICzEeq4BIv9FegE_w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_Rt5aYYCzEeq4BIv9FegE_w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_Rt6BcICzEeq4BIv9FegE_w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_Rt6ogICzEeq4BIv9FegE_w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_RuCkUICzEeq4BIv9FegE_w" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_RuDLYICzEeq4BIv9FegE_w" name="awt">
+        <packagedElement xmi:type="uml:Package" xmi:id="_RuDLYYCzEeq4BIv9FegE_w" name="event">
+          <packagedElement xmi:type="uml:Interface" xmi:id="_R5LdUICzEeq4BIv9FegE_w" name="ActionListener"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_R55PAYCzEeq4BIv9FegE_w" name="ActionEvent"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_R57EMICzEeq4BIv9FegE_w" name="KeyEvent"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_R6K70YCzEeq4BIv9FegE_w" name="InputEvent"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_R6PNQYCzEeq4BIv9FegE_w" name="MouseAdapter"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_R6QbYYCzEeq4BIv9FegE_w" name="MouseEvent"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_RvxpsICzEeq4BIv9FegE_w" name="Window">
+          <packagedElement xmi:type="uml:Enumeration" xmi:id="_R53Z0YCzEeq4BIv9FegE_w" name="Type"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_RvyQwICzEeq4BIv9FegE_w" name="Dialog">
+          <packagedElement xmi:type="uml:Enumeration" xmi:id="_R58SUICzEeq4BIv9FegE_w" name="ModalExclusionType"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_R5niMICzEeq4BIv9FegE_w" name="EventQueue"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_R52LsYCzEeq4BIv9FegE_w" name="Font"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_R59gcICzEeq4BIv9FegE_w" name="Color"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_R6HRcYCzEeq4BIv9FegE_w" name="Cursor"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_R6OmMICzEeq4BIv9FegE_w" name="Dimension"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_RvTIkICzEeq4BIv9FegE_w" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="_R5Y4sICzEeq4BIv9FegE_w" name="ArrayList"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_RwPjwICzEeq4BIv9FegE_w" name="io">
+        <packagedElement xmi:type="uml:Class" xmi:id="_R6iIMICzEeq4BIv9FegE_w" name="File"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_RuKgIICzEeq4BIv9FegE_w" name="commands">
+      <packagedElement xmi:type="uml:Class" xmi:id="_RxEqMICzEeq4BIv9FegE_w" name="CommandsFactory">
+        <ownedComment xmi:id="_R8HckICzEeq4BIv9FegE_w">
+          <body>@author vaggelisbarb
+Factory class is responsible for creating the objects of 'commands Package'. This is the only class seen by ' view Package's ' classes.</body>
+        </ownedComment>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_R74MAICzEeq4BIv9FegE_w" name="createCommand" specification="_RxL-8ICzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_R74zEICzEeq4BIv9FegE_w" name="com">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_R74zEYCzEeq4BIv9FegE_w" type="_R5LdUICzEeq4BIv9FegE_w" direction="return"/>
+          <language>java</language>
+          <body>// TODO
+		return null;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_RxL-8ICzEeq4BIv9FegE_w" name="createCommand" method="_R74MAICzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_RxMmAICzEeq4BIv9FegE_w" name="com">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_R6x_0ICzEeq4BIv9FegE_w" type="_R5LdUICzEeq4BIv9FegE_w" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_RxQ3cICzEeq4BIv9FegE_w" name="EditDocument">
+        <ownedComment xmi:id="_R8HckYCzEeq4BIv9FegE_w">
+          <body>@author vaggelisbarb
+Class responsible for editing document</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_RxSFkICzEeq4BIv9FegE_w" name="EncodeDocument">
+        <ownedComment xmi:id="_R8HckoCzEeq4BIv9FegE_w">
+          <body>@author vaggelisbarb
+Class responsible for encoding a document file with the preferred encoding style</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_RxTTsICzEeq4BIv9FegE_w" name="EncodeLine">
+        <ownedComment xmi:id="_R8IDoICzEeq4BIv9FegE_w">
+          <body>@author vaggelisbarb
+Class responsible for encoding a SINGLE LINE with the selected encoding style</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_RxUh0ICzEeq4BIv9FegE_w" name="HighlightText">
+        <ownedComment xmi:id="_R8IDoYCzEeq4BIv9FegE_w">
+          <body>@author vaggelisbarb
+Class responsible for highlighting a specific text of the document</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_RxVv8ICzEeq4BIv9FegE_w" name="LineToSpeech">
+        <ownedComment xmi:id="_R8IDooCzEeq4BIv9FegE_w">
+          <body>@author vaggelisbarb
+Class responsible for transforming a SINGLE LINE of a document into audio</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_RxW-EICzEeq4BIv9FegE_w" name="NewDocument">
+        <ownedComment xmi:id="_R8IDo4CzEeq4BIv9FegE_w">
+          <body>@author vaggelisbarb
+Class responsible for creating a new document file</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_RxYMMICzEeq4BIv9FegE_w" name="OpenDocument">
+        <ownedComment xmi:id="_R8IDpICzEeq4BIv9FegE_w">
+          <body>@author vaggelisbarb
+Class responsible for opening a document file</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_RxaBYICzEeq4BIv9FegE_w" name="SaveDocument">
+        <ownedComment xmi:id="_R8IDpYCzEeq4BIv9FegE_w">
+          <body>@author vaggelisbarb
+Class responsible for saving a document file</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_RxbPgICzEeq4BIv9FegE_w" name="TextToSpeech">
+        <ownedComment xmi:id="_R8IDpoCzEeq4BIv9FegE_w">
+          <body>@author vaggelisbarb
+Class responsible for transforming a document file to audio</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_RxdEsICzEeq4BIv9FegE_w" name="TuneAudio">
+        <ownedComment xmi:id="_R8IqsICzEeq4BIv9FegE_w">
+          <body>@author vaggelisbarb
+Class responsible for tuning the audio. The settings of the main application GUI.</body>
+        </ownedComment>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_RuoaMICzEeq4BIv9FegE_w" name="encodingstrategies">
+      <packagedElement xmi:type="uml:Class" xmi:id="_Rxe54ICzEeq4BIv9FegE_w" name="AtBashEncoding">
+        <ownedComment xmi:id="_R8IqsYCzEeq4BIv9FegE_w">
+          <body>@author vaggelisbarb
+ *</body>
+        </ownedComment>
+        <generalization xmi:id="_R5PuwICzEeq4BIv9FegE_w" general="_Rx4igICzEeq4BIv9FegE_w"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_R77PUICzEeq4BIv9FegE_w" name="encode" specification="_RxgIAICzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_R77PUYCzEeq4BIv9FegE_w" name="txt">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_R77PUoCzEeq4BIv9FegE_w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>// TODO
+		return null;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_R772YICzEeq4BIv9FegE_w" name="mapCharacter" specification="_Rxh9MICzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_R772YYCzEeq4BIv9FegE_w" name="txtChar">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_R772YoCzEeq4BIv9FegE_w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return 0;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_RxgIAICzEeq4BIv9FegE_w" name="encode" method="_R77PUICzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_RxgvEICzEeq4BIv9FegE_w" name="txt">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_RxhWIICzEeq4BIv9FegE_w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_Rxh9MICzEeq4BIv9FegE_w" name="mapCharacter" method="_R772YICzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_RxikQICzEeq4BIv9FegE_w" name="txtChar">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_RxjLUICzEeq4BIv9FegE_w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_RxpR8ICzEeq4BIv9FegE_w" name="EncodingStrategy">
+        <ownedComment xmi:id="_R8IqsoCzEeq4BIv9FegE_w">
+          <body>@author vaggelisbarb
+ *</body>
+        </ownedComment>
+        <ownedOperation xmi:id="_RxrHIICzEeq4BIv9FegE_w" name="encode">
+          <ownedParameter xmi:id="_RxruMICzEeq4BIv9FegE_w" name="type">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_RxruMYCzEeq4BIv9FegE_w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_RxsVQICzEeq4BIv9FegE_w" name="Rot13Encoding">
+        <ownedComment xmi:id="_R8Iqs4CzEeq4BIv9FegE_w">
+          <body>@author vaggelisbarb
+ *</body>
+        </ownedComment>
+        <generalization xmi:id="_R5Q84ICzEeq4BIv9FegE_w" general="_Rx4igICzEeq4BIv9FegE_w"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_R78dcICzEeq4BIv9FegE_w" name="encode" specification="_RxuKcICzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_R78dcYCzEeq4BIv9FegE_w" name="txt">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_R78dcoCzEeq4BIv9FegE_w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>// TODO
+		return null;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_R78dc4CzEeq4BIv9FegE_w" name="mapCharacter" specification="_Rxv_oICzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_R78ddICzEeq4BIv9FegE_w" name="txtChar">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_R78ddYCzEeq4BIv9FegE_w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return 0;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_RxuKcICzEeq4BIv9FegE_w" name="encode" method="_R78dcICzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_RxuxgICzEeq4BIv9FegE_w" name="txt">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_RxuxgYCzEeq4BIv9FegE_w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_Rxv_oICzEeq4BIv9FegE_w" name="mapCharacter" method="_R78dc4CzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_Rxv_oYCzEeq4BIv9FegE_w" name="txtChar">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_RxwmsICzEeq4BIv9FegE_w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Rx0REICzEeq4BIv9FegE_w" name="StrategiesFactory">
+        <ownedComment xmi:id="_R8IqtICzEeq4BIv9FegE_w">
+          <body>@author vaggelisbarb
+ *</body>
+        </ownedComment>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_R79EgICzEeq4BIv9FegE_w" name="createStrategy" specification="_Rx2GQICzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_R79EgYCzEeq4BIv9FegE_w" name="encodeType">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_R79EgoCzEeq4BIv9FegE_w" type="_RxpR8ICzEeq4BIv9FegE_w" direction="return"/>
+          <language>java</language>
+          <body>// TODO
+		return null;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_Rx2GQICzEeq4BIv9FegE_w" name="createStrategy" method="_R79EgICzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_Rx2GQYCzEeq4BIv9FegE_w" name="encodeType">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_R5Rj8ICzEeq4BIv9FegE_w" type="_RxpR8ICzEeq4BIv9FegE_w" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Rx4igICzEeq4BIv9FegE_w" name="TemplateEncoding" isAbstract="true">
+        <ownedComment xmi:id="_R8JRwICzEeq4BIv9FegE_w">
+          <body>@author vaggelisbarb
+ *</body>
+        </ownedComment>
+        <interfaceRealization xmi:id="_R5UnQICzEeq4BIv9FegE_w" client="_Rx4igICzEeq4BIv9FegE_w" supplier="_RxpR8ICzEeq4BIv9FegE_w" contract="_RxpR8ICzEeq4BIv9FegE_w"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_R79rkICzEeq4BIv9FegE_w" name="encode" specification="_Rx6-wICzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_R79rkYCzEeq4BIv9FegE_w" name="txt">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_R79rkoCzEeq4BIv9FegE_w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>// TODO 
+		return null;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_Rx6-wICzEeq4BIv9FegE_w" name="encode" method="_R79rkICzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_Rx6-wYCzEeq4BIv9FegE_w" name="txt">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_Rx7l0ICzEeq4BIv9FegE_w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_Rx8z8ICzEeq4BIv9FegE_w" name="mapCharacter" isAbstract="true">
+          <ownedParameter xmi:id="_Rx8z8YCzEeq4BIv9FegE_w" name="txtChar">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_Rx9bAICzEeq4BIv9FegE_w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_RvD4AICzEeq4BIv9FegE_w" name="text2speechapis">
+      <packagedElement xmi:type="uml:Class" xmi:id="_RybVEICzEeq4BIv9FegE_w" name="FakeTextToSpeechAPI">
+        <ownedComment xmi:id="_R8JRxICzEeq4BIv9FegE_w">
+          <body>@author vaggelisbarb
+ *</body>
+        </ownedComment>
+        <interfaceRealization xmi:id="_R5eYQICzEeq4BIv9FegE_w" client="_RybVEICzEeq4BIv9FegE_w" supplier="_RzE1UICzEeq4BIv9FegE_w" contract="_RzE1UICzEeq4BIv9FegE_w"/>
+        <ownedOperation xmi:id="_RydKQICzEeq4BIv9FegE_w" name="play">
+          <ownedParameter xmi:id="_RydKQYCzEeq4BIv9FegE_w" name="text">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_RyfmgICzEeq4BIv9FegE_w" name="setVolume">
+          <ownedParameter xmi:id="_RyfmgYCzEeq4BIv9FegE_w" name="vol">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_RyiCwICzEeq4BIv9FegE_w" name="setPitch">
+          <ownedParameter xmi:id="_RyiCwYCzEeq4BIv9FegE_w" name="pitch">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_Rym7QICzEeq4BIv9FegE_w" name="setRate">
+          <ownedParameter xmi:id="_RyniUICzEeq4BIv9FegE_w" name="rate">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_RyqloICzEeq4BIv9FegE_w" name="FreeTTSAdapter">
+        <ownedComment xmi:id="_R8J40ICzEeq4BIv9FegE_w">
+          <body>@author vaggelisbarb
+ *</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_R7NdoICzEeq4BIv9FegE_w" name="vm" visibility="private" type="_R5g0gYCzEeq4BIv9FegE_w" association="_R8da0YCzEeq4BIv9FegE_w"/>
+        <ownedAttribute xmi:id="_R7OrwYCzEeq4BIv9FegE_w" name="voice" visibility="private" type="_R5fmYICzEeq4BIv9FegE_w" association="_R8eo8ICzEeq4BIv9FegE_w"/>
+        <interfaceRealization xmi:id="_R5ipsICzEeq4BIv9FegE_w" client="_RyqloICzEeq4BIv9FegE_w" supplier="_RzE1UICzEeq4BIv9FegE_w" contract="_RzE1UICzEeq4BIv9FegE_w"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_R8BV8ICzEeq4BIv9FegE_w" name="FreeTTSAdapter" specification="_R624UICzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_R8BV8YCzEeq4BIv9FegE_w" name="vm" type="_R5g0gYCzEeq4BIv9FegE_w"/>
+          <ownedParameter xmi:id="_R8BV8oCzEeq4BIv9FegE_w" name="voice" type="_R5fmYICzEeq4BIv9FegE_w"/>
+          <ownedParameter xmi:id="_R8BV84CzEeq4BIv9FegE_w" type="_RyqloICzEeq4BIv9FegE_w" direction="return"/>
+          <language>java</language>
+          <body>super();
+		this.vm = vm;
+		this.voice = voice;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_RyuQAICzEeq4BIv9FegE_w" name="play">
+          <ownedParameter xmi:id="_Ryu3EICzEeq4BIv9FegE_w" name="text">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_Ryx6YICzEeq4BIv9FegE_w" name="setVolume">
+          <ownedParameter xmi:id="_RyzIgICzEeq4BIv9FegE_w" name="vol">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_Ry2L0ICzEeq4BIv9FegE_w" name="setPitch">
+          <ownedParameter xmi:id="_Ry2L0YCzEeq4BIv9FegE_w" name="pitch">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_Ry7rYICzEeq4BIv9FegE_w" name="setRate">
+          <ownedParameter xmi:id="_Ry8ScICzEeq4BIv9FegE_w" name="rate">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_R624UICzEeq4BIv9FegE_w" name="FreeTTSAdapter" method="_R8BV8ICzEeq4BIv9FegE_w">
+          <eAnnotations xmi:id="_R63fYICzEeq4BIv9FegE_w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_R63fYYCzEeq4BIv9FegE_w" key="create"/>
+          </eAnnotations>
+          <ownedComment xmi:id="_R8J40YCzEeq4BIv9FegE_w">
+            <body>Constructor
+	 * 
+	 * @param vm
+	 * @param voice</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_R624UYCzEeq4BIv9FegE_w" name="vm" type="_R5g0gYCzEeq4BIv9FegE_w"/>
+          <ownedParameter xmi:id="_R624UoCzEeq4BIv9FegE_w" name="voice" type="_R5fmYICzEeq4BIv9FegE_w"/>
+          <ownedParameter xmi:id="_R63fYoCzEeq4BIv9FegE_w" type="_RyqloICzEeq4BIv9FegE_w" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_RzE1UICzEeq4BIv9FegE_w" name="TextToSpeechAPI">
+        <ownedComment xmi:id="_R8J40oCzEeq4BIv9FegE_w">
+          <body>@author vaggelisbarb
+Interface responsible for text to audio transformation.</body>
+        </ownedComment>
+        <ownedOperation xmi:id="_RzGqgICzEeq4BIv9FegE_w" name="play">
+          <ownedParameter xmi:id="_RzGqgYCzEeq4BIv9FegE_w" name="text">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_RzH4oICzEeq4BIv9FegE_w" name="setVolume">
+          <ownedParameter xmi:id="_RzH4oYCzEeq4BIv9FegE_w" name="vol">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_RzIfsICzEeq4BIv9FegE_w" name="setPitch">
+          <ownedParameter xmi:id="_RzJGwICzEeq4BIv9FegE_w" name="pitch">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_RzJt0ICzEeq4BIv9FegE_w" name="setRate">
+          <ownedParameter xmi:id="_RzJt0YCzEeq4BIv9FegE_w" name="rate">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_RzK78ICzEeq4BIv9FegE_w" name="TextToSpeechAPIFactory">
+        <ownedComment xmi:id="_R8J404CzEeq4BIv9FegE_w">
+          <body>@author vaggelisbarb
+ *</body>
+        </ownedComment>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_R8B9AICzEeq4BIv9FegE_w" name="createTTSAPI" specification="_RzMKEICzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_R8B9AYCzEeq4BIv9FegE_w" name="api">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_R8B9AoCzEeq4BIv9FegE_w" type="_RzE1UICzEeq4BIv9FegE_w" direction="return"/>
+          <language>java</language>
+          <body>// TODO :
+		return null;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_RzMKEICzEeq4BIv9FegE_w" name="createTTSAPI" method="_R8B9AICzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_RzMxIICzEeq4BIv9FegE_w" name="api">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_R5mUEICzEeq4BIv9FegE_w" type="_RzE1UICzEeq4BIv9FegE_w" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R8da0YCzEeq4BIv9FegE_w" name="" memberEnd="_R8da0oCzEeq4BIv9FegE_w _R7NdoICzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R8da0oCzEeq4BIv9FegE_w" name="" type="_RyqloICzEeq4BIv9FegE_w" association="_R8da0YCzEeq4BIv9FegE_w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R8eo8ICzEeq4BIv9FegE_w" name="" memberEnd="_R8eo8YCzEeq4BIv9FegE_w _R7OrwYCzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R8eo8YCzEeq4BIv9FegE_w" name="" type="_RyqloICzEeq4BIv9FegE_w" association="_R8eo8ICzEeq4BIv9FegE_w"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_RvMa4ICzEeq4BIv9FegE_w" name="model">
+      <packagedElement xmi:type="uml:Class" xmi:id="_Rx-pIICzEeq4BIv9FegE_w" name="Document">
+        <ownedComment xmi:id="_R8JRwYCzEeq4BIv9FegE_w">
+          <body>@author vaggelisbarb
+Class responsible for document objects. A document object consists of multiple lines. Each line is an Line object.</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_R7H-EICzEeq4BIv9FegE_w" name="encodingStrategy" visibility="private" type="_RxpR8ICzEeq4BIv9FegE_w" association="_R8X7QICzEeq4BIv9FegE_w"/>
+        <ownedAttribute xmi:id="_R7JMMICzEeq4BIv9FegE_w" name="audioManager" visibility="private" type="_RzE1UICzEeq4BIv9FegE_w" association="_R8YiUYCzEeq4BIv9FegE_w"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_R79rk4CzEeq4BIv9FegE_w" name="Document" specification="_R5WccICzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_R79rlICzEeq4BIv9FegE_w" name="encodingStrategy" type="_RxpR8ICzEeq4BIv9FegE_w"/>
+          <ownedParameter xmi:id="_R79rlYCzEeq4BIv9FegE_w" name="audioManager" type="_RzE1UICzEeq4BIv9FegE_w"/>
+          <ownedParameter xmi:id="_R79rloCzEeq4BIv9FegE_w" type="_Rx-pIICzEeq4BIv9FegE_w" direction="return"/>
+          <language>java</language>
+          <body>super();
+		this.encodingStrategy = encodingStrategy;
+		this.audioManager = audioManager;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_R7-SoICzEeq4BIv9FegE_w" name="playContents" specification="_RyCTgICzEeq4BIv9FegE_w">
+          <language>java</language>
+          <body>// TODO
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_R7-SoYCzEeq4BIv9FegE_w" name="playReverseContents" specification="_RyDhoICzEeq4BIv9FegE_w">
+          <language>java</language>
+          <body>// TODO
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_R7-SooCzEeq4BIv9FegE_w" name="playEncodedContents" specification="_RyDhoYCzEeq4BIv9FegE_w">
+          <language>java</language>
+          <body>// TODO
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_R7-5sICzEeq4BIv9FegE_w" name="playLine" specification="_RyEvwICzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_R7-5sYCzEeq4BIv9FegE_w" name="numLine">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>// TODO
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_R7-5soCzEeq4BIv9FegE_w" name="playReverseLine" specification="_RyF94ICzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_R7-5s4CzEeq4BIv9FegE_w" name="numLine">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>// TODO
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_R7_gwICzEeq4BIv9FegE_w" name="playEncodedLine" specification="_RyHMAICzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_R7_gwYCzEeq4BIv9FegE_w" name="numLine">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>// TODO
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_R7_gwoCzEeq4BIv9FegE_w" name="tuneEncodingStrategy" specification="_R5XqkICzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_R7_gw4CzEeq4BIv9FegE_w" name="strategy" type="_RxpR8ICzEeq4BIv9FegE_w"/>
+          <language>java</language>
+          <body>// TODO
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_RyCTgICzEeq4BIv9FegE_w" name="playContents" method="_R7-SoICzEeq4BIv9FegE_w"/>
+        <ownedOperation xmi:id="_RyDhoICzEeq4BIv9FegE_w" name="playReverseContents" method="_R7-SoYCzEeq4BIv9FegE_w"/>
+        <ownedOperation xmi:id="_RyDhoYCzEeq4BIv9FegE_w" name="playEncodedContents" method="_R7-SooCzEeq4BIv9FegE_w"/>
+        <ownedOperation xmi:id="_RyEvwICzEeq4BIv9FegE_w" name="playLine" method="_R7-5sICzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_RyEvwYCzEeq4BIv9FegE_w" name="numLine">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_RyF94ICzEeq4BIv9FegE_w" name="playReverseLine" method="_R7-5soCzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_RyGk8ICzEeq4BIv9FegE_w" name="numLine">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_RyHMAICzEeq4BIv9FegE_w" name="playEncodedLine" method="_R7_gwICzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_RyHzEICzEeq4BIv9FegE_w" name="numLine">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_R5WccICzEeq4BIv9FegE_w" name="Document" method="_R79rk4CzEeq4BIv9FegE_w">
+          <eAnnotations xmi:id="_R5XDgICzEeq4BIv9FegE_w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_R5XDgYCzEeq4BIv9FegE_w" key="create"/>
+          </eAnnotations>
+          <ownedComment xmi:id="_R8JRwoCzEeq4BIv9FegE_w">
+            <body>@param encodingStrategy
+	 * @param audioManager</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_R5WccYCzEeq4BIv9FegE_w" name="encodingStrategy" type="_RxpR8ICzEeq4BIv9FegE_w"/>
+          <ownedParameter xmi:id="_R5WccoCzEeq4BIv9FegE_w" name="audioManager" type="_RzE1UICzEeq4BIv9FegE_w"/>
+          <ownedParameter xmi:id="_R5XDgoCzEeq4BIv9FegE_w" type="_Rx-pIICzEeq4BIv9FegE_w" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_R5XqkICzEeq4BIv9FegE_w" name="tuneEncodingStrategy" method="_R7_gwoCzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_R5XqkYCzEeq4BIv9FegE_w" name="strategy" type="_RxpR8ICzEeq4BIv9FegE_w"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_RyOgwICzEeq4BIv9FegE_w" name="Line">
+        <ownedComment xmi:id="_R8JRw4CzEeq4BIv9FegE_w">
+          <body>@author vaggelisbarb
+Class responsible for each line of the document.</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_R7KaUICzEeq4BIv9FegE_w" name="words" visibility="private" type="_R5Y4sICzEeq4BIv9FegE_w" association="_R8ZwcYCzEeq4BIv9FegE_w"/>
+        <ownedAttribute xmi:id="_R7LocYCzEeq4BIv9FegE_w" name="encodingStrategy" visibility="private" type="_RxpR8ICzEeq4BIv9FegE_w" association="_R8bloICzEeq4BIv9FegE_w"/>
+        <ownedAttribute xmi:id="_R7MPgYCzEeq4BIv9FegE_w" name="audioManager" visibility="private" type="_RzE1UICzEeq4BIv9FegE_w" association="_R8czwICzEeq4BIv9FegE_w"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_R8AH0ICzEeq4BIv9FegE_w" name="Line" specification="_R6zN8ICzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_R8AH0YCzEeq4BIv9FegE_w" name="words" type="_R5Y4sICzEeq4BIv9FegE_w"/>
+          <ownedParameter xmi:id="_R8AH0oCzEeq4BIv9FegE_w" name="encodingStrategy" type="_RxpR8ICzEeq4BIv9FegE_w"/>
+          <ownedParameter xmi:id="_R8AH04CzEeq4BIv9FegE_w" name="audioManager" type="_RzE1UICzEeq4BIv9FegE_w"/>
+          <ownedParameter xmi:id="_R8AH1ICzEeq4BIv9FegE_w" type="_RyOgwICzEeq4BIv9FegE_w" direction="return"/>
+          <language>java</language>
+          <body>super();
+		this.words = words;
+		this.encodingStrategy = encodingStrategy;
+		this.audioManager = audioManager;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_R8AH1YCzEeq4BIv9FegE_w" name="playLine" specification="_RySLIICzEeq4BIv9FegE_w">
+          <language>java</language>
+          <body>// TODO
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_R8AH1oCzEeq4BIv9FegE_w" name="playReverseLine" specification="_RySyMICzEeq4BIv9FegE_w">
+          <language>java</language>
+          <body>// TODO
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_R8Au4ICzEeq4BIv9FegE_w" name="playEncodedLine" specification="_RyTZQICzEeq4BIv9FegE_w">
+          <language>java</language>
+          <body>// TODO
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_R8Au4YCzEeq4BIv9FegE_w" name="tuneEncodingStrategy" specification="_R5dKIICzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_R8Au4oCzEeq4BIv9FegE_w" name="strategy" type="_RxpR8ICzEeq4BIv9FegE_w"/>
+          <language>java</language>
+          <body>// TODO
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_RySLIICzEeq4BIv9FegE_w" name="playLine" method="_R8AH1YCzEeq4BIv9FegE_w"/>
+        <ownedOperation xmi:id="_RySyMICzEeq4BIv9FegE_w" name="playReverseLine" method="_R8AH1oCzEeq4BIv9FegE_w"/>
+        <ownedOperation xmi:id="_RyTZQICzEeq4BIv9FegE_w" name="playEncodedLine" method="_R8Au4ICzEeq4BIv9FegE_w"/>
+        <ownedOperation xmi:id="_R5dKIICzEeq4BIv9FegE_w" name="tuneEncodingStrategy" method="_R8Au4YCzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_R5dKIYCzEeq4BIv9FegE_w" name="strategy" type="_RxpR8ICzEeq4BIv9FegE_w"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_R6zN8ICzEeq4BIv9FegE_w" name="Line" method="_R8AH0ICzEeq4BIv9FegE_w">
+          <eAnnotations xmi:id="_R6z1AYCzEeq4BIv9FegE_w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_R6z1AoCzEeq4BIv9FegE_w" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_R6zN8YCzEeq4BIv9FegE_w" name="words" type="_R5Y4sICzEeq4BIv9FegE_w"/>
+          <ownedParameter xmi:id="_R6zN8oCzEeq4BIv9FegE_w" name="encodingStrategy" type="_RxpR8ICzEeq4BIv9FegE_w"/>
+          <ownedParameter xmi:id="_R6z1AICzEeq4BIv9FegE_w" name="audioManager" type="_RzE1UICzEeq4BIv9FegE_w"/>
+          <ownedParameter xmi:id="_R6z1A4CzEeq4BIv9FegE_w" type="_RyOgwICzEeq4BIv9FegE_w" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R8X7QICzEeq4BIv9FegE_w" name="" memberEnd="_R8X7QYCzEeq4BIv9FegE_w _R7H-EICzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R8X7QYCzEeq4BIv9FegE_w" name="" type="_Rx-pIICzEeq4BIv9FegE_w" association="_R8X7QICzEeq4BIv9FegE_w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R8YiUYCzEeq4BIv9FegE_w" name="" memberEnd="_R8YiUoCzEeq4BIv9FegE_w _R7JMMICzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R8YiUoCzEeq4BIv9FegE_w" name="" type="_Rx-pIICzEeq4BIv9FegE_w" association="_R8YiUYCzEeq4BIv9FegE_w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R8ZwcYCzEeq4BIv9FegE_w" name="" memberEnd="_R8ZwcoCzEeq4BIv9FegE_w _R7KaUICzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R8ZwcoCzEeq4BIv9FegE_w" name="" type="_RyOgwICzEeq4BIv9FegE_w" association="_R8ZwcYCzEeq4BIv9FegE_w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R8bloICzEeq4BIv9FegE_w" name="" memberEnd="_R8bloYCzEeq4BIv9FegE_w _R7LocYCzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R8bloYCzEeq4BIv9FegE_w" name="" type="_RyOgwICzEeq4BIv9FegE_w" association="_R8bloICzEeq4BIv9FegE_w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R8czwICzEeq4BIv9FegE_w" name="" memberEnd="_R8czwYCzEeq4BIv9FegE_w _R7MPgYCzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R8czwYCzEeq4BIv9FegE_w" name="" type="_RyOgwICzEeq4BIv9FegE_w" association="_R8czwICzEeq4BIv9FegE_w"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_RvfV0ICzEeq4BIv9FegE_w" name="com">
+      <packagedElement xmi:type="uml:Package" xmi:id="_Rvf84ICzEeq4BIv9FegE_w" name="sun">
+        <packagedElement xmi:type="uml:Package" xmi:id="_Rvf84YCzEeq4BIv9FegE_w" name="speech">
+          <packagedElement xmi:type="uml:Package" xmi:id="_Rvgj8ICzEeq4BIv9FegE_w" name="freetts">
+            <packagedElement xmi:type="uml:Class" xmi:id="_R5fmYICzEeq4BIv9FegE_w" name="Voice"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_R5g0gYCzEeq4BIv9FegE_w" name="VoiceManager"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_RvwbkICzEeq4BIv9FegE_w" name="javax">
+      <packagedElement xmi:type="uml:Package" xmi:id="_RvwbkYCzEeq4BIv9FegE_w" name="swing">
+        <packagedElement xmi:type="uml:Package" xmi:id="_Rvy30ICzEeq4BIv9FegE_w" name="border">
+          <packagedElement xmi:type="uml:Class" xmi:id="_R6GDUICzEeq4BIv9FegE_w" name="BevelBorder"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_R6JtsYCzEeq4BIv9FegE_w" name="MatteBorder"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_RwWRcICzEeq4BIv9FegE_w" name="filechooser">
+          <packagedElement xmi:type="uml:Class" xmi:id="_R6nAsICzEeq4BIv9FegE_w" name="FileFilter"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_R5pXYICzEeq4BIv9FegE_w" name="JFrame"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_R5qlgYCzEeq4BIv9FegE_w" name="JLabel"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_R5sasICzEeq4BIv9FegE_w" name="JMenu"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_R5wFEYCzEeq4BIv9FegE_w" name="AbstractAction"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_R5x6QICzEeq4BIv9FegE_w" name="ButtonGroup"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_R5zIYYCzEeq4BIv9FegE_w" name="ImageIcon"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_R509kICzEeq4BIv9FegE_w" name="JCheckBoxMenuItem"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_R5-ukYCzEeq4BIv9FegE_w" name="SwingConstants"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_R6AjwICzEeq4BIv9FegE_w" name="JMenuBar"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_R6Bx4ICzEeq4BIv9FegE_w" name="JMenuItem"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_R6DAAYCzEeq4BIv9FegE_w" name="JRadioButtonMenuItem"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_R6E1MICzEeq4BIv9FegE_w" name="KeyStroke"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_R6IfkYCzEeq4BIv9FegE_w" name="UIManager"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_R6MJ8YCzEeq4BIv9FegE_w" name="JSlider"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_R6j9YICzEeq4BIv9FegE_w" name="JFileChooser"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Rvze4ICzEeq4BIv9FegE_w" name="view">
+      <packagedElement xmi:type="uml:Class" xmi:id="_RzOmUICzEeq4BIv9FegE_w" name="MainAppGUI">
+        <ownedAttribute xmi:id="_R7Qg8ICzEeq4BIv9FegE_w" name="frmTextToSpeech" visibility="private" type="_R5pXYICzEeq4BIv9FegE_w" association="_R8fQAYCzEeq4BIv9FegE_w"/>
+        <ownedAttribute xmi:id="_R7RvEYCzEeq4BIv9FegE_w" name="menuBar" visibility="package" type="_R6AjwICzEeq4BIv9FegE_w" association="_R8f3EYCzEeq4BIv9FegE_w"/>
+        <ownedAttribute xmi:id="_R7SWIYCzEeq4BIv9FegE_w" name="menuFile" visibility="package" type="_R5sasICzEeq4BIv9FegE_w" association="_R8hFMYCzEeq4BIv9FegE_w"/>
+        <ownedAttribute xmi:id="_R7TkQICzEeq4BIv9FegE_w" name="menuEdit" visibility="private" type="_R5sasICzEeq4BIv9FegE_w" association="_R8iTUYCzEeq4BIv9FegE_w"/>
+        <ownedAttribute xmi:id="_R7ULUYCzEeq4BIv9FegE_w" name="menuItem" visibility="package" type="_R6Bx4ICzEeq4BIv9FegE_w" association="_R8jhcICzEeq4BIv9FegE_w"/>
+        <ownedAttribute xmi:id="_R7UyYYCzEeq4BIv9FegE_w" name="mntmNewFile" visibility="private" type="_R6Bx4ICzEeq4BIv9FegE_w" association="_R8kIgYCzEeq4BIv9FegE_w"/>
+        <ownedAttribute xmi:id="_R7XOoICzEeq4BIv9FegE_w" name="mntmSaveFile" visibility="private" type="_R6Bx4ICzEeq4BIv9FegE_w" association="_R8l9sICzEeq4BIv9FegE_w"/>
+        <ownedAttribute xmi:id="_R7X1sYCzEeq4BIv9FegE_w" name="mntmSaveFileAs" visibility="private" type="_R6Bx4ICzEeq4BIv9FegE_w" association="_R8mkwYCzEeq4BIv9FegE_w"/>
+        <ownedAttribute xmi:id="_R7YcwYCzEeq4BIv9FegE_w" name="mntmOpenFile" visibility="private" type="_R6Bx4ICzEeq4BIv9FegE_w" association="_R8ny4YCzEeq4BIv9FegE_w"/>
+        <ownedAttribute xmi:id="_R7ZD0YCzEeq4BIv9FegE_w" name="cbMenuItem" visibility="package" type="_R509kICzEeq4BIv9FegE_w" association="_R8pBAYCzEeq4BIv9FegE_w"/>
+        <ownedAttribute xmi:id="_R7aR8ICzEeq4BIv9FegE_w" name="cbMenuItem_1" visibility="private" type="_R509kICzEeq4BIv9FegE_w" association="_R8poEYCzEeq4BIv9FegE_w"/>
+        <ownedAttribute xmi:id="_R7a5AICzEeq4BIv9FegE_w" name="menuSpeech" visibility="private" type="_R5sasICzEeq4BIv9FegE_w" association="_R8q2MYCzEeq4BIv9FegE_w"/>
+        <ownedAttribute xmi:id="_R7bgEYCzEeq4BIv9FegE_w" name="mntmTextHighlight" visibility="private" type="_R6Bx4ICzEeq4BIv9FegE_w" association="_R8sEUYCzEeq4BIv9FegE_w"/>
+        <ownedAttribute xmi:id="_R7cHIYCzEeq4BIv9FegE_w" name="reverseText2speech_MenuItem" visibility="private" type="_R6Bx4ICzEeq4BIv9FegE_w" association="_R8srYYCzEeq4BIv9FegE_w"/>
+        <ownedAttribute xmi:id="_R7cuMYCzEeq4BIv9FegE_w" name="reverseHighlight2speech_MenuItem_1" visibility="private" type="_R6Bx4ICzEeq4BIv9FegE_w" association="_R8t5gYCzEeq4BIv9FegE_w"/>
+        <ownedAttribute xmi:id="_R7fKcICzEeq4BIv9FegE_w" name="menuEncoding" visibility="private" type="_R5sasICzEeq4BIv9FegE_w" association="_R8vHoYCzEeq4BIv9FegE_w"/>
+        <ownedAttribute xmi:id="_R7fxgYCzEeq4BIv9FegE_w" name="textEncode_MenuItem_1" visibility="private" type="_R6Bx4ICzEeq4BIv9FegE_w" association="_R8wVwICzEeq4BIv9FegE_w"/>
+        <ownedAttribute xmi:id="_R7g_oICzEeq4BIv9FegE_w" name="text2speech_MenuItem_2" visibility="private" type="_R6Bx4ICzEeq4BIv9FegE_w" association="_R8w80YCzEeq4BIv9FegE_w"/>
+        <ownedAttribute xmi:id="_R7hmsICzEeq4BIv9FegE_w" name="atbshaMenuItem" visibility="private" type="_R6DAAYCzEeq4BIv9FegE_w" association="_R8yK8YCzEeq4BIv9FegE_w"/>
+        <ownedAttribute xmi:id="_R7iNwICzEeq4BIv9FegE_w" name="rot13MenuItem" visibility="private" type="_R6DAAYCzEeq4BIv9FegE_w" association="_R8zZEICzEeq4BIv9FegE_w"/>
+        <ownedAttribute xmi:id="_R7i00ICzEeq4BIv9FegE_w" name="menuSettings" visibility="private" type="_R5sasICzEeq4BIv9FegE_w" association="_R80nMICzEeq4BIv9FegE_w"/>
+        <ownedAttribute xmi:id="_R7jb4ICzEeq4BIv9FegE_w" name="volumeSubmenu" visibility="private" type="_R5sasICzEeq4BIv9FegE_w" association="_R81OQYCzEeq4BIv9FegE_w"/>
+        <ownedAttribute xmi:id="_R7kC8ICzEeq4BIv9FegE_w" name="mntmDefaultVolume" visibility="private" type="_R6Bx4ICzEeq4BIv9FegE_w" association="_R82cYYCzEeq4BIv9FegE_w"/>
+        <ownedAttribute xmi:id="_R7kqAICzEeq4BIv9FegE_w" name="volumeSlider" visibility="private" type="_R6MJ8YCzEeq4BIv9FegE_w" association="_R83qgICzEeq4BIv9FegE_w"/>
+        <ownedAttribute xmi:id="_R7lREICzEeq4BIv9FegE_w" name="rateSubmenu" visibility="private" type="_R5sasICzEeq4BIv9FegE_w" association="_R84RkYCzEeq4BIv9FegE_w"/>
+        <ownedAttribute xmi:id="_R7l4IYCzEeq4BIv9FegE_w" name="rateSlider" visibility="private" type="_R6MJ8YCzEeq4BIv9FegE_w" association="_R85fsYCzEeq4BIv9FegE_w"/>
+        <ownedAttribute xmi:id="_R7mfMYCzEeq4BIv9FegE_w" name="mntmDefaultRate" visibility="private" type="_R6Bx4ICzEeq4BIv9FegE_w" association="_R87U4ICzEeq4BIv9FegE_w"/>
+        <ownedAttribute xmi:id="_R7nGQYCzEeq4BIv9FegE_w" name="pitchSubmenu" visibility="private" type="_R5sasICzEeq4BIv9FegE_w" association="_R88jAYCzEeq4BIv9FegE_w"/>
+        <ownedAttribute xmi:id="_R7ntUYCzEeq4BIv9FegE_w" name="mntmDefaultPitch" visibility="private" type="_R6Bx4ICzEeq4BIv9FegE_w" association="_R89xIYCzEeq4BIv9FegE_w"/>
+        <ownedAttribute xmi:id="_R7pigICzEeq4BIv9FegE_w" name="pitchSlider" visibility="private" type="_R6MJ8YCzEeq4BIv9FegE_w" association="_R8-_QICzEeq4BIv9FegE_w"/>
+        <ownedAttribute xmi:id="_R7qJkYCzEeq4BIv9FegE_w" name="path" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_R7qwoICzEeq4BIv9FegE_w" value="null"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_R7rXsYCzEeq4BIv9FegE_w" name="editMenuItem" visibility="private" type="_R6Bx4ICzEeq4BIv9FegE_w" association="_R9ANYICzEeq4BIv9FegE_w"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_R8DLIICzEeq4BIv9FegE_w" name="main" specification="_RzZlcICzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_R8DLIYCzEeq4BIv9FegE_w" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_R8DLIoCzEeq4BIv9FegE_w" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					MainAppGUI window = new MainAppGUI();
+					window.frmTextToSpeech.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_R8DLI4CzEeq4BIv9FegE_w" name="MainAppGUI" specification="_RzcBsICzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_R8DLJICzEeq4BIv9FegE_w" type="_RzOmUICzEeq4BIv9FegE_w" direction="return"/>
+          <language>java</language>
+          <body>initialize();
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_R8DyMICzEeq4BIv9FegE_w" name="initialize" specification="_RzdP0ICzEeq4BIv9FegE_w">
+          <language>java</language>
+          <body>frmTextToSpeech = new JFrame();
+		frmTextToSpeech.setResizable(false);
+		frmTextToSpeech.setModalExclusionType(ModalExclusionType.APPLICATION_EXCLUDE);
+		//frmTextToSpeech.setExtendedState(frmTextToSpeech.MAXIMIZED_BOTH);
+		frmTextToSpeech.setVisible(true);
+		frmTextToSpeech.setBackground(Color.WHITE);
+		frmTextToSpeech.setTitle(&quot;Text to Speech Editor&quot;);
+		frmTextToSpeech.setFont(new Font(&quot;League Spartan Semibold&quot;, Font.PLAIN, 17));
+		frmTextToSpeech.setBounds(500, 500, 900, 600);
+		frmTextToSpeech.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmTextToSpeech.getContentPane().setLayout(null);
+		
+
+		//Create the menu bar.
+		menuBar = new JMenuBar();
+		menuBar.setFont(new Font(&quot;League Spartan Semibold&quot;, Font.BOLD, 14));
+		menuBar.setBackground(UIManager.getColor(&quot;Button.disabledToolBarBorderBackground&quot;));
+		menuBar.setBorder(new MatteBorder(1, 1, 1, 1, (Color) new Color(0, 0, 0)));
+		
+		
+		//Build the first menu.
+		menuFile = new JMenu(&quot;File&quot;);
+		menuFile.setToolTipText(&quot;Choose a file option&quot;);
+		menuFile.setActionCommand(&quot;File\n&quot;);
+		menuFile.setFont(new Font(&quot;League Spartan Semibold&quot;, Font.PLAIN, 16));
+		menuFile.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+		menuFile.setMnemonic(KeyEvent.VK_A);
+		menuFile.getAccessibleContext().setAccessibleDescription(
+		        &quot;The only menu in this program that has menu items&quot;);
+		menuBar.add(menuFile);
+
+		
+		
+		mntmNewFile = new JMenuItem(&quot;New Document&quot;,KeyEvent.VK_T);
+		mntmNewFile.setIcon(new ImageIcon(&quot;/home/vaggelisbarb/eclipse-workspace/Text2SpeechEditor/ImageSource/add.png&quot;));
+		mntmNewFile.setFont(new Font(&quot;League Spartan Semibold&quot;, Font.PLAIN, 15));
+		mntmNewFile.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_N, InputEvent.CTRL_MASK));
+		mntmNewFile.getAccessibleContext().setAccessibleDescription(&quot;This doesn't really do anything&quot;);
+		menuFile.add(mntmNewFile);
+		
+		//a group of JMenuItems
+		mntmOpenFile = new JMenuItem(&quot;Load Document&quot;);
+		mntmOpenFile.addActionListener(new java.awt.event.ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				
+				path = MyCustomFileChooserRunner.MyCustomFileChooserScreen(&quot;Files&quot;);
+			}
+			
+		});
+		
+		mntmOpenFile.setIcon(new ImageIcon(&quot;/home/vaggelisbarb/eclipse-workspace/Text2SpeechEditor/ImageSource/file.png&quot;));
+		mntmOpenFile.setFont(new Font(&quot;League Spartan Semibold&quot;, Font.PLAIN, 15));
+		mntmOpenFile.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_L, InputEvent.CTRL_MASK));
+		mntmOpenFile.getAccessibleContext().setAccessibleDescription(
+		        &quot;This doesn't really do anything&quot;);
+		menuFile.add(mntmOpenFile);
+
+		mntmSaveFileAs = new JMenuItem(&quot;Save Document as&quot;,
+		                         new ImageIcon(&quot;/home/vaggelisbarb/eclipse-workspace/Text2SpeechEditor/ImageSource/icons8-save-as-24.png&quot;));
+		mntmSaveFileAs.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_A, InputEvent.CTRL_MASK));
+		mntmSaveFileAs.setFont(new Font(&quot;League Spartan Semibold&quot;, Font.PLAIN, 15));
+		mntmOpenFile.setAccelerator(KeyStroke.getKeyStroke(
+		        KeyEvent.VK_3, ActionEvent.ALT_MASK));
+		mntmSaveFileAs.setMnemonic(KeyEvent.VK_B);
+		menuFile.add(mntmSaveFileAs);
+
+		mntmSaveFile = new JMenuItem(new ImageIcon(&quot;/home/vaggelisbarb/eclipse-workspace/Text2SpeechEditor/ImageSource/icons8-save-24.png&quot;));
+		mntmSaveFile.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S, InputEvent.CTRL_MASK));
+		mntmSaveFile.setFont(new Font(&quot;League Spartan Semibold&quot;, Font.PLAIN, 15));
+		mntmSaveFile.setText(&quot;Save Document&quot;);
+		mntmOpenFile.setAccelerator(KeyStroke.getKeyStroke(
+		        KeyEvent.VK_4, ActionEvent.ALT_MASK));
+		mntmSaveFile.setMnemonic(KeyEvent.VK_D);
+		menuFile.add(mntmSaveFile);
+		ButtonGroup group = new ButtonGroup();
+
+		//a group of check box menu items
+		menuFile.addSeparator();
+		cbMenuItem = new JCheckBoxMenuItem(&quot;A check box menu item&quot;);
+		cbMenuItem.setFont(new Font(&quot;League Spartan Semibold&quot;, Font.PLAIN, 15));
+		cbMenuItem.setMnemonic(KeyEvent.VK_C);
+		menuFile.add(cbMenuItem);
+
+		cbMenuItem_1 = new JCheckBoxMenuItem(&quot;Another one&quot;);
+		cbMenuItem_1.setFont(new Font(&quot;League Spartan Semibold&quot;, Font.PLAIN, 15));
+		cbMenuItem_1.setMnemonic(KeyEvent.VK_H);
+		menuFile.add(cbMenuItem_1);
+
+		// SECOND TOP MENU BAR
+			
+		//Build second menu in the menu bar.
+		menuEdit = new JMenu(&quot;Edit&quot;);
+		menuEdit.setToolTipText(&quot;Select tools&quot;);
+		menuEdit.setFont(new Font(&quot;League Spartan Semibold&quot;, Font.PLAIN, 16));
+		menuEdit.setMnemonic(KeyEvent.VK_N);
+		menuEdit.getAccessibleContext().setAccessibleDescription(
+		        &quot;This menu does nothing&quot;);
+		menuBar.add(menuEdit);
+		
+		frmTextToSpeech.setJMenuBar(menuBar);
+		
+		
+		mntmTextHighlight = new JMenuItem(&quot;Text Highlight&quot;,KeyEvent.VK_T);
+		mntmTextHighlight.setIcon(new ImageIcon(&quot;/home/vaggelisbarb/eclipse-workspace/Text2SpeechEditor/ImageSource/textHigh.png&quot;));
+		mntmTextHighlight.setFont(new Font(&quot;League Spartan Semibold&quot;, Font.PLAIN, 15));
+		mntmTextHighlight.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_F2, 0));
+		mntmTextHighlight.getAccessibleContext().setAccessibleDescription(&quot;This doesn't really do anything&quot;);
+		
+		editMenuItem = new JMenuItem(&quot;Edit Document&quot;);
+		editMenuItem.setIcon(new ImageIcon(&quot;/home/vaggelisbarb/eclipse-workspace/Text2SpeechEditor/ImageSource/edit.png&quot;));
+		editMenuItem.setFont(new Font(&quot;League Spartan Semibold&quot;, Font.PLAIN, 15));
+		menuEdit.add(editMenuItem);
+		menuEdit.add(mntmTextHighlight);
+		
+		
+		
+		//Build the third menu.
+		menuSpeech = new JMenu(&quot;Speech&quot;);
+		menuSpeech.setToolTipText(&quot;Transform into audio&quot;);
+		menuSpeech.setActionCommand(&quot;Speech\n&quot;);
+		menuSpeech.setFont(new Font(&quot;League Spartan Semibold&quot;, Font.PLAIN, 16));
+		menuSpeech.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+		menuSpeech.setMnemonic(KeyEvent.VK_5);
+		menuSpeech.getAccessibleContext().setAccessibleDescription(
+		        &quot;The only menu in this program that has menu items&quot;);
+		menuBar.add(menuSpeech);
+		
+		JMenuItem text2speech_MenuItem = new JMenuItem(&quot;Text to speech&quot;);
+		text2speech_MenuItem.setIcon(new ImageIcon(&quot;/home/vaggelisbarb/eclipse-workspace/Text2SpeechEditor/ImageSource/textSpeech.png&quot;));
+		text2speech_MenuItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_1, InputEvent.ALT_MASK));
+		text2speech_MenuItem.setFont(new Font(&quot;League Spartan Semibold&quot;, Font.PLAIN, 15));
+		menuSpeech.add(text2speech_MenuItem);
+		
+		JMenuItem highlight2speech_MenuItem = new JMenuItem(&quot;Highlighted text to speech&quot;);
+		highlight2speech_MenuItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_2, InputEvent.ALT_MASK));
+		highlight2speech_MenuItem.setIcon(new ImageIcon(&quot;/home/vaggelisbarb/eclipse-workspace/Text2SpeechEditor/ImageSource/HighlightSpeech.png&quot;));
+		highlight2speech_MenuItem.setFont(new Font(&quot;League Spartan Semibold&quot;, Font.PLAIN, 15));
+		menuSpeech.add(highlight2speech_MenuItem);
+		
+		menuSpeech.addSeparator();
+		
+		reverseText2speech_MenuItem = new JMenuItem(&quot;Reverse text to speech&quot;);
+		reverseText2speech_MenuItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_3, InputEvent.ALT_MASK));
+		reverseText2speech_MenuItem.setIcon(new ImageIcon(&quot;/home/vaggelisbarb/eclipse-workspace/Text2SpeechEditor/ImageSource/reverseText.png&quot;));
+		reverseText2speech_MenuItem.setFont(new Font(&quot;League Spartan Semibold&quot;, Font.PLAIN, 15));
+		menuSpeech.add(reverseText2speech_MenuItem);
+		
+		reverseHighlight2speech_MenuItem_1 = new JMenuItem(&quot;Reverse highlighted text to speech&quot;);
+		reverseHighlight2speech_MenuItem_1.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_4, InputEvent.ALT_MASK));
+		reverseHighlight2speech_MenuItem_1.setIcon(new ImageIcon(&quot;/home/vaggelisbarb/eclipse-workspace/Text2SpeechEditor/ImageSource/reverseHighlighted.png&quot;));
+		reverseHighlight2speech_MenuItem_1.setFont(new Font(&quot;League Spartan Semibold&quot;, Font.PLAIN, 15));
+		menuSpeech.add(reverseHighlight2speech_MenuItem_1);
+		
+		
+		// BUILD THE 4TH TOP BAR MENU ELEMENT
+		
+		//Build the fourth menu.
+		menuEncoding = new JMenu(&quot;Encoding&quot;);
+		menuEncoding.setToolTipText(&quot;Select the encoding style&quot;);
+		menuEncoding.setActionCommand(&quot;Encoding\n&quot;);
+		menuEncoding.setFont(new Font(&quot;League Spartan Semibold&quot;, Font.PLAIN, 16));
+		menuEncoding.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+		menuEncoding.setMnemonic(KeyEvent.VK_5);
+		menuEncoding.getAccessibleContext().setAccessibleDescription(&quot;The only menu in this program that has menu items&quot;);
+		menuBar.add(menuEncoding);
+		
+		textEncode_MenuItem_1 = new JMenuItem(&quot;Text encode&quot;);
+		textEncode_MenuItem_1.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_E, InputEvent.SHIFT_MASK));
+		textEncode_MenuItem_1.setIcon(new ImageIcon(&quot;/home/vaggelisbarb/eclipse-workspace/Text2SpeechEditor/ImageSource/textEncode.png&quot;));
+		textEncode_MenuItem_1.setFont(new Font(&quot;League Spartan Semibold&quot;, Font.PLAIN, 15));
+		menuEncoding.add(textEncode_MenuItem_1);
+		
+		text2speech_MenuItem_2 = new JMenuItem(&quot;Highlighted text encode&quot;);
+		text2speech_MenuItem_2.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_H, InputEvent.SHIFT_MASK));
+		text2speech_MenuItem_2.setIcon(new ImageIcon(&quot;/home/vaggelisbarb/eclipse-workspace/Text2SpeechEditor/ImageSource/highlightedTextEncode.png&quot;));
+		text2speech_MenuItem_2.setFont(new Font(&quot;League Spartan Semibold&quot;, Font.PLAIN, 15));
+		menuEncoding.add(text2speech_MenuItem_2);
+		
+		
+		menuEncoding.addSeparator();
+		ButtonGroup encodingGroup = new ButtonGroup();
+		atbshaMenuItem = new JRadioButtonMenuItem(&quot;Atbash encoding&quot;);
+		atbshaMenuItem.setFont(new Font(&quot;League Spartan Semibold&quot;, Font.PLAIN, 15));
+		atbshaMenuItem.setSelected(true);
+		atbshaMenuItem.setMnemonic(KeyEvent.VK_R);
+		encodingGroup.add(atbshaMenuItem);
+		menuEncoding.add(atbshaMenuItem);
+
+		rot13MenuItem = new JRadioButtonMenuItem(&quot;Rot-13 encoding&quot;);
+		rot13MenuItem.setFont(new Font(&quot;League Spartan Semibold&quot;, Font.PLAIN, 15));
+		rot13MenuItem.setMnemonic(KeyEvent.VK_O);
+		encodingGroup.add(rot13MenuItem);
+		menuEncoding.add(rot13MenuItem);
+		
+		
+		// BUILD THE SEETINGS TOP BAR MENU ELEMENT
+		
+		menuSettings = new JMenu(&quot;Settings&quot;);
+		menuSettings.setActionCommand(&quot;Settings\n&quot;);
+		menuSettings.setFont(new Font(&quot;League Spartan Semibold&quot;, Font.PLAIN, 16));
+		menuSettings.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+		menuSettings.setMnemonic(KeyEvent.VK_5);
+		menuSettings.getAccessibleContext().setAccessibleDescription(&quot;The only menu in this program that has menu items&quot;);
+		menuBar.add(menuSettings);
+		
+		volumeSubmenu = new JMenu(&quot;Speech Volume&quot;);
+		volumeSubmenu.setIcon(new ImageIcon(&quot;/home/vaggelisbarb/eclipse-workspace/Text2SpeechEditor/ImageSource/volumeAdjust.png&quot;));
+		volumeSubmenu.setToolTipText(&quot;Adjust the volume&quot;);
+		volumeSubmenu.setMnemonic(KeyEvent.VK_S);
+		volumeSubmenu.setFont(new Font(&quot;League Spartan Semibold&quot;, Font.PLAIN, 15));
+		menuSettings.add(volumeSubmenu);
+		mntmDefaultVolume = new JMenuItem(&quot;Default Volume&quot;);
+		mntmDefaultVolume.setFont(new Font(&quot;League Spartan Semibold&quot;, Font.PLAIN, 15));
+		volumeSubmenu.add(mntmDefaultVolume);
+		
+		volumeSubmenu.addSeparator();
+		
+		volumeSlider = new JSlider(0, 200, 100);
+		volumeSlider.setToolTipText(&quot;Adjust volume level&quot;);
+		volumeSlider.setPreferredSize(new Dimension(160, 50));
+		volumeSlider.setPaintTrack(true);
+		volumeSlider.setPaintTicks(true);
+		volumeSlider.setPaintLabels(true);
+		volumeSlider.setMinorTickSpacing(5);
+		volumeSlider.setMaximumSize(new Dimension(3276, 16));
+		volumeSlider.setMajorTickSpacing(50);
+		volumeSubmenu.add(volumeSlider);
+		
+		rateSubmenu = new JMenu(&quot;Speech Rate&quot;);
+		rateSubmenu.setIcon(new ImageIcon(&quot;/home/vaggelisbarb/eclipse-workspace/Text2SpeechEditor/ImageSource/RateAdjust.png&quot;));
+		rateSubmenu.setToolTipText(&quot;Adjust the rate&quot;);
+		rateSubmenu.setMnemonic(KeyEvent.VK_S);
+		rateSubmenu.setFont(new Font(&quot;League Spartan Semibold&quot;, Font.PLAIN, 15));
+		menuSettings.add(rateSubmenu);
+		
+		mntmDefaultRate = new JMenuItem(&quot;Default Rate&quot;);
+		mntmDefaultRate.setFont(new Font(&quot;League Spartan Semibold&quot;, Font.PLAIN, 15));
+		rateSubmenu.add(mntmDefaultRate);
+		
+		rateSubmenu.addSeparator();
+		rateSlider = new JSlider(0, 200, 100);
+		rateSlider.setToolTipText(&quot;Adjust rate level&quot;);
+		rateSlider.setPreferredSize(new Dimension(160, 50));
+		rateSlider.setPaintTrack(true);
+		rateSlider.setPaintTicks(true);
+		rateSlider.setPaintLabels(true);
+		rateSlider.setMinorTickSpacing(5);
+		rateSlider.setMaximumSize(new Dimension(3276, 16));
+		rateSlider.setMajorTickSpacing(50);
+		rateSubmenu.add(rateSlider);
+		
+		pitchSubmenu = new JMenu(&quot;Speech Pitch&quot;);
+		pitchSubmenu.setIcon(new ImageIcon(&quot;/home/vaggelisbarb/eclipse-workspace/Text2SpeechEditor/ImageSource/pitchAdjust.png&quot;));
+		pitchSubmenu.setFont(new Font(&quot;League Spartan Semibold&quot;, Font.PLAIN, 15));
+		menuSettings.add(pitchSubmenu);
+		
+		mntmDefaultPitch = new JMenuItem(&quot;Default Pitch&quot;);
+		mntmDefaultPitch.setFont(new Font(&quot;League Spartan Semibold&quot;, Font.PLAIN, 15));
+		pitchSubmenu.add(mntmDefaultPitch);
+		
+		pitchSlider = new JSlider(0, 200, 100);
+		pitchSlider.setToolTipText(&quot;Adjust pitch level&quot;);
+		pitchSlider.setPreferredSize(new Dimension(160, 50));
+		pitchSlider.setPaintTrack(true);
+		pitchSlider.setPaintTicks(true);
+		pitchSlider.setPaintLabels(true);
+		pitchSlider.setMinorTickSpacing(5);
+		pitchSlider.setMaximumSize(new Dimension(3276, 16));
+		pitchSlider.setMajorTickSpacing(50);
+		pitchSubmenu.add(pitchSlider);
+		
+		JLabel lblNewLabel = new JLabel(&quot;&quot;);
+		lblNewLabel.setIcon(new ImageIcon(&quot;/home/vaggelisbarb/Εικόνες/text2speechLogo.png&quot;));
+		lblNewLabel.setBounds(626, 12, 262, 122);
+		frmTextToSpeech.getContentPane().add(lblNewLabel);
+		
+		JLabel appBackground = new JLabel(&quot;&quot;);
+		appBackground.setIcon(new ImageIcon(&quot;/home/vaggelisbarb/eclipse-workspace/Text2SpeechEditor/ImageSource/AI-Programming.png&quot;));
+		appBackground.setBounds(-45, -24, 945, 600);
+		frmTextToSpeech.getContentPane().add(appBackground);
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_RzZlcICzEeq4BIv9FegE_w" name="main" isStatic="true" method="_R8DLIICzEeq4BIv9FegE_w">
+          <ownedComment xmi:id="_R8Kf4ICzEeq4BIv9FegE_w">
+            <body>Launch the application.</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_RzZlcYCzEeq4BIv9FegE_w" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RzazkICzEeq4BIv9FegE_w" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_RzcBsICzEeq4BIv9FegE_w" name="MainAppGUI" method="_R8DLI4CzEeq4BIv9FegE_w">
+          <eAnnotations xmi:id="_RzcowICzEeq4BIv9FegE_w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_RzcowYCzEeq4BIv9FegE_w" key="create"/>
+          </eAnnotations>
+          <ownedComment xmi:id="_R8Kf4YCzEeq4BIv9FegE_w">
+            <body>Create the application.</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_RzcowoCzEeq4BIv9FegE_w" type="_RzOmUICzEeq4BIv9FegE_w" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_RzdP0ICzEeq4BIv9FegE_w" name="initialize" visibility="private" method="_R8DyMICzEeq4BIv9FegE_w">
+          <ownedComment xmi:id="_R8Kf4oCzEeq4BIv9FegE_w">
+            <body>Initialize the contents of the frame.</body>
+          </ownedComment>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Rz7w8ICzEeq4BIv9FegE_w" name="MyCustomFileChooserRunner">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_R8EZQICzEeq4BIv9FegE_w" name="MyCustomFileChooserScreen" specification="_Rz8_EICzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_R8EZQYCzEeq4BIv9FegE_w" name="option">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_R8EZQoCzEeq4BIv9FegE_w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>MyFileChooser f = new MyFileChooser(&quot;.txt&quot;,option);
+     int result;
+     String path = null;
+
+     result = f.showOpenDialog(null);
+     
+     if (result == JFileChooser.APPROVE_OPTION) {
+         File file = f.getSelectedFile();
+         path = file.getAbsolutePath();
+     }
+     return path;
+ </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_Rz8_EICzEeq4BIv9FegE_w" name="MyCustomFileChooserScreen" isStatic="true" method="_R8EZQICzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_Rz8_EYCzEeq4BIv9FegE_w" name="option">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_Rz9mIICzEeq4BIv9FegE_w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Rz-NMICzEeq4BIv9FegE_w" name="MyFileChooser">
+        <generalization xmi:id="_R7B3cICzEeq4BIv9FegE_w" general="_R6j9YICzEeq4BIv9FegE_w"/>
+        <ownedAttribute xmi:id="_R7tM4ICzEeq4BIv9FegE_w" name="filterString" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_R8EZQ4CzEeq4BIv9FegE_w" name="MyFileChooser" specification="_R0ACYICzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_R8EZRICzEeq4BIv9FegE_w" name="filterString">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_R8EZRYCzEeq4BIv9FegE_w" name="option">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_R8EZRoCzEeq4BIv9FegE_w" type="_Rz-NMICzEeq4BIv9FegE_w" direction="return"/>
+          <language>java</language>
+          <body>super();
+     this.filterString = filterString;
+     
+     if(option.equals(&quot;Dir&quot;))
+     	setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+     else if(option.contentEquals(&quot;Files&quot;))
+     	setFileSelectionMode(JFileChooser.FILES_ONLY);
+     setFileFilter(new MyFileFilter(filterString));
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_R8FAUICzEeq4BIv9FegE_w" name="approveSelection" specification="_R0B3kICzEeq4BIv9FegE_w">
+          <language>java</language>
+          <body>File file = this.getSelectedFile();
+     if (!file.isDirectory() || file.getName().contains(filterString)) {
+         super.approveSelection();           
+     }   
+ </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_R0ACYICzEeq4BIv9FegE_w" name="MyFileChooser" method="_R8EZQ4CzEeq4BIv9FegE_w">
+          <eAnnotations xmi:id="_R0ApcoCzEeq4BIv9FegE_w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_R0BQgICzEeq4BIv9FegE_w" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_R0ApcICzEeq4BIv9FegE_w" name="filterString">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_R0ApcYCzEeq4BIv9FegE_w" name="option">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_R0BQgYCzEeq4BIv9FegE_w" type="_Rz-NMICzEeq4BIv9FegE_w" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_R0B3kICzEeq4BIv9FegE_w" name="approveSelection" method="_R8FAUICzEeq4BIv9FegE_w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_R0Fh8ICzEeq4BIv9FegE_w" name="MyFileFilter">
+        <generalization xmi:id="_R7ETsYCzEeq4BIv9FegE_w" general="_R6nAsICzEeq4BIv9FegE_w"/>
+        <ownedAttribute xmi:id="_R7ubAICzEeq4BIv9FegE_w" name="filterString" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_R8FAUYCzEeq4BIv9FegE_w" name="MyFileFilter" specification="_R0HXIICzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_R8FAUoCzEeq4BIv9FegE_w" name="filterString">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_R8FAU4CzEeq4BIv9FegE_w" type="_R0Fh8ICzEeq4BIv9FegE_w" direction="return"/>
+          <language>java</language>
+          <body>super();
+     this.filterString = filterString;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_R8FnYICzEeq4BIv9FegE_w" name="accept" specification="_R7CegICzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_R8FnYYCzEeq4BIv9FegE_w" name="file" type="_R6iIMICzEeq4BIv9FegE_w"/>
+          <ownedParameter xmi:id="_R8FnYoCzEeq4BIv9FegE_w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return  file.isDirectory() || file.getName().toLowerCase().contains(filterString);
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_R8FnY4CzEeq4BIv9FegE_w" name="getDescription" specification="_R0JMUICzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_R8FnZICzEeq4BIv9FegE_w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return filterString + &quot; only&quot;;
+  </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_R0HXIICzEeq4BIv9FegE_w" name="MyFileFilter" method="_R8FAUYCzEeq4BIv9FegE_w">
+          <eAnnotations xmi:id="_R0H-MICzEeq4BIv9FegE_w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_R0H-MYCzEeq4BIv9FegE_w" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_R0HXIYCzEeq4BIv9FegE_w" name="filterString">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_R0H-MoCzEeq4BIv9FegE_w" type="_R0Fh8ICzEeq4BIv9FegE_w" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_R0JMUICzEeq4BIv9FegE_w" name="getDescription" method="_R8FnY4CzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_R0KacICzEeq4BIv9FegE_w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_R7CegICzEeq4BIv9FegE_w" name="accept" method="_R8FnYICzEeq4BIv9FegE_w">
+          <ownedParameter xmi:id="_R7DFkICzEeq4BIv9FegE_w" name="file" type="_R6iIMICzEeq4BIv9FegE_w"/>
+          <ownedParameter xmi:id="_R7DFkYCzEeq4BIv9FegE_w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R8fQAYCzEeq4BIv9FegE_w" name="" memberEnd="_R8fQAoCzEeq4BIv9FegE_w _R7Qg8ICzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R8fQAoCzEeq4BIv9FegE_w" name="" type="_RzOmUICzEeq4BIv9FegE_w" association="_R8fQAYCzEeq4BIv9FegE_w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R8f3EYCzEeq4BIv9FegE_w" name="" memberEnd="_R8geIICzEeq4BIv9FegE_w _R7RvEYCzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R8geIICzEeq4BIv9FegE_w" name="" type="_RzOmUICzEeq4BIv9FegE_w" association="_R8f3EYCzEeq4BIv9FegE_w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R8hFMYCzEeq4BIv9FegE_w" name="" memberEnd="_R8hFMoCzEeq4BIv9FegE_w _R7SWIYCzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R8hFMoCzEeq4BIv9FegE_w" name="" type="_RzOmUICzEeq4BIv9FegE_w" association="_R8hFMYCzEeq4BIv9FegE_w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R8iTUYCzEeq4BIv9FegE_w" name="" memberEnd="_R8iTUoCzEeq4BIv9FegE_w _R7TkQICzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R8iTUoCzEeq4BIv9FegE_w" name="" type="_RzOmUICzEeq4BIv9FegE_w" association="_R8iTUYCzEeq4BIv9FegE_w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R8jhcICzEeq4BIv9FegE_w" name="" memberEnd="_R8jhcYCzEeq4BIv9FegE_w _R7ULUYCzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R8jhcYCzEeq4BIv9FegE_w" name="" type="_RzOmUICzEeq4BIv9FegE_w" association="_R8jhcICzEeq4BIv9FegE_w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R8kIgYCzEeq4BIv9FegE_w" name="" memberEnd="_R8kIgoCzEeq4BIv9FegE_w _R7UyYYCzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R8kIgoCzEeq4BIv9FegE_w" name="" type="_RzOmUICzEeq4BIv9FegE_w" association="_R8kIgYCzEeq4BIv9FegE_w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R8l9sICzEeq4BIv9FegE_w" name="" memberEnd="_R8l9sYCzEeq4BIv9FegE_w _R7XOoICzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R8l9sYCzEeq4BIv9FegE_w" name="" type="_RzOmUICzEeq4BIv9FegE_w" association="_R8l9sICzEeq4BIv9FegE_w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R8mkwYCzEeq4BIv9FegE_w" name="" memberEnd="_R8mkwoCzEeq4BIv9FegE_w _R7X1sYCzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R8mkwoCzEeq4BIv9FegE_w" name="" type="_RzOmUICzEeq4BIv9FegE_w" association="_R8mkwYCzEeq4BIv9FegE_w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R8ny4YCzEeq4BIv9FegE_w" name="" memberEnd="_R8ny4oCzEeq4BIv9FegE_w _R7YcwYCzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R8ny4oCzEeq4BIv9FegE_w" name="" type="_RzOmUICzEeq4BIv9FegE_w" association="_R8ny4YCzEeq4BIv9FegE_w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R8pBAYCzEeq4BIv9FegE_w" name="" memberEnd="_R8pBAoCzEeq4BIv9FegE_w _R7ZD0YCzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R8pBAoCzEeq4BIv9FegE_w" name="" type="_RzOmUICzEeq4BIv9FegE_w" association="_R8pBAYCzEeq4BIv9FegE_w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R8poEYCzEeq4BIv9FegE_w" name="" memberEnd="_R8poEoCzEeq4BIv9FegE_w _R7aR8ICzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R8poEoCzEeq4BIv9FegE_w" name="" type="_RzOmUICzEeq4BIv9FegE_w" association="_R8poEYCzEeq4BIv9FegE_w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R8q2MYCzEeq4BIv9FegE_w" name="" memberEnd="_R8q2MoCzEeq4BIv9FegE_w _R7a5AICzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R8q2MoCzEeq4BIv9FegE_w" name="" type="_RzOmUICzEeq4BIv9FegE_w" association="_R8q2MYCzEeq4BIv9FegE_w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R8sEUYCzEeq4BIv9FegE_w" name="" memberEnd="_R8sEUoCzEeq4BIv9FegE_w _R7bgEYCzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R8sEUoCzEeq4BIv9FegE_w" name="" type="_RzOmUICzEeq4BIv9FegE_w" association="_R8sEUYCzEeq4BIv9FegE_w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R8srYYCzEeq4BIv9FegE_w" name="" memberEnd="_R8srYoCzEeq4BIv9FegE_w _R7cHIYCzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R8srYoCzEeq4BIv9FegE_w" name="" type="_RzOmUICzEeq4BIv9FegE_w" association="_R8srYYCzEeq4BIv9FegE_w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R8t5gYCzEeq4BIv9FegE_w" name="" memberEnd="_R8t5goCzEeq4BIv9FegE_w _R7cuMYCzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R8t5goCzEeq4BIv9FegE_w" name="" type="_RzOmUICzEeq4BIv9FegE_w" association="_R8t5gYCzEeq4BIv9FegE_w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R8vHoYCzEeq4BIv9FegE_w" name="" memberEnd="_R8vHooCzEeq4BIv9FegE_w _R7fKcICzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R8vHooCzEeq4BIv9FegE_w" name="" type="_RzOmUICzEeq4BIv9FegE_w" association="_R8vHoYCzEeq4BIv9FegE_w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R8wVwICzEeq4BIv9FegE_w" name="" memberEnd="_R8wVwYCzEeq4BIv9FegE_w _R7fxgYCzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R8wVwYCzEeq4BIv9FegE_w" name="" type="_RzOmUICzEeq4BIv9FegE_w" association="_R8wVwICzEeq4BIv9FegE_w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R8w80YCzEeq4BIv9FegE_w" name="" memberEnd="_R8w80oCzEeq4BIv9FegE_w _R7g_oICzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R8w80oCzEeq4BIv9FegE_w" name="" type="_RzOmUICzEeq4BIv9FegE_w" association="_R8w80YCzEeq4BIv9FegE_w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R8yK8YCzEeq4BIv9FegE_w" name="" memberEnd="_R8yK8oCzEeq4BIv9FegE_w _R7hmsICzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R8yK8oCzEeq4BIv9FegE_w" name="" type="_RzOmUICzEeq4BIv9FegE_w" association="_R8yK8YCzEeq4BIv9FegE_w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R8zZEICzEeq4BIv9FegE_w" name="" memberEnd="_R8zZEYCzEeq4BIv9FegE_w _R7iNwICzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R8zZEYCzEeq4BIv9FegE_w" name="" type="_RzOmUICzEeq4BIv9FegE_w" association="_R8zZEICzEeq4BIv9FegE_w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R80nMICzEeq4BIv9FegE_w" name="" memberEnd="_R80nMYCzEeq4BIv9FegE_w _R7i00ICzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R80nMYCzEeq4BIv9FegE_w" name="" type="_RzOmUICzEeq4BIv9FegE_w" association="_R80nMICzEeq4BIv9FegE_w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R81OQYCzEeq4BIv9FegE_w" name="" memberEnd="_R81OQoCzEeq4BIv9FegE_w _R7jb4ICzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R81OQoCzEeq4BIv9FegE_w" name="" type="_RzOmUICzEeq4BIv9FegE_w" association="_R81OQYCzEeq4BIv9FegE_w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R82cYYCzEeq4BIv9FegE_w" name="" memberEnd="_R82cYoCzEeq4BIv9FegE_w _R7kC8ICzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R82cYoCzEeq4BIv9FegE_w" name="" type="_RzOmUICzEeq4BIv9FegE_w" association="_R82cYYCzEeq4BIv9FegE_w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R83qgICzEeq4BIv9FegE_w" name="" memberEnd="_R83qgYCzEeq4BIv9FegE_w _R7kqAICzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R83qgYCzEeq4BIv9FegE_w" name="" type="_RzOmUICzEeq4BIv9FegE_w" association="_R83qgICzEeq4BIv9FegE_w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R84RkYCzEeq4BIv9FegE_w" name="" memberEnd="_R84RkoCzEeq4BIv9FegE_w _R7lREICzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R84RkoCzEeq4BIv9FegE_w" name="" type="_RzOmUICzEeq4BIv9FegE_w" association="_R84RkYCzEeq4BIv9FegE_w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R85fsYCzEeq4BIv9FegE_w" name="" memberEnd="_R85fsoCzEeq4BIv9FegE_w _R7l4IYCzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R85fsoCzEeq4BIv9FegE_w" name="" type="_RzOmUICzEeq4BIv9FegE_w" association="_R85fsYCzEeq4BIv9FegE_w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R87U4ICzEeq4BIv9FegE_w" name="" memberEnd="_R87U4YCzEeq4BIv9FegE_w _R7mfMYCzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R87U4YCzEeq4BIv9FegE_w" name="" type="_RzOmUICzEeq4BIv9FegE_w" association="_R87U4ICzEeq4BIv9FegE_w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R88jAYCzEeq4BIv9FegE_w" name="" memberEnd="_R88jAoCzEeq4BIv9FegE_w _R7nGQYCzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R88jAoCzEeq4BIv9FegE_w" name="" type="_RzOmUICzEeq4BIv9FegE_w" association="_R88jAYCzEeq4BIv9FegE_w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R89xIYCzEeq4BIv9FegE_w" name="" memberEnd="_R89xIoCzEeq4BIv9FegE_w _R7ntUYCzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R89xIoCzEeq4BIv9FegE_w" name="" type="_RzOmUICzEeq4BIv9FegE_w" association="_R89xIYCzEeq4BIv9FegE_w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R8-_QICzEeq4BIv9FegE_w" name="" memberEnd="_R8-_QYCzEeq4BIv9FegE_w _R7pigICzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R8-_QYCzEeq4BIv9FegE_w" name="" type="_RzOmUICzEeq4BIv9FegE_w" association="_R8-_QICzEeq4BIv9FegE_w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_R9ANYICzEeq4BIv9FegE_w" name="" memberEnd="_R9ANYYCzEeq4BIv9FegE_w _R7rXsYCzEeq4BIv9FegE_w">
+        <ownedEnd xmi:id="_R9ANYYCzEeq4BIv9FegE_w" name="" type="_RzOmUICzEeq4BIv9FegE_w" association="_R9ANYICzEeq4BIv9FegE_w"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_Q-WMwICzEeq4BIv9FegE_w">
+      <eAnnotations xmi:id="_Q-aeMICzEeq4BIv9FegE_w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_Q-f9wICzEeq4BIv9FegE_w" base_Package="_OLKTcICzEeq4BIv9FegE_w">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_RxjyYICzEeq4BIv9FegE_w" base_Element="_Rxh9MICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Annotations xmi:id="_RxmOoICzEeq4BIv9FegE_w" base_Element="_Rxh9MICzEeq4BIv9FegE_w">
+    <annotations xmi:id="_RxmOoYCzEeq4BIv9FegE_w" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Rxx00ICzEeq4BIv9FegE_w" base_Element="_Rxv_oICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Annotations xmi:id="_Rxyb4ICzEeq4BIv9FegE_w" base_Element="_Rxv_oICzEeq4BIv9FegE_w">
+    <annotations xmi:id="_RxzC8ICzEeq4BIv9FegE_w" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_RyeYYICzEeq4BIv9FegE_w" base_Element="_RydKQICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Annotations xmi:id="_Rye_cICzEeq4BIv9FegE_w" base_Element="_RydKQICzEeq4BIv9FegE_w">
+    <annotations xmi:id="_Rye_cYCzEeq4BIv9FegE_w" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Ryg0oICzEeq4BIv9FegE_w" base_Element="_RyfmgICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Annotations xmi:id="_RyhbsICzEeq4BIv9FegE_w" base_Element="_RyfmgICzEeq4BIv9FegE_w">
+    <annotations xmi:id="_RyhbsYCzEeq4BIv9FegE_w" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_RyjQ4ICzEeq4BIv9FegE_w" base_Element="_RyiCwICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Annotations xmi:id="_Ryj38ICzEeq4BIv9FegE_w" base_Element="_RyiCwICzEeq4BIv9FegE_w">
+    <annotations xmi:id="_Ryj38YCzEeq4BIv9FegE_w" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_RyoJYICzEeq4BIv9FegE_w" base_Element="_Rym7QICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Annotations xmi:id="_RypXgICzEeq4BIv9FegE_w" base_Element="_Rym7QICzEeq4BIv9FegE_w">
+    <annotations xmi:id="_RypXgYCzEeq4BIv9FegE_w" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_RyveIICzEeq4BIv9FegE_w" base_Element="_RyuQAICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Annotations xmi:id="_RywsQICzEeq4BIv9FegE_w" base_Element="_RyuQAICzEeq4BIv9FegE_w">
+    <annotations xmi:id="_RyxTUICzEeq4BIv9FegE_w" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Ry0WoICzEeq4BIv9FegE_w" base_Element="_Ryx6YICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Annotations xmi:id="_Ry09sICzEeq4BIv9FegE_w" base_Element="_Ryx6YICzEeq4BIv9FegE_w">
+    <annotations xmi:id="_Ry09sYCzEeq4BIv9FegE_w" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Ry52MICzEeq4BIv9FegE_w" base_Element="_Ry2L0ICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Annotations xmi:id="_Ry7EUICzEeq4BIv9FegE_w" base_Element="_Ry2L0ICzEeq4BIv9FegE_w">
+    <annotations xmi:id="_Ry7EUYCzEeq4BIv9FegE_w" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Ry85gICzEeq4BIv9FegE_w" base_Element="_Ry7rYICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Annotations xmi:id="_Ry-HoICzEeq4BIv9FegE_w" base_Element="_Ry7rYICzEeq4BIv9FegE_w">
+    <annotations xmi:id="_Ry-HoYCzEeq4BIv9FegE_w" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R0CeoICzEeq4BIv9FegE_w" base_Element="_R0B3kICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Annotations xmi:id="_R0DswICzEeq4BIv9FegE_w" base_Element="_R0B3kICzEeq4BIv9FegE_w">
+    <annotations xmi:id="_R0DswYCzEeq4BIv9FegE_w" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R0LBgICzEeq4BIv9FegE_w" base_Element="_R0JMUICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Annotations xmi:id="_R0LokICzEeq4BIv9FegE_w" base_Element="_R0JMUICzEeq4BIv9FegE_w">
+    <annotations xmi:id="_R0LokYCzEeq4BIv9FegE_w" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_R5NSgICzEeq4BIv9FegE_w" base_Element="_R5LdUICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R5b8AICzEeq4BIv9FegE_w" base_Element="_R5Y4sICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R5g0gICzEeq4BIv9FegE_w" base_Element="_R5fmYICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R5iCoICzEeq4BIv9FegE_w" base_Element="_R5g0gYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R5owUICzEeq4BIv9FegE_w" base_Element="_R5niMICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R5qlgICzEeq4BIv9FegE_w" base_Element="_R5pXYICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R5rzoICzEeq4BIv9FegE_w" base_Element="_R5qlgYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R5wFEICzEeq4BIv9FegE_w" base_Element="_R5sasICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R5xTMICzEeq4BIv9FegE_w" base_Element="_R5wFEYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R5zIYICzEeq4BIv9FegE_w" base_Element="_R5x6QICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R50WgICzEeq4BIv9FegE_w" base_Element="_R5zIYYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R52LsICzEeq4BIv9FegE_w" base_Element="_R509kICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R53Z0ICzEeq4BIv9FegE_w" base_Element="_R52LsYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R55PAICzEeq4BIv9FegE_w" base_Element="_R53Z0YCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R56dIICzEeq4BIv9FegE_w" base_Element="_R55PAYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R57rQICzEeq4BIv9FegE_w" base_Element="_R57EMICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R585YICzEeq4BIv9FegE_w" base_Element="_R58SUICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R5-ukICzEeq4BIv9FegE_w" base_Element="_R59gcICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R5_8sICzEeq4BIv9FegE_w" base_Element="_R5-ukYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R6BK0ICzEeq4BIv9FegE_w" base_Element="_R6AjwICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R6DAAICzEeq4BIv9FegE_w" base_Element="_R6Bx4ICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R6EOIICzEeq4BIv9FegE_w" base_Element="_R6DAAYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R6FcQICzEeq4BIv9FegE_w" base_Element="_R6E1MICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R6HRcICzEeq4BIv9FegE_w" base_Element="_R6GDUICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R6IfkICzEeq4BIv9FegE_w" base_Element="_R6HRcYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R6JtsICzEeq4BIv9FegE_w" base_Element="_R6IfkYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R6K70ICzEeq4BIv9FegE_w" base_Element="_R6JtsYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R6MJ8ICzEeq4BIv9FegE_w" base_Element="_R6K70YCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R6N_IICzEeq4BIv9FegE_w" base_Element="_R6MJ8YCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R6PNQICzEeq4BIv9FegE_w" base_Element="_R6OmMICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R6QbYICzEeq4BIv9FegE_w" base_Element="_R6PNQYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R6RCcICzEeq4BIv9FegE_w" base_Element="_R6QbYYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R6jWUICzEeq4BIv9FegE_w" base_Element="_R6iIMICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R6lLgICzEeq4BIv9FegE_w" base_Element="_R6j9YICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R6oO0ICzEeq4BIv9FegE_w" base_Element="_R6nAsICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Generics xmi:id="_R61DIICzEeq4BIv9FegE_w" genericsValue="String" base_Element="_R6zN8YCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7DsoICzEeq4BIv9FegE_w" base_Element="_R7CegICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Annotations xmi:id="_R7DsoYCzEeq4BIv9FegE_w" base_Element="_R7CegICzEeq4BIv9FegE_w">
+    <annotations xmi:id="_R7ETsICzEeq4BIv9FegE_w" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7IlIICzEeq4BIv9FegE_w" base_Element="_R7H-EICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7JMMYCzEeq4BIv9FegE_w" base_Element="_R7JMMICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Generics xmi:id="_R7LBYICzEeq4BIv9FegE_w" genericsValue="String" base_Element="_R7KaUICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7LocICzEeq4BIv9FegE_w" base_Element="_R7KaUICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7MPgICzEeq4BIv9FegE_w" base_Element="_R7LocYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7M2kICzEeq4BIv9FegE_w" base_Element="_R7MPgYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7OrwICzEeq4BIv9FegE_w" base_Element="_R7NdoICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7P54ICzEeq4BIv9FegE_w" base_Element="_R7OrwYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7RvEICzEeq4BIv9FegE_w" base_Element="_R7Qg8ICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7SWIICzEeq4BIv9FegE_w" base_Element="_R7RvEYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7S9MICzEeq4BIv9FegE_w" base_Element="_R7SWIYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7ULUICzEeq4BIv9FegE_w" base_Element="_R7TkQICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7UyYICzEeq4BIv9FegE_w" base_Element="_R7ULUYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7WnkICzEeq4BIv9FegE_w" base_Element="_R7UyYYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7X1sICzEeq4BIv9FegE_w" base_Element="_R7XOoICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7YcwICzEeq4BIv9FegE_w" base_Element="_R7X1sYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7ZD0ICzEeq4BIv9FegE_w" base_Element="_R7YcwYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7Zq4ICzEeq4BIv9FegE_w" base_Element="_R7ZD0YCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7aR8YCzEeq4BIv9FegE_w" base_Element="_R7aR8ICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7bgEICzEeq4BIv9FegE_w" base_Element="_R7a5AICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7cHIICzEeq4BIv9FegE_w" base_Element="_R7bgEYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7cuMICzEeq4BIv9FegE_w" base_Element="_R7cHIYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7ejYICzEeq4BIv9FegE_w" base_Element="_R7cuMYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7fxgICzEeq4BIv9FegE_w" base_Element="_R7fKcICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7gYkICzEeq4BIv9FegE_w" base_Element="_R7fxgYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7g_oYCzEeq4BIv9FegE_w" base_Element="_R7g_oICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7hmsYCzEeq4BIv9FegE_w" base_Element="_R7hmsICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7iNwYCzEeq4BIv9FegE_w" base_Element="_R7iNwICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7i00YCzEeq4BIv9FegE_w" base_Element="_R7i00ICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7jb4YCzEeq4BIv9FegE_w" base_Element="_R7jb4ICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7kC8YCzEeq4BIv9FegE_w" base_Element="_R7kC8ICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7kqAYCzEeq4BIv9FegE_w" base_Element="_R7kqAICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7l4IICzEeq4BIv9FegE_w" base_Element="_R7lREICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7mfMICzEeq4BIv9FegE_w" base_Element="_R7l4IYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7nGQICzEeq4BIv9FegE_w" base_Element="_R7mfMYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7ntUICzEeq4BIv9FegE_w" base_Element="_R7nGQYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7oUYICzEeq4BIv9FegE_w" base_Element="_R7ntUYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7qJkICzEeq4BIv9FegE_w" base_Element="_R7pigICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7rXsICzEeq4BIv9FegE_w" base_Element="_R7qJkYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7r-wICzEeq4BIv9FegE_w" base_Element="_R7rXsYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7tz8ICzEeq4BIv9FegE_w" base_Element="_R7tM4ICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_R7vCEICzEeq4BIv9FegE_w" base_Element="_R7ubAICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R8YiUICzEeq4BIv9FegE_w" base_Element="_R8X7QICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R8ZwcICzEeq4BIv9FegE_w" base_Element="_R8YiUYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R8a-kICzEeq4BIv9FegE_w" base_Element="_R8ZwcYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R8cMsICzEeq4BIv9FegE_w" base_Element="_R8bloICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R8da0ICzEeq4BIv9FegE_w" base_Element="_R8czwICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R8eB4ICzEeq4BIv9FegE_w" base_Element="_R8da0YCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R8fQAICzEeq4BIv9FegE_w" base_Element="_R8eo8ICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R8f3EICzEeq4BIv9FegE_w" base_Element="_R8fQAYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R8hFMICzEeq4BIv9FegE_w" base_Element="_R8f3EYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R8iTUICzEeq4BIv9FegE_w" base_Element="_R8hFMYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R8i6YICzEeq4BIv9FegE_w" base_Element="_R8iTUYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R8kIgICzEeq4BIv9FegE_w" base_Element="_R8jhcICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R8lWoICzEeq4BIv9FegE_w" base_Element="_R8kIgYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R8mkwICzEeq4BIv9FegE_w" base_Element="_R8l9sICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R8ny4ICzEeq4BIv9FegE_w" base_Element="_R8mkwYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R8pBAICzEeq4BIv9FegE_w" base_Element="_R8ny4YCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R8poEICzEeq4BIv9FegE_w" base_Element="_R8pBAYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R8q2MICzEeq4BIv9FegE_w" base_Element="_R8poEYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R8sEUICzEeq4BIv9FegE_w" base_Element="_R8q2MYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R8srYICzEeq4BIv9FegE_w" base_Element="_R8sEUYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R8t5gICzEeq4BIv9FegE_w" base_Element="_R8srYYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R8vHoICzEeq4BIv9FegE_w" base_Element="_R8t5gYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R8vusICzEeq4BIv9FegE_w" base_Element="_R8vHoYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R8w80ICzEeq4BIv9FegE_w" base_Element="_R8wVwICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R8yK8ICzEeq4BIv9FegE_w" base_Element="_R8w80YCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R8yyAICzEeq4BIv9FegE_w" base_Element="_R8yK8YCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R80AIICzEeq4BIv9FegE_w" base_Element="_R8zZEICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R81OQICzEeq4BIv9FegE_w" base_Element="_R80nMICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R82cYICzEeq4BIv9FegE_w" base_Element="_R81OQYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R83DcICzEeq4BIv9FegE_w" base_Element="_R82cYYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R84RkICzEeq4BIv9FegE_w" base_Element="_R83qgICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R85fsICzEeq4BIv9FegE_w" base_Element="_R84RkYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R86t0ICzEeq4BIv9FegE_w" base_Element="_R85fsYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R88jAICzEeq4BIv9FegE_w" base_Element="_R87U4ICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R89xIICzEeq4BIv9FegE_w" base_Element="_R88jAYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R8-YMICzEeq4BIv9FegE_w" base_Element="_R89xIYCzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R8_mUICzEeq4BIv9FegE_w" base_Element="_R8-_QICzEeq4BIv9FegE_w"/>
+  <UMLLabProfile:Reference xmi:id="_R9A0cICzEeq4BIv9FegE_w" base_Element="_R9ANYICzEeq4BIv9FegE_w"/>
+</xmi:XMI>
