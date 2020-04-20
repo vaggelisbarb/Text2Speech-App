@@ -50,11 +50,11 @@ public class OpenDocument extends IConstructDocument implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		
-		System.out.println("\n\t$$$ \"Open Document\" Command is given\n");
+		System.out.println("\n\t$$$ \"Load Document\" Command is given\n");
 		
 		// Browse through Home Directory
 		JFileChooser fileBrowse = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
-		fileBrowse.setDialogTitle("Load a document : ");
+		fileBrowse.setDialogTitle("Load a .txt document  ");
 		
 		// Set a filter for showing only .txt, files only
 		fileBrowse.setFileSelectionMode(JFileChooser.FILES_ONLY);
@@ -68,6 +68,7 @@ public class OpenDocument extends IConstructDocument implements ActionListener{
 			int numObjLines = constructDocumentObject(fileBrowse);
 			if (numObjLines != 0) {
 				try {
+					mainGUI.setDocAreaVisible();
 					mainGUI.setTextArea(fileBrowse.getSelectedFile());
 				} catch (IOException e1) {
 					// TODO Auto-generated catch block
@@ -75,7 +76,7 @@ public class OpenDocument extends IConstructDocument implements ActionListener{
 				}
 				Path fullPath = Paths.get(fileBrowse.getSelectedFile().getAbsolutePath());
 				Path fileName = fullPath.getFileName(); 
-				mainGUI.popUpInformMessage("Load successfully \n"+fileName.toString(), "Message");
+				mainGUI.popUpInformMessage("Load successfully \n"+fileName.toString(), "Load message");
 				
 				// Set MainGUI currentDocument 
 				mainGUI.setCurrentDocument(currentDocument);

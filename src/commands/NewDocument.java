@@ -31,6 +31,7 @@ public class NewDocument implements ActionListener{
 		
 		newDocument = new Document();
 		
+		mainGUI.setDocAreaVisible();
 		mainGUI.clearTextArea();
 		mainGUI.enableDocEdit();
 		mainGUI.popUpInformMessage("A new document is ready for use", "New Document Message");

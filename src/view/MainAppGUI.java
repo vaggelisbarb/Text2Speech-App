@@ -140,9 +140,13 @@ public class MainAppGUI {
 	}
 	
 	
+	public void setDocAreaVisible() {
+		scrollPane.setVisible(true);
+		textArea.setVisible(true);
+	}
+	
 	// Enable text area edit option
 	public void enableDocEdit() {
-		scrollPane.setEnabled(true);
 		textArea.setEditable(true);
 	}
 	
@@ -452,13 +456,14 @@ public class MainAppGUI {
 		frmTextToSpeech.getContentPane().add(applicationLabel);
 		
 		scrollPane = new JScrollPane();
+		scrollPane.setVisible(false);
 		scrollPane.setBounds(45, 183, 807, 329);
 		frmTextToSpeech.getContentPane().add(scrollPane);
 		
 		textArea = new JEditorPane();
-		textArea.setVisible(true);
+		textArea.setVisible(false);
 		textArea.setFont(new Font("League Spartan Semibold", Font.PLAIN, 16));
-		textArea.setEditable(true);
+		textArea.setEditable(false);
 		scrollPane.setViewportView(textArea);
 		
 		JLabel appBackground = new JLabel("");
