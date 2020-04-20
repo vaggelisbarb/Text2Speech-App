@@ -76,6 +76,9 @@ public class OpenDocument implements ActionListener{
 				Path fullPath = Paths.get(fileBrowse.getSelectedFile().getAbsolutePath());
 				Path fileName = fullPath.getFileName(); 
 				mainGUI.popUpInformMessage("Load successfully \n"+fileName.toString(), "Message");
+				
+				// Set MainGUI currentDocument 
+				mainGUI.setCurrentDocument(currentDocument);
 			}
 		}
 	}
