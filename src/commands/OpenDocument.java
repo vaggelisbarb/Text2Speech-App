@@ -65,7 +65,7 @@ public class OpenDocument implements ActionListener{
 		int returnValue = fileBrowse.showOpenDialog(null);
 		if (returnValue == JFileChooser.APPROVE_OPTION) {
 			
-			int numObjLines = constructLineObjects(fileBrowse);
+			int numObjLines = constructDocumentObject(fileBrowse);
 			if (numObjLines != 0) {
 				try {
 					mainGUI.setTextArea(fileBrowse.getSelectedFile());
@@ -105,7 +105,7 @@ public class OpenDocument implements ActionListener{
 	 * @param fileBrowse A JFileChooser component
 	 * @return The # of lines of the file that eventually are loaded
 	 */
-	public int constructLineObjects(JFileChooser fileBrowse) {
+	public int constructDocumentObject(JFileChooser fileBrowse) {
 		int lineCounter = 0;	
 		HashMap<Line, Integer> linesHashMap;
 		
