@@ -36,9 +36,9 @@ public class CommandsFactory {
 		case "OpenDocument" :
 			return new OpenDocument(mainGUI);
 		case "NewDocument" :
-			return new NewDocument();
+			return new NewDocument(mainGUI);
 		case "SaveDocument" :
-			return new SaveDocument();
+			return new SaveDocument(mainGUI);
 		case "EditDocument" :
 			return new EditDocument(mainGUI);
 		case "TextHighlight" :

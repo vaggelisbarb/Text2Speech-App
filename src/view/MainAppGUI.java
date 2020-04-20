@@ -119,13 +119,15 @@ public class MainAppGUI {
 		commandsfactory = new CommandsFactory(this);
 		
 		// Initialize current Document to null
-		currentDocument = new Document();
 		currentDocument = null;
 		
 		initialize();
 	}
 	
 	
+	public String getDocumentArea() {
+		return textArea.getText();
+	}
 	
 	
 	public Document getCurrentDocument() {
@@ -140,7 +142,13 @@ public class MainAppGUI {
 	
 	// Enable text area edit option
 	public void enableDocEdit() {
-		this.textArea.setEditable(true);
+		scrollPane.setEnabled(true);
+		textArea.setEditable(true);
+	}
+	
+	
+	public void clearTextArea() {
+		textArea.setText("");
 	}
 	
 	/**
@@ -203,6 +211,7 @@ public class MainAppGUI {
 		
 		
 		mntmNewFile = new JMenuItem("New Document",KeyEvent.VK_T);
+		mntmNewFile.addActionListener(commandsfactory.createCommand("NewDocument"));
 		mntmNewFile.setIcon(new ImageIcon("/home/vaggelisbarb/eclipse-workspace/Text2SpeechEditor/ImageSource/add.png"));
 		mntmNewFile.setFont(new Font("League Spartan Semibold", Font.PLAIN, 15));
 		mntmNewFile.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_N, InputEvent.CTRL_MASK));
@@ -229,6 +238,7 @@ public class MainAppGUI {
 		menuFile.add(mntmSaveFileAs);
 
 		mntmSaveFile = new JMenuItem(new ImageIcon("/home/vaggelisbarb/eclipse-workspace/Text2SpeechEditor/ImageSource/icons8-save-24.png"));
+		mntmSaveFile.addActionListener(commandsfactory.createCommand("SaveDocument"));
 		mntmSaveFile.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S, InputEvent.CTRL_MASK));
 		mntmSaveFile.setFont(new Font("League Spartan Semibold", Font.PLAIN, 15));
 		mntmSaveFile.setText("Save Document");
@@ -446,9 +456,9 @@ public class MainAppGUI {
 		frmTextToSpeech.getContentPane().add(scrollPane);
 		
 		textArea = new JEditorPane();
-		textArea.setVisible(false);
+		textArea.setVisible(true);
 		textArea.setFont(new Font("League Spartan Semibold", Font.PLAIN, 16));
-		textArea.setEditable(false);
+		textArea.setEditable(true);
 		scrollPane.setViewportView(textArea);
 		
 		JLabel appBackground = new JLabel("");

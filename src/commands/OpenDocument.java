@@ -33,7 +33,7 @@ import view.MainAppGUI;
  * @author vaggelisbarb
  * Class responsible for opening a document file
  */
-public class OpenDocument implements ActionListener{
+public class OpenDocument extends IConstructDocument implements ActionListener{
 	
 	private MainAppGUI mainGUI;
 	private Document currentDocument;
@@ -50,7 +50,7 @@ public class OpenDocument implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		
-		System.out.println("\"Open Document\" Command is given\n");
+		System.out.println("\n\t$$$ \"Open Document\" Command is given\n");
 		
 		// Browse through Home Directory
 		JFileChooser fileBrowse = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
@@ -84,20 +84,7 @@ public class OpenDocument implements ActionListener{
 	}
 	
 	
-	/**
-	 * Function responsible for tokenize a single line and store each token in a ArrayList<String>
-	 * 
-	 * @param singleLine A string containing a line of the file
-	 * @return An ArrayList<String> with the tokens
-	 */
-	public ArrayList<String> lineTokenize(String singleLine) {
-		ArrayList<String> wordsList = new ArrayList<String>();
-		StringTokenizer defaultTokenizer = new StringTokenizer(singleLine);
 	
-		while (defaultTokenizer.hasMoreTokens())
-			wordsList.add(defaultTokenizer.nextToken());	
-		return wordsList;
-	}
 	
 	
 	
@@ -142,7 +129,6 @@ public class OpenDocument implements ActionListener{
 		
 			buffer.close();
 			filereader.close();		
-			return lineCounter;
 			
 		} catch (IOException exp) {
 			exp.printStackTrace();
@@ -151,8 +137,6 @@ public class OpenDocument implements ActionListener{
 		
 		return currentDocument.getLineHashmapSize();
 	}
-	
-	
 	
 
 }
