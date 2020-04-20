@@ -12,6 +12,7 @@ import javax.swing.JCheckBoxMenuItem;
 import javax.swing.JFileChooser;
 
 import java.awt.Font;
+import java.awt.TrayIcon.MessageType;
 import java.awt.Window.Type;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
@@ -125,6 +126,19 @@ public class MainAppGUI {
 	}
 	
 	
+	
+	
+	public Document getCurrentDocument() {
+		return currentDocument;
+	}
+
+
+	public void setCurrentDocument(Document currentDocument) {
+		this.currentDocument = currentDocument;
+	}
+	
+	
+	// Enable text area edit option
 	public void enableDocEdit() {
 		this.textArea.setEditable(true);
 	}
@@ -133,8 +147,8 @@ public class MainAppGUI {
 	 * A simple pop up message
 	 * @param message 
 	 */
-	public void popUpMessage(String message) {
-		JOptionPane.showMessageDialog(frmTextToSpeech, message);
+	public void popUpInformMessage(String message, String title) {
+		JOptionPane.showMessageDialog(frmTextToSpeech, message, title, JOptionPane.INFORMATION_MESSAGE);
 	}
 	
 	
@@ -148,12 +162,15 @@ public class MainAppGUI {
 		textArea.setPage(file.toURI().toURL());
 	}
 
+	
+	
 	/**
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
 		frmTextToSpeech = new JFrame();
 		frmTextToSpeech.setResizable(false);
+		frmTextToSpeech.setLocationRelativeTo(null);
 		frmTextToSpeech.setModalExclusionType(ModalExclusionType.APPLICATION_EXCLUDE);
 		//frmTextToSpeech.setExtendedState(frmTextToSpeech.MAXIMIZED_BOTH);
 		frmTextToSpeech.setVisible(true);
@@ -425,12 +442,12 @@ public class MainAppGUI {
 		frmTextToSpeech.getContentPane().add(applicationLabel);
 		
 		scrollPane = new JScrollPane();
-		scrollPane.setBounds(45, 178, 807, 334);
+		scrollPane.setBounds(45, 183, 807, 329);
 		frmTextToSpeech.getContentPane().add(scrollPane);
 		
 		textArea = new JEditorPane();
-		textArea.setFont(new Font("League Spartan Semibold", Font.PLAIN, 16));
 		textArea.setVisible(false);
+		textArea.setFont(new Font("League Spartan Semibold", Font.PLAIN, 16));
 		textArea.setEditable(false);
 		scrollPane.setViewportView(textArea);
 		

@@ -3,6 +3,8 @@
  */
 package model;
 
+import java.util.HashMap;
+
 import encodingstrategies.EncodingStrategy;
 import text2speechapis.TextToSpeechAPI;
 
@@ -12,6 +14,7 @@ import text2speechapis.TextToSpeechAPI;
  */
 public class Document {
 	
+	private HashMap<Line, Integer> lineHashmap;
 	private String author;
 	private String title;
 	private String creationDate;
@@ -21,9 +24,18 @@ public class Document {
 	private TextToSpeechAPI audioManager;
 	
 
-	public Document() { }
-
+	public Document() { 
+		lineHashmap = new HashMap<Line, Integer>();
+	}
 	
+	
+	public Document(HashMap<Line, Integer> lineHashmap) {
+		this.lineHashmap = lineHashmap;
+		System.out.println("\"New Document Object Created\" with {"+lineHashmap+"} as given HashMap\n");
+	}
+
+
+
 	/**
 	 * @param encodingStrategy 
 	 * @param audioManager
@@ -34,6 +46,12 @@ public class Document {
 		this.audioManager = audioManager;
 	}
 	
+	
+	
+	public int getLineHashmapSize() {
+		return lineHashmap.size();
+	}
+
 
 
 	public void playContents() {

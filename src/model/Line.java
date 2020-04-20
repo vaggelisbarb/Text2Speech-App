@@ -19,9 +19,14 @@ public class Line {
 	private TextToSpeechAPI audioManager;
 	
 	
-	public Line(ArrayList<String> words, EncodingStrategy encodingStrategy, TextToSpeechAPI audioManager) {
-		super();
+	public Line(ArrayList<String> words) {
 		this.words = words;
+	}
+
+
+	public Line(EncodingStrategy encodingStrategy, TextToSpeechAPI audioManager) {
+		super();
+		this.words = new ArrayList<String>();
 		this.encodingStrategy = encodingStrategy;
 		this.audioManager = audioManager;
 	}
