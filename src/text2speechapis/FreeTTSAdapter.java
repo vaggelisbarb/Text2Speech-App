@@ -17,7 +17,6 @@ public class FreeTTSAdapter implements TextToSpeechAPI{
 	
 	private VoiceManager vm;
 	private Voice voice;
-	private Synthesizer synthesizer;
 	
 	
 
@@ -26,7 +25,6 @@ public class FreeTTSAdapter implements TextToSpeechAPI{
 		    System.setProperty("logLevel", "OFF"); // INFO or WARN are also valid
 		    System.setProperty("FreeTTSSynthEngineCentral", "com.sun.speech.freetts.jsapi.FreeTTSEngineCentral");
 		    System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
-		    //System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_slt_arctic.ArcticVoiceDirectory");
 		    Central.registerEngineCentral("com.sun.speech.freetts.jsapi.FreeTTSEngineCentral");
 		}catch(EngineException e) {
 			  System.out.println("Unable to provide speech synthesis: " + e);

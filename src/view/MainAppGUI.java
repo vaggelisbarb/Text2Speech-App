@@ -46,6 +46,7 @@ import javax.swing.border.SoftBevelBorder;
 import javax.swing.JScrollPane;
 import javax.swing.JEditorPane;
 import javax.swing.JTextField;
+import javax.swing.JSeparator;
 
 public class MainAppGUI {
 
@@ -92,6 +93,7 @@ public class MainAppGUI {
 	 private JEditorPane textArea;
 	 private JScrollPane scrollPane;
 	 private JTextField docDetailsArea;
+	 private JSeparator separator;
 	 
 	 /**
 	 * Launch the application.
@@ -359,6 +361,7 @@ public class MainAppGUI {
 		menuSpeech.addSeparator();
 		
 		reverseText2speech_MenuItem = new JMenuItem("Reverse text to speech");
+		reverseText2speech_MenuItem.addActionListener(commandsfactory.createCommand("ReversedTextToSpeech"));
 		reverseText2speech_MenuItem.setBackground(new Color(211, 211, 211));
 		reverseText2speech_MenuItem.setForeground(new Color(0, 0, 0));
 		reverseText2speech_MenuItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_3, InputEvent.ALT_MASK));
@@ -507,6 +510,9 @@ public class MainAppGUI {
 		mntmDefaultPitch.setForeground(new Color(0, 0, 0));
 		mntmDefaultPitch.setFont(new Font("League Spartan Semibold", Font.PLAIN, 16));
 		pitchSubmenu.add(mntmDefaultPitch);
+		
+		separator = new JSeparator();
+		pitchSubmenu.add(separator);
 		
 		pitchSlider = new JSlider(0, 200, 100);
 		pitchSlider.setBackground(new Color(211, 211, 211));

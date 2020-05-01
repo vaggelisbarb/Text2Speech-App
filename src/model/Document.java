@@ -3,7 +3,12 @@
  */
 package model;
 
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.Set;
+
 import encodingstrategies.EncodingStrategy;
 import text2speechapis.TextToSpeechAPI;
 
@@ -119,22 +124,35 @@ public class Document {
 		}	
 	}
 
-
+	
+	/**
+	 * Play each Line of the Document
+	 */
 	public void playContents(){
-		for (Line line : contents.keySet()) {
-			System.out.println(line);
+		ArrayList lineKeySet = new ArrayList(contents.keySet());
+		for (int i = 0; i < lineKeySet.size(); i++) {
+			
+			Line line = (Line) lineKeySet.get(i);
+			System.out.println(line.lineToString());
 			line.playLine();
-			try {
-				Thread.sleep(300);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
 		}
+			
 	}
 	
+	/**
+	 * Play reversed each Line Of the Document
+	 */
 	public void playReverseContents() {
-		// TODO
+		//create an ArrayList initialized with keys of map
+		ArrayList lineKeySet = new ArrayList(contents.keySet());
+		for (int i = lineKeySet.size() - 1; i >= 0; i--) {
+			
+			//get key
+			Line line = (Line) lineKeySet.get(i);
+			System.out.print(line.reverseLineToString()+"\n");
+			line.playReverseLine();
+		}
+
 	}
 	
 	public void playEncodedContents() {

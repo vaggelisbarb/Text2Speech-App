@@ -7,7 +7,9 @@ import java.util.ArrayList;
 
 import encodingstrategies.EncodingStrategy;
 import text2speechapis.TextToSpeechAPI;
-
+import java.lang.*; 
+import java.io.*; 
+import java.util.*; 
 
 /**
  * @author vaggelisbarb
@@ -47,22 +49,38 @@ public class Line {
 		this.audioManager = audioManager;
 	}
 
-
-	@Override
-	public String toString() {
+	
+	
+	/**
+	 * @return the line in a string. Between each word is a '.' for the speech to become a bit slower
+	 */
+	public String toDotString() {
 		String line = "";
 		for (String word : words)
-			line +="."+ word;
+			line += " "+word;
 		return line;
 	}
 
+	
+	public String lineToString() {
+		String normalLine = "";
+		normalLine = new StringBuilder(toDotString()).toString();
+		return normalLine;
+	}
+	
+	public String reverseLineToString() {
+		String reverseLine = "";
+		reverseLine = new StringBuilder(toDotString()).reverse().toString();
+		return reverseLine;
+	}
+	
 
 	public void playLine() {
-		audioManager.play(toString());
+		audioManager.play(lineToString());
 	}
 	
 	public void playReverseLine() {
-		// TODO
+		audioManager.play(reverseLineToString());
 	}
 	
 	public void playEncodedLine() {

@@ -44,6 +44,8 @@ public class CommandsFactory {
 			return new HighlightText();
 		case "TextToSpeech" :
 			return new TextToSpeech(mainGUI);
+		case "ReversedTextToSpeech":
+			return new ReversedTextToSpeech(mainGUI);
 		default:
 			throw new IllegalArgumentException("Unexpected command : " + commandType);
 		}
