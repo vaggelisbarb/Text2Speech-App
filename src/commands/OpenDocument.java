@@ -16,6 +16,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
@@ -68,6 +69,7 @@ public class OpenDocument extends IConstructDocument implements ActionListener{
 			int numObjLines = constructDocumentObject(fileBrowse);
 			if (numObjLines != 0) {
 				try {
+					mainGUI.setDocumentsDetailArea("");
 					mainGUI.setDocAreaVisible();
 					mainGUI.setTextArea(fileBrowse.getSelectedFile());
 				} catch (IOException e1) {
@@ -87,18 +89,15 @@ public class OpenDocument extends IConstructDocument implements ActionListener{
 	
 	
 	
-	
-	
 	/**
 	 * Reads a given file line by line and tokenize each of it 
 	 * 
-	 * @param inputFile The given File object
 	 * @param fileBrowse A JFileChooser component
 	 * @return The # of lines of the file that eventually are loaded
 	 */
 	public int constructDocumentObject(JFileChooser fileBrowse) {
 		int lineCounter = 0;	
-		HashMap<Line, Integer> linesHashMap;
+		LinkedHashMap<Line, Integer> linesHashMap;
 		
 		try {
 			FileReader filereader = new FileReader(fileBrowse.getSelectedFile());
@@ -106,7 +105,7 @@ public class OpenDocument extends IConstructDocument implements ActionListener{
 			
 			System.out.print("File is opened for read mode\n");
 			
-			linesHashMap = new HashMap<Line, Integer>();
+			linesHashMap = new LinkedHashMap<Line, Integer>();
 			System.out.println("\"An empty Hashmap<Line, Integer> has been created\"\n");
 			
 			

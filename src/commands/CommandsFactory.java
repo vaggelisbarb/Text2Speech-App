@@ -18,8 +18,7 @@ import view.MainAppGUI;
 public class CommandsFactory {
 	
 	private MainAppGUI mainGUI;
-	private OpenDocument opendoc;
-	private NewDocument newdoc; 
+
 	
 	public CommandsFactory(MainAppGUI mainGUI) {
 		this.mainGUI = mainGUI;
@@ -43,6 +42,8 @@ public class CommandsFactory {
 			return new EditDocument(mainGUI);
 		case "TextHighlight" :
 			return new HighlightText();
+		case "TextToSpeech" :
+			return new TextToSpeech(mainGUI);
 		default:
 			throw new IllegalArgumentException("Unexpected command : " + commandType);
 		}

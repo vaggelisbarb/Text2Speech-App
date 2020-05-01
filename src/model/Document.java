@@ -3,8 +3,7 @@
  */
 package model;
 
-import java.util.HashMap;
-
+import java.util.LinkedHashMap;
 import encodingstrategies.EncodingStrategy;
 import text2speechapis.TextToSpeechAPI;
 
@@ -14,7 +13,7 @@ import text2speechapis.TextToSpeechAPI;
  */
 public class Document {
 	
-	private HashMap<Line, Integer> lineHashmap;
+	private LinkedHashMap<Line, Integer> contents;
 	private String author;
 	private String title;
 	private String creationDate;
@@ -23,23 +22,26 @@ public class Document {
 	private EncodingStrategy encodingStrategy;
 	private TextToSpeechAPI audioManager;
 	
-
-	public Document() { 
-		lineHashmap = new HashMap<Line, Integer>();
-	}
 	
 	
-	public Document(HashMap<Line, Integer> lineHashmap) {
-		this.lineHashmap = lineHashmap;
-		System.out.println("\"New Document Object Created\" with {"+lineHashmap+"} as given HashMap\n");
+	public Document(TextToSpeechAPI audioManager) {
+		this.audioManager = audioManager;
 	}
 
 
+	public Document(String author, String title, String creationDate) {
+		this.author = author;
+		this.title = title;
+		this.creationDate = creationDate;
+	}
+	
+	
+	public Document(LinkedHashMap<Line, Integer> contents) {
+		this.contents = contents;
+		System.out.println("\"New Document Object Created\" with {"+contents+"} as given HashMap\n");
+	}
 
-	/**
-	 * @param encodingStrategy 
-	 * @param audioManager
-	 */
+
 	public Document(EncodingStrategy encodingStrategy, TextToSpeechAPI audioManager) {
 		super();
 		this.encodingStrategy = encodingStrategy;
@@ -48,14 +50,87 @@ public class Document {
 	
 	
 	
-	public int getLineHashmapSize() {
-		return lineHashmap.size();
+	public int checkForDocumentChanges(Document otherDocument) {
+		if (this.contents.size() == otherDocument.contents.size()) {
+			if (this.contents.equals(otherDocument.contents)) {
+				return 1;
+			}
+			return -1;
+		}
+		return 0;
+	}
+	
+	
+	
+	public String getAuthor() {
+		return author;
 	}
 
 
+	public void setAuthor(String author) {
+		this.author = author;
+	}
 
-	public void playContents() {
-		// TODO
+
+	public String getTitle() {
+		return title;
+	}
+
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+
+	public String getCreationDate() {
+		return creationDate;
+	}
+
+
+	public void setCreationDate(String creationDate) {
+		this.creationDate = creationDate;
+	}
+
+
+	public String getSaveDate() {
+		return saveDate;
+	}
+
+
+	public void setSaveDate(String saveDate) {
+		this.saveDate = saveDate;
+	}
+
+
+	public int getLineHashmapSize() {
+		return contents.size();
+	}
+
+
+	public TextToSpeechAPI getAudioManager() {
+		return audioManager;
+	}
+
+
+	public void setAudioManager(TextToSpeechAPI audioManager) {
+		this.audioManager = audioManager;
+		for (Line line : contents.keySet()) {
+			line.setAudioManager(audioManager);
+		}	
+	}
+
+
+	public void playContents(){
+		for (Line line : contents.keySet()) {
+			System.out.println(line);
+			line.playLine();
+			try {
+				Thread.sleep(300);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 	}
 	
 	public void playReverseContents() {

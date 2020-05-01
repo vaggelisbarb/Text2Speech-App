@@ -18,7 +18,13 @@ public class Line {
 	private EncodingStrategy encodingStrategy;
 	private TextToSpeechAPI audioManager;
 	
+
 	
+	public Line(TextToSpeechAPI audioManager) {
+		this.audioManager = audioManager;
+	}
+
+
 	public Line(ArrayList<String> words) {
 		this.words = words;
 	}
@@ -31,9 +37,28 @@ public class Line {
 		this.audioManager = audioManager;
 	}
 
+	public boolean checkForLineChanges(Line otherLine) {
+		boolean isTheSameLine = this.words.equals(otherLine.words);
+		return isTheSameLine;
+	}
 	
+
+	public void setAudioManager(TextToSpeechAPI audioManager) {
+		this.audioManager = audioManager;
+	}
+
+
+	@Override
+	public String toString() {
+		String line = "";
+		for (String word : words)
+			line +="."+ word;
+		return line;
+	}
+
+
 	public void playLine() {
-		// TODO
+		audioManager.play(toString());
 	}
 	
 	public void playReverseLine() {

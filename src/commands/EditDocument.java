@@ -23,10 +23,11 @@ public class EditDocument implements ActionListener{
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		mainGUI.enableDocEdit();
-		
-		mainGUI.popUpInformMessage("Document edit option is enabled", "Edit Enable");
-		
+		if (mainGUI.getCurrentDocument() != null) {
+			mainGUI.enableDocEdit();
+			mainGUI.popUpInformMessage("Document edit option is enabled", "Edit Enable");
+		}else
+			mainGUI.popUpInformMessage("No Document for edit\nLoad or create a new", "Edit Error");
 	}
 
 }

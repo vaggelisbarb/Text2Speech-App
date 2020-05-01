@@ -10,11 +10,12 @@
 	<classpathentry kind="lib" path="/home/vaggelisbarb/Επιφάνεια εργασίας/voiceJars/cmulex.jar"/>
 	<classpathentry kind="lib" path="/home/vaggelisbarb/Επιφάνεια εργασίας/voiceJars/cmutimelex.jar"/>
 	<classpathentry kind="lib" path="/home/vaggelisbarb/Επιφάνεια εργασίας/voiceJars/cmu_time_awb.jar"/>
-	<classpathentry kind="lib" path="/home/vaggelisbarb/Επιφάνεια εργασίας/voiceJars/freetts.jar"/>
+	<classpathentry kind="lib" path="/home/vaggelisbarb/Επιφάνεια εργασίας/voiceJars/freetts.jar" sourcepath="freetts-1.2.2-bin/freetts-1.2/bin"/>
 	<classpathentry kind="lib" path="/home/vaggelisbarb/Επιφάνεια εργασίας/voiceJars/cmu_us_kal.jar"/>
 	<classpathentry kind="lib" path="/home/vaggelisbarb/Επιφάνεια εργασίας/voiceJars/mbrola.jar"/>
 	<classpathentry kind="lib" path="/home/vaggelisbarb/Επιφάνεια εργασίας/voiceJars/freetts-jsapi10.jar"/>
 	<classpathentry kind="lib" path="/home/vaggelisbarb/Επιφάνεια εργασίας/voiceJars/cmudict04.jar"/>
 	<classpathentry kind="lib" path="/home/vaggelisbarb/Επιφάνεια εργασίας/voiceJars/jsapi.jar"/>
+	<classpathentry kind="lib" path="freetts-1.2.2-bin/freetts-1.2/lib"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

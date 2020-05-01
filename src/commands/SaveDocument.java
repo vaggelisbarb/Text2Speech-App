@@ -11,6 +11,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
@@ -82,14 +83,14 @@ public class SaveDocument extends IConstructDocument implements ActionListener{
 	@Override
 	public int constructDocumentObject(JFileChooser fileBrowse) {
 		int lineCounter = 0;
-		HashMap<Line, Integer> linesHashmap;
+		LinkedHashMap<Line, Integer> linesHashmap;
 		
 		try {
 			String docText = mainGUI.getDocumentArea();
 			if (!docText.equals("")) {
 				Scanner scanner = new Scanner(docText);
 				
-				linesHashmap = new HashMap<Line, Integer>();
+				linesHashmap = new LinkedHashMap<Line, Integer>();
 				System.out.println("\"An empty HashMap<Line, Integer> has been created\"");
 			
 				String line = null;
