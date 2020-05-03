@@ -43,7 +43,6 @@ public class Document {
 	
 	public Document(LinkedHashMap<Line, Integer> contents) {
 		this.contents = contents;
-		System.out.println("\"New Document Object Created\" with {"+contents+"} as given HashMap\n");
 	}
 
 
@@ -129,11 +128,13 @@ public class Document {
 	 * Play each Line of the Document
 	 */
 	public void playContents(){
-		ArrayList lineKeySet = new ArrayList(contents.keySet());
+		System.out.println("\n____DOCUMENT TO AUDIO____\n");
+		ArrayList<Line> lineKeySet = new ArrayList<Line>(contents.keySet());
 		for (int i = 0; i < lineKeySet.size(); i++) {
 			
 			Line line = (Line) lineKeySet.get(i);
-			System.out.println(line.lineToString());
+			Integer numberOfLine = contents.get(line)+1;
+			System.out.println("Line["+numberOfLine+"] : "+line.lineToString());
 			line.playLine();
 		}
 			
@@ -143,13 +144,15 @@ public class Document {
 	 * Play reversed each Line Of the Document
 	 */
 	public void playReverseContents() {
+		System.out.println("\n____REVERSED DOCUMENT TO AUDIO____\n");
 		//create an ArrayList initialized with keys of map
-		ArrayList lineKeySet = new ArrayList(contents.keySet());
+		ArrayList<Line> lineKeySet = new ArrayList<Line>(contents.keySet());
 		for (int i = lineKeySet.size() - 1; i >= 0; i--) {
 			
 			//get key
 			Line line = (Line) lineKeySet.get(i);
-			System.out.print(line.reverseLineToString()+"\n");
+			Integer numberOfLine = contents.get(line)+1;
+			System.out.print("Line["+numberOfLine+"] : "+line.reverseLineToString()+"\n");
 			line.playReverseLine();
 		}
 

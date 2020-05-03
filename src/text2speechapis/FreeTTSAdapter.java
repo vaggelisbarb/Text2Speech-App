@@ -26,30 +26,25 @@ public class FreeTTSAdapter implements TextToSpeechAPI{
 		    System.setProperty("FreeTTSSynthEngineCentral", "com.sun.speech.freetts.jsapi.FreeTTSEngineCentral");
 		    System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
 		    Central.registerEngineCentral("com.sun.speech.freetts.jsapi.FreeTTSEngineCentral");
+		    
+		    vm = VoiceManager.getInstance();
+			voice = vm.getVoice("kevin16");
+			
+			System.out.println("\n\t~~~FreeTTSAdapter generated~~~");
+		
 		}catch(EngineException e) {
 			  System.out.println("Unable to provide speech synthesis: " + e);
 			  System.exit(1);
 		}	
-		vm = VoiceManager.getInstance();
-		voice = vm.getVoice("kevin16");
 		
-		System.out.println("A FreeTTSAdapter has been generated");
 	}
-
-
-	public FreeTTSAdapter(VoiceManager vm, Voice voice) {
-		super();
-		this.vm = vm;
-		this.voice = voice;
-	}
-
 
 	
 	@Override
 	public void play(String text) {
 		try {
 			voice.allocate();
-			this.voice.speak(text);
+			voice.speak(text);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -58,18 +53,18 @@ public class FreeTTSAdapter implements TextToSpeechAPI{
 
 	@Override
 	public void setVolume(int vol) {
-		voice.setVolume(vol);
+		voice.setVolume((float)vol/100);
 		
 	}
 
 	@Override
 	public void setPitch(int pitch) {
-		voice.setPitch(pitch);		
+		voice.setPitch((float)pitch);		
 	}
 
 	@Override
 	public void setRate(int rate) {
-		voice.setRate(rate);
+		voice.setRate((float)rate);
 		
 	}
 	

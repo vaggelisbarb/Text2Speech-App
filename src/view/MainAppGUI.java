@@ -24,11 +24,15 @@ import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JRadioButtonMenuItem;
 import javax.swing.KeyStroke;
+import javax.swing.Painter;
 import javax.swing.border.BevelBorder;
 import java.awt.Cursor;
 import javax.swing.UIManager;
 import javax.swing.border.MatteBorder;
 import model.Document;
+import model.Line;
+import text2speechapis.TextToSpeechAPI;
+import text2speechapis.TextToSpeechAPIFactory;
 import commands.CommandsFactory;
 import commands.OpenDocument;
 
@@ -43,6 +47,11 @@ import java.net.MalformedURLException;
 import java.awt.event.ActionListener;
 import javax.swing.JTextArea;
 import javax.swing.border.SoftBevelBorder;
+import javax.swing.text.BadLocationException;
+import javax.swing.text.DefaultHighlighter;
+import javax.swing.text.DefaultHighlighter.DefaultHighlightPainter;
+import javax.swing.text.Highlighter;
+import javax.swing.text.Highlighter.HighlightPainter;
 import javax.swing.JScrollPane;
 import javax.swing.JEditorPane;
 import javax.swing.JTextField;
@@ -50,50 +59,64 @@ import javax.swing.JSeparator;
 
 public class MainAppGUI {
 
+	// GUI frame and the MenuBar containing the menuItems above
 	private JFrame frmTextToSpeech;
-	JMenuBar menuBar;
-	JMenu menuFile;
+	private JMenuBar menuBar;
+
+	// Menu buttons for the File part
+	private JMenu menuFile;
 	private JMenu menuEdit;
-	JMenuItem menuItem;
+	private JMenuItem menuItem;
 	private JMenuItem mntmNewFile;
 	private JMenuItem mntmSaveFile;
 	private JMenuItem mntmSaveFileAs;
 	private JMenuItem mntmOpenFile;
-	JCheckBoxMenuItem cbMenuItem;
+	private JCheckBoxMenuItem cbMenuItem;
 	private JCheckBoxMenuItem cbMenuItem_1;
 	
+	// Menu Buttons of the Speech part
 	private JMenu menuSpeech;
-	private JMenuItem mntmTextHighlight; 
+	private JMenuItem text2speech_MenuItem;
+	private JMenuItem mntmTextHighlight;
+	private JMenuItem highlight2speech_MenuItem;
 	private JMenuItem reverseText2speech_MenuItem;
 	private JMenuItem reverseHighlight2speech_MenuItem_1;
 	
+	// Menu buttons for the Encoding part
 	private JMenu menuEncoding; 
 	private JMenuItem textEncode_MenuItem_1;
 	private JMenuItem text2speech_MenuItem_2;
 	private JRadioButtonMenuItem atbshaMenuItem;
 	private JRadioButtonMenuItem rot13MenuItem;
 	
+	// Menu buttons for the Settings part
 	 private JMenu menuSettings;
 	 private JMenu volumeSubmenu;
-	 private JMenuItem mntmDefaultVolume;
+	 private JMenuItem mntmSetVolume;
 	 private JSlider volumeSlider;
 	 private JMenu rateSubmenu;
 	 private JSlider rateSlider;
-	 private JMenuItem mntmDefaultRate;
+	 private JMenuItem mntmSetRate;
 	 private JMenu pitchSubmenu;
-	 private JMenuItem mntmDefaultPitch;
+	 private JMenuItem mntmSetPitch;
 	 private JSlider pitchSlider;
 	
+	 
 	 private JMenuItem editMenuItem;
 	 
 	 
 	 // Initializations
 	 private CommandsFactory commandsfactory;
 	 private Document currentDocument;
+	 private Line currentSelectedLine;
+	 private TextToSpeechAPIFactory textToSpeechAPIFactory;
+	 private TextToSpeechAPI managerAudio;
+	 
 	 private JEditorPane textArea;
 	 private JScrollPane scrollPane;
 	 private JTextField docDetailsArea;
 	 private JSeparator separator;
+	 
 	 
 	 /**
 	 * Launch the application.
@@ -125,11 +148,54 @@ public class MainAppGUI {
 		// Initialize current Document to null
 		currentDocument = null;
 		
+		textToSpeechAPIFactory = new TextToSpeechAPIFactory();
+		// Factory's 'createTTSAPI' method returns a new object that implements TextToSpeechAPI interface
+		managerAudio = textToSpeechAPIFactory.createTTSAPI("TTSAdapter");
+		
 		initialize();
 	}
 	
+	public TextToSpeechAPI getAPI() {
+		return this.managerAudio;
+	}
 	
+	// Highlight the selected text in the document area
+	public void getHighlighter() throws Exception {
+		DefaultHighlighter highlighter = (DefaultHighlighter) textArea.getHighlighter();
+		DefaultHighlighter.DefaultHighlightPainter painter = new DefaultHighlightPainter(Color.YELLOW);
+		removeHighlights();
+
+		int start = textArea.getSelectionStart();
+		int end = textArea.getSelectionEnd();
+		
+		highlighter.addHighlight(start, end, painter);
+	}
 	
+	// Removing all highlighted text of the document area
+	public void removeHighlights() {
+		Highlighter highlighter = textArea.getHighlighter();
+		highlighter.removeAllHighlights();
+	}
+	
+	// Returns the value from the volume Slider component.
+	public int getVolumeValue() {
+		int volume = volumeSlider.getValue();
+		return volume;
+	}
+	
+	public int getRateValue() {
+		int rate = rateSlider.getValue();
+		return rate;
+	}
+	
+	public int getPitchValue() {
+		int pitch = pitchSlider.getValue();
+		return pitch;
+	}
+	
+	/* Close speech menu. An attempt to close Speech submenu before audio start to play.
+		TODO:
+	*/
 	public void closeSpeechMenu () {
 		menuSpeech.setVisible(false);
 	}
@@ -144,12 +210,12 @@ public class MainAppGUI {
 		return textArea.getText();
 	}
 	
-	// Get the current Document of the gui
+	// Get the current Document of the GUI
 	public Document getCurrentDocument() {
 		return currentDocument;
 	}
 
-	
+	// Set the current Document of the GUI 
 	public void setCurrentDocument(Document currentDocument) {
 		this.currentDocument = currentDocument;
 	}
@@ -176,6 +242,9 @@ public class MainAppGUI {
 	 */
 	public void popUpInformMessage(String message, String title) {
 		JOptionPane.showMessageDialog(frmTextToSpeech, message, title, JOptionPane.INFORMATION_MESSAGE);
+	}
+	public void popUpWarningMessage(String message, String title) {
+		JOptionPane.showMessageDialog(frmTextToSpeech, message, title, JOptionPane.WARNING_MESSAGE);
 	}
 	
 	
@@ -236,7 +305,7 @@ public class MainAppGUI {
 		mntmNewFile.setForeground(new Color(0, 0, 0));
 		mntmNewFile.setBackground(new Color(211, 211, 211));
 		mntmNewFile.addActionListener(commandsfactory.createCommand("NewDocument"));
-		mntmNewFile.setIcon(new ImageIcon("/home/vaggelisbarb/eclipse-workspace/Text2SpeechEditor/ImageSource/add.png"));
+		mntmNewFile.setIcon(new ImageIcon("ImageSource/add.png"));
 		mntmNewFile.setFont(new Font("League Spartan Semibold", Font.PLAIN, 16));
 		mntmNewFile.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_N, InputEvent.CTRL_MASK));
 		mntmNewFile.getAccessibleContext().setAccessibleDescription("This doesn't really do anything");
@@ -247,7 +316,7 @@ public class MainAppGUI {
 		mntmOpenFile.setForeground(new Color(0, 0, 0));
 		mntmOpenFile.setBackground(new Color(211, 211, 211));
 		mntmOpenFile.addActionListener(commandsfactory.createCommand("OpenDocument"));
-		mntmOpenFile.setIcon(new ImageIcon("/home/vaggelisbarb/eclipse-workspace/Text2SpeechEditor/ImageSource/folder.png"));
+		mntmOpenFile.setIcon(new ImageIcon("ImageSource/folder.png"));
 		mntmOpenFile.setFont(new Font("League Spartan Semibold", Font.PLAIN, 16));
 		mntmOpenFile.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_L, InputEvent.CTRL_MASK));
 		mntmOpenFile.getAccessibleContext().setAccessibleDescription(
@@ -263,15 +332,15 @@ public class MainAppGUI {
 		mntmOpenFile.setAccelerator(KeyStroke.getKeyStroke(
 		        KeyEvent.VK_3, ActionEvent.ALT_MASK));
 		
-				mntmSaveFile = new JMenuItem(new ImageIcon("/home/vaggelisbarb/eclipse-workspace/Text2SpeechEditor/ImageSource/file-and-folder.png"));
-				mntmSaveFile.setForeground(new Color(0, 0, 0));
-				mntmSaveFile.setBackground(new Color(211, 211, 211));
-				mntmSaveFile.addActionListener(commandsfactory.createCommand("SaveDocument"));
-				mntmSaveFile.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S, InputEvent.CTRL_MASK));
-				mntmSaveFile.setFont(new Font("League Spartan Semibold", Font.PLAIN, 16));
-				mntmSaveFile.setText("Save Document");
-				mntmSaveFile.setMnemonic(KeyEvent.VK_D);
-				menuFile.add(mntmSaveFile);
+		mntmSaveFile = new JMenuItem(new ImageIcon("ImageSource/file-and-folder.png"));
+		mntmSaveFile.setForeground(new Color(0, 0, 0));
+		mntmSaveFile.setBackground(new Color(211, 211, 211));
+		mntmSaveFile.addActionListener(commandsfactory.createCommand("SaveDocument"));
+		mntmSaveFile.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S, InputEvent.CTRL_MASK));
+		mntmSaveFile.setFont(new Font("League Spartan Semibold", Font.PLAIN, 16));
+		mntmSaveFile.setText("Save Document");
+		mntmSaveFile.setMnemonic(KeyEvent.VK_D);
+		menuFile.add(mntmSaveFile);
 		mntmSaveFileAs.setMnemonic(KeyEvent.VK_B);
 		menuFile.add(mntmSaveFileAs);
 		mntmOpenFile.setAccelerator(KeyStroke.getKeyStroke(
@@ -310,6 +379,7 @@ public class MainAppGUI {
 		
 		
 		mntmTextHighlight = new JMenuItem("Text Highlight",KeyEvent.VK_T);
+		mntmTextHighlight.addActionListener(commandsfactory.createCommand("TextHighlight"));
 		mntmTextHighlight.setBackground(new Color(211, 211, 211));
 		mntmTextHighlight.setForeground(new Color(0, 0, 0));
 		mntmTextHighlight.setIcon(null);
@@ -321,7 +391,7 @@ public class MainAppGUI {
 		editMenuItem.setBackground(new Color(211, 211, 211));
 		editMenuItem.setForeground(new Color(0, 0, 0));
 		editMenuItem.addActionListener(commandsfactory.createCommand("EditDocument"));
-		editMenuItem.setIcon(new ImageIcon("/home/vaggelisbarb/eclipse-workspace/Text2SpeechEditor/ImageSource/text.png"));
+		editMenuItem.setIcon(new ImageIcon("ImageSource/text.png"));
 		editMenuItem.setFont(new Font("League Spartan Semibold", Font.PLAIN, 16));
 		menuEdit.add(editMenuItem);
 		menuEdit.add(mntmTextHighlight);
@@ -340,17 +410,16 @@ public class MainAppGUI {
 		        "The only menu in this program that has menu items");
 		menuBar.add(menuSpeech);
 		
-		JMenuItem text2speech_MenuItem = new JMenuItem("Text to speech");
+		text2speech_MenuItem = new JMenuItem("Text to speech");
 		text2speech_MenuItem.addActionListener(commandsfactory.createCommand("TextToSpeech"));
 		text2speech_MenuItem.setBackground(new Color(211, 211, 211));
 		text2speech_MenuItem.setForeground(new Color(0, 0, 0));
-		text2speech_MenuItem.addActionListener(commandsfactory.createCommand("TextToSpeech"));
-		text2speech_MenuItem.setIcon(new ImageIcon("/home/vaggelisbarb/eclipse-workspace/Text2SpeechEditor/ImageSource/speech.png"));
+		text2speech_MenuItem.setIcon(new ImageIcon("ImageSource/speech.png"));
 		text2speech_MenuItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_1, InputEvent.ALT_MASK));
 		text2speech_MenuItem.setFont(new Font("League Spartan Semibold", Font.PLAIN, 16));
 		menuSpeech.add(text2speech_MenuItem);
 		
-		JMenuItem highlight2speech_MenuItem = new JMenuItem("Highlighted text to speech");
+		highlight2speech_MenuItem = new JMenuItem("Highlighted text to speech");
 		highlight2speech_MenuItem.setBackground(new Color(211, 211, 211));
 		highlight2speech_MenuItem.setForeground(new Color(0, 0, 0));
 		highlight2speech_MenuItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_2, InputEvent.ALT_MASK));
@@ -365,7 +434,7 @@ public class MainAppGUI {
 		reverseText2speech_MenuItem.setBackground(new Color(211, 211, 211));
 		reverseText2speech_MenuItem.setForeground(new Color(0, 0, 0));
 		reverseText2speech_MenuItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_3, InputEvent.ALT_MASK));
-		reverseText2speech_MenuItem.setIcon(new ImageIcon("/home/vaggelisbarb/eclipse-workspace/Text2SpeechEditor/ImageSource/reversespeech.png"));
+		reverseText2speech_MenuItem.setIcon(new ImageIcon("ImageSource/reversespeech.png"));
 		reverseText2speech_MenuItem.setFont(new Font("League Spartan Semibold", Font.PLAIN, 16));
 		menuSpeech.add(reverseText2speech_MenuItem);
 		
@@ -427,7 +496,7 @@ public class MainAppGUI {
 		menuEncoding.add(rot13MenuItem);
 		
 		
-		// BUILD THE SEETINGS TOP BAR MENU ELEMENT
+		// BUILD THE SETTINGS TOP BAR MENU ELEMENT
 		
 		menuSettings = new JMenu("Settings");
 		menuSettings.setForeground(new Color(0, 0, 0));
@@ -438,23 +507,25 @@ public class MainAppGUI {
 		menuSettings.getAccessibleContext().setAccessibleDescription("The only menu in this program that has menu items");
 		menuBar.add(menuSettings);
 		
-		volumeSubmenu = new JMenu("Speech Volume");
+		volumeSubmenu = new JMenu("Volume");
 		volumeSubmenu.setBackground(new Color(211, 211, 211));
 		volumeSubmenu.setForeground(new Color(0, 0, 0));
-		volumeSubmenu.setIcon(new ImageIcon("/home/vaggelisbarb/eclipse-workspace/Text2SpeechEditor/ImageSource/volume.png"));
+		volumeSubmenu.setIcon(new ImageIcon("ImageSource/volume.png"));
 		volumeSubmenu.setToolTipText("Adjust the volume");
 		volumeSubmenu.setMnemonic(KeyEvent.VK_S);
 		volumeSubmenu.setFont(new Font("League Spartan Semibold", Font.PLAIN, 16));
 		menuSettings.add(volumeSubmenu);
-		mntmDefaultVolume = new JMenuItem("Default Volume");
-		mntmDefaultVolume.setBackground(new Color(211, 211, 211));
-		mntmDefaultVolume.setForeground(new Color(0, 0, 0));
-		mntmDefaultVolume.setFont(new Font("League Spartan Semibold", Font.PLAIN, 16));
-		volumeSubmenu.add(mntmDefaultVolume);
+		
+		mntmSetVolume = new JMenuItem("Set Volume");
+		mntmSetVolume.addActionListener(commandsfactory.createCommand("VolumeSettings"));
+		mntmSetVolume.setBackground(new Color(211, 211, 211));
+		mntmSetVolume.setForeground(new Color(0, 0, 0));
+		mntmSetVolume.setFont(new Font("League Spartan Semibold", Font.PLAIN, 16));
+		volumeSubmenu.add(mntmSetVolume);
 		
 		volumeSubmenu.addSeparator();
 		
-		volumeSlider = new JSlider(0, 200, 100);
+		volumeSlider = new JSlider(0, 100, 100);
 		volumeSlider.setBackground(new Color(211, 211, 211));
 		volumeSlider.setFont(new Font("Manjari Regular", Font.BOLD, 14));
 		volumeSlider.setForeground(new Color(0, 0, 0));
@@ -468,28 +539,29 @@ public class MainAppGUI {
 		volumeSlider.setMajorTickSpacing(50);
 		volumeSubmenu.add(volumeSlider);
 		
-		rateSubmenu = new JMenu("Speech Rate");
+		rateSubmenu = new JMenu("Ratio");
 		rateSubmenu.setBackground(new Color(211, 211, 211));
 		rateSubmenu.setForeground(new Color(0, 0, 0));
-		rateSubmenu.setIcon(new ImageIcon("/home/vaggelisbarb/eclipse-workspace/Text2SpeechEditor/ImageSource/ratio.png"));
+		rateSubmenu.setIcon(new ImageIcon("ImageSource/ratio.png"));
 		rateSubmenu.setToolTipText("");
 		rateSubmenu.setMnemonic(KeyEvent.VK_S);
 		rateSubmenu.setFont(new Font("League Spartan Semibold", Font.PLAIN, 16));
 		menuSettings.add(rateSubmenu);
 		
-		mntmDefaultRate = new JMenuItem("Default Rate");
-		mntmDefaultRate.setBackground(new Color(211, 211, 211));
-		mntmDefaultRate.setForeground(new Color(0, 0, 0));
-		mntmDefaultRate.setFont(new Font("League Spartan Semibold", Font.PLAIN, 16));
-		rateSubmenu.add(mntmDefaultRate);
+		mntmSetRate = new JMenuItem("Set Ratio");
+		mntmSetRate.addActionListener(commandsfactory.createCommand("RatioSettings"));
+		mntmSetRate.setBackground(new Color(211, 211, 211));
+		mntmSetRate.setForeground(new Color(0, 0, 0));
+		mntmSetRate.setFont(new Font("League Spartan Semibold", Font.PLAIN, 16));
+		rateSubmenu.add(mntmSetRate);
 		
 		rateSubmenu.addSeparator();
-		rateSlider = new JSlider(0, 200, 100);
+		rateSlider = new JSlider(60, 300, 185);
 		rateSlider.setBackground(new Color(211, 211, 211));
 		rateSlider.setForeground(new Color(0, 0, 0));
 		rateSlider.setFont(new Font("Manjari Regular", Font.BOLD, 14));
 		rateSlider.setToolTipText("Adjust rate level");
-		rateSlider.setPreferredSize(new Dimension(160, 50));
+		rateSlider.setPreferredSize(new Dimension(260, 60));
 		rateSlider.setPaintTrack(true);
 		rateSlider.setPaintTicks(true);
 		rateSlider.setPaintLabels(true);
@@ -498,28 +570,29 @@ public class MainAppGUI {
 		rateSlider.setMajorTickSpacing(50);
 		rateSubmenu.add(rateSlider);
 		
-		pitchSubmenu = new JMenu("Speech Pitch");
+		pitchSubmenu = new JMenu("Voice Pitch");
 		pitchSubmenu.setBackground(new Color(211, 211, 211));
 		pitchSubmenu.setForeground(new Color(0, 0, 0));
-		pitchSubmenu.setIcon(new ImageIcon("/home/vaggelisbarb/eclipse-workspace/Text2SpeechEditor/ImageSource/pitch.png"));
+		pitchSubmenu.setIcon(new ImageIcon("ImageSource/pitch.png"));
 		pitchSubmenu.setFont(new Font("League Spartan Semibold", Font.PLAIN, 16));
 		menuSettings.add(pitchSubmenu);
 		
-		mntmDefaultPitch = new JMenuItem("Default Pitch");
-		mntmDefaultPitch.setBackground(new Color(211, 211, 211));
-		mntmDefaultPitch.setForeground(new Color(0, 0, 0));
-		mntmDefaultPitch.setFont(new Font("League Spartan Semibold", Font.PLAIN, 16));
-		pitchSubmenu.add(mntmDefaultPitch);
+		mntmSetPitch = new JMenuItem("Set Pitch");
+		mntmSetPitch.addActionListener(commandsfactory.createCommand("PitchSettings"));
+		mntmSetPitch.setBackground(new Color(211, 211, 211));
+		mntmSetPitch.setForeground(new Color(0, 0, 0));
+		mntmSetPitch.setFont(new Font("League Spartan Semibold", Font.PLAIN, 16));
+		pitchSubmenu.add(mntmSetPitch);
 		
 		separator = new JSeparator();
 		pitchSubmenu.add(separator);
 		
-		pitchSlider = new JSlider(0, 200, 100);
+		pitchSlider = new JSlider(50, 300, 100);
 		pitchSlider.setBackground(new Color(211, 211, 211));
 		pitchSlider.setFont(new Font("Manjari Regular", Font.BOLD, 14));
 		pitchSlider.setForeground(new Color(0, 0, 0));
 		pitchSlider.setToolTipText("Adjust pitch level");
-		pitchSlider.setPreferredSize(new Dimension(160, 50));
+		pitchSlider.setPreferredSize(new Dimension(300, 60));
 		pitchSlider.setPaintTrack(true);
 		pitchSlider.setPaintTicks(true);
 		pitchSlider.setPaintLabels(true);
@@ -530,7 +603,7 @@ public class MainAppGUI {
 		
 		scrollPane = new JScrollPane();
 		scrollPane.setVisible(false);
-		scrollPane.setBounds(45, 74, 807, 438);
+		scrollPane.setBounds(45, 115, 807, 397);
 		frmTextToSpeech.getContentPane().add(scrollPane);
 		
 		textArea = new JEditorPane();
@@ -552,7 +625,7 @@ public class MainAppGUI {
 		docDetailsArea.setColumns(10);
 		
 		JLabel appBackground = new JLabel("");
-		appBackground.setIcon(new ImageIcon("/home/vaggelisbarb/eclipse-workspace/Text2SpeechEditor/ImageSource/green-red-colors-combination-abstract-pattern-x.jpg"));
+		appBackground.setIcon(new ImageIcon("ImageSource/green-red-colors-combination-abstract-pattern-x.jpg"));
 		appBackground.setBounds(-45, -24, 945, 575);
 		frmTextToSpeech.getContentPane().add(appBackground);
 	}

@@ -3,18 +3,14 @@
  */
 package text2speechapis;
 
-import view.MainAppGUI;
-
 /**
  * @author vaggelisbarb
  *
  */
 public class TextToSpeechAPIFactory {
 	
-	private MainAppGUI mainGUI;
 	
-	public TextToSpeechAPIFactory(MainAppGUI mainGUI) {
-		this.mainGUI = mainGUI;
+	public TextToSpeechAPIFactory() {
 	}
 	
 	

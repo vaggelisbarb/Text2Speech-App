@@ -50,7 +50,11 @@ public class Line {
 	}
 
 	
-	
+	public int getNumOfWords() {
+		return words.size();
+	}
+
+
 	/**
 	 * @return the line in a string. Between each word is a '.' for the speech to become a bit slower
 	 */
@@ -76,11 +80,11 @@ public class Line {
 	
 
 	public void playLine() {
-		audioManager.play(lineToString());
+		this.audioManager.play(lineToString());
 	}
 	
 	public void playReverseLine() {
-		audioManager.play(reverseLineToString());
+		this.audioManager.play(reverseLineToString());
 	}
 	
 	public void playEncodedLine() {

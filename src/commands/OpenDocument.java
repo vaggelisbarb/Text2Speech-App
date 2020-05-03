@@ -51,7 +51,7 @@ public class OpenDocument extends IConstructDocument implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		
-		System.out.println("\n\t$$$ \"Load Document\" Command is given\n");
+		System.out.println("\n\t~~~Load Document command~~~\n");
 		
 		// Browse through Home Directory
 		JFileChooser fileBrowse = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
@@ -103,18 +103,16 @@ public class OpenDocument extends IConstructDocument implements ActionListener{
 			FileReader filereader = new FileReader(fileBrowse.getSelectedFile());
 			BufferedReader buffer = new BufferedReader(filereader);
 			
-			System.out.print("File is opened for read mode\n");
+			System.out.print("- File loaded for READ MODE\n");
 			
-			linesHashMap = new LinkedHashMap<Line, Integer>();
-			System.out.println("\"An empty Hashmap<Line, Integer> has been created\"\n");
-			
+			linesHashMap = new LinkedHashMap<Line, Integer>();			
 			
 			String line = null;
 			line = buffer.readLine();
 			while (line != null) {
 				ArrayList<String> wordList = lineTokenize(line);
 				Line newLineObj = new Line(wordList);
-				System.out.println("At line {"+lineCounter+"} -> Object Line {"+newLineObj+"} -> ArrayList<String> consists of {"+wordList.size()+"} words \n");
+				System.out.println("Line {"+lineCounter+"} consists of {"+newLineObj.getNumOfWords()+"} words");
 				
 				linesHashMap.put(newLineObj, lineCounter);
 				
@@ -124,8 +122,7 @@ public class OpenDocument extends IConstructDocument implements ActionListener{
 			
 			currentDocument = new Document(linesHashMap);
 			
-			System.out.println("Total number of lines loaded from the file : "+lineCounter+"\n");
-			System.out.println("~~Document Object consists of {"+currentDocument.getLineHashmapSize()+"} Line Objects");
+			System.out.println("- Document Object consists of {"+currentDocument.getLineHashmapSize()+"} Line Objects");
 		
 			buffer.close();
 			filereader.close();		

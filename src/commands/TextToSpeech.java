@@ -25,25 +25,28 @@ public class TextToSpeech implements ActionListener{
 	public TextToSpeech(MainAppGUI mainGUI) {
 		this.mainGUI = mainGUI;
 		
+		// Create a new TextToSpeechAPIFactory
+		managerAudio = this.mainGUI.getAPI();		
 	}
 
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		currentDocument = mainGUI.getCurrentDocument();
+		
+		// Check if the document we try to use is NULL or empty
 		if (currentDocument != null) {
 			if (currentDocument.getLineHashmapSize() != 0) {
 				
-				textfactory = new TextToSpeechAPIFactory(mainGUI);
-		
-				managerAudio = textfactory.createTTSAPI("TTSAdapter");
-			
+				// Set this TTSAdapter object to the current document
 				currentDocument.setAudioManager(managerAudio);
+				
+				// Play contents of the document
 				currentDocument.playContents();
 			}else
 				mainGUI.popUpInformMessage("Document is empty !!", "No document");
 		}else 
-			mainGUI.popUpInformMessage("None Document is found\nAudio not generated!!", "Audio Error");
+			mainGUI.popUpWarningMessage("None Document is found\nAudio not generated!!", "Audio Error");
 		
 	}
 	

@@ -34,7 +34,7 @@ public class ReversedTextToSpeech implements ActionListener{
 		if (currentDocument != null) {
 			if (currentDocument.getLineHashmapSize() != 0) {
 				
-				textfactory = new TextToSpeechAPIFactory(mainGUI);
+				textfactory = new TextToSpeechAPIFactory();
 		
 				managerAudio = textfactory.createTTSAPI("TTSAdapter");
 			

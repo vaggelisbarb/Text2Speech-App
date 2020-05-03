@@ -41,11 +41,21 @@ public class CommandsFactory {
 		case "EditDocument" :
 			return new EditDocument(mainGUI);
 		case "TextHighlight" :
-			return new HighlightText();
+			return new HighlightText(mainGUI);
 		case "TextToSpeech" :
 			return new TextToSpeech(mainGUI);
+		case"HighlightTextToSpeech":
+			return new LineToSpeech();
 		case "ReversedTextToSpeech":
 			return new ReversedTextToSpeech(mainGUI);
+		case "ReversedLineToSpeech":
+			return new ReversedLineToSpeech(mainGUI);
+		case "VolumeSettings":
+			return new SetVolume(mainGUI);
+		case "RatioSettings":
+			return new SetRatio(mainGUI);
+		case "PitchSettings":
+			return new SetPitch(mainGUI);
 		default:
 			throw new IllegalArgumentException("Unexpected command : " + commandType);
 		}
