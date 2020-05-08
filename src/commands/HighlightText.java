@@ -32,13 +32,16 @@ public class HighlightText implements ActionListener{
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		painter = new DefaultHighlighter.DefaultHighlightPainter(Color.YELLOW);
-		try {
-			mainGUI.getHighlighter();
-		} catch (Exception e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
+		if (mainGUI.getCurrentDocument() != null) {
+			painter = new DefaultHighlighter.DefaultHighlightPainter(Color.YELLOW);
+			try {
+				mainGUI.getHighlighter();
+			} catch (Exception e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+		}else
+			mainGUI.popUpWarningMessage("No document to be highlighted", "Hightlight Error");
 	}
 	
 }	

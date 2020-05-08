@@ -3,12 +3,7 @@
  */
 package commands;
 
-import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
-
-import javax.swing.JTextArea;
-
 import view.MainAppGUI;
 
 /**
@@ -22,7 +17,7 @@ public class CommandsFactory {
 	
 	public CommandsFactory(MainAppGUI mainGUI) {
 		this.mainGUI = mainGUI;
-		System.out.println("CommandsFactory created ");
+		System.out.println("\t~~CommandsFactory created~~");
 	}
 
 	
@@ -56,6 +51,12 @@ public class CommandsFactory {
 			return new SetRatio(mainGUI);
 		case "PitchSettings":
 			return new SetPitch(mainGUI);
+		case "Rot13":
+			return new Rot13Action(mainGUI);
+		case "AtBash":
+			return new AtBashAction(mainGUI);
+		case "EncodeDocument":
+			return new EncodeDocument(mainGUI);
 		default:
 			throw new IllegalArgumentException("Unexpected command : " + commandType);
 		}

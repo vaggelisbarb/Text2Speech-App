@@ -10,16 +10,17 @@ package encodingstrategies;
 public class AtBashEncoding extends TemplateEncoding{
 
 	
-	public String encode(String txt) {
-		// TODO
-		return null;
-	}
+	public AtBashEncoding() {}
 	
 	
 	@Override
 	public char mapCharacter(char txtChar) {
-		// TODO Auto-generated method stub
-		return 0;
+		int atbashChar = 0;
+		if (txtChar >= 'A' && txtChar <= 'Z')
+			atbashChar = ('Z' - txtChar) + 'A';
+		else if (txtChar >='a' && txtChar <='z')
+			atbashChar = ('z' - txtChar) + 'a';
+		return (char)atbashChar;
 	}
 	
 }

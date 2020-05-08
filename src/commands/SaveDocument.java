@@ -41,42 +41,45 @@ public class SaveDocument extends IConstructDocument implements ActionListener{
 	
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		System.out.println("\n\t$$$ \"Save Document\" Command is given\n");
+		if (mainGUI.getCurrentDocument() != null) {
+			System.out.println("\n\t~~~Save Document~~~\n");
 		
-		// Browse through Home Directory
-		JFileChooser fileBrowse = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
-		fileBrowse.setDialogTitle("Save document");
+			// Browse through Home Directory
+			JFileChooser fileBrowse = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
+			fileBrowse.setDialogTitle("Save document");
 	
-		// Set a filter for showing only .txt, files only
-		fileBrowse.setFileSelectionMode(JFileChooser.FILES_ONLY);
-		fileBrowse.setAcceptAllFileFilterUsed(false);
-		FileNameExtensionFilter filter = new FileNameExtensionFilter("TXT files","txt");
-		fileBrowse.addChoosableFileFilter(filter);
+			// Set a filter for showing only .txt, files only
+			fileBrowse.setFileSelectionMode(JFileChooser.FILES_ONLY);
+			fileBrowse.setAcceptAllFileFilterUsed(false);
+			FileNameExtensionFilter filter = new FileNameExtensionFilter("TXT files","txt");
+			fileBrowse.addChoosableFileFilter(filter);
 			
-		int userSelection = fileBrowse.showSaveDialog(null);
-		if (userSelection == JFileChooser.APPROVE_OPTION) {
-			
-			int numOfObjLines = constructDocumentObject(fileBrowse);
-			if (numOfObjLines != 0) {
-				docToFile = fileBrowse.getSelectedFile();
+			int userSelection = fileBrowse.showSaveDialog(null);
+			if (userSelection == JFileChooser.APPROVE_OPTION) {
 				
-				Path fullPath = Paths.get(fileBrowse.getSelectedFile().getAbsolutePath());
-				Path fileName = fullPath.getFileName();
-				try (PrintWriter out = new PrintWriter(fileBrowse.getSelectedFile())){
-					out.print(mainGUI.getDocumentArea());
+				int numOfObjLines = constructDocumentObject(fileBrowse);
+				if (numOfObjLines != 0) {
+					docToFile = fileBrowse.getSelectedFile();
+				
+					Path fullPath = Paths.get(fileBrowse.getSelectedFile().getAbsolutePath());
+					Path fileName = fullPath.getFileName();
+					try (PrintWriter out = new PrintWriter(fileBrowse.getSelectedFile())){
+						out.print(mainGUI.getDocumentArea());
 					
-					mainGUI.popUpInformMessage("File : "+fileName.toString()+" saved\n"+"Full path : "+fullPath.toString(), "Save message");
-					System.out.println("Save file to path : "+fullPath.toString());
+						System.out.println("*File Path* -> "+fullPath.toString());
+						mainGUI.popUpInformMessage("File : "+fileName.toString()+" saved\n"+"Full path : "+fullPath.toString(), "Save message");
 					
-					mainGUI.setCurrentDocument(newDocument);
-				} catch (Exception e2) {
-					// TODO: handle exception
+						mainGUI.setCurrentDocument(newDocument);
+					} catch (Exception e2) {
+						// TODO: handle exception
+					}
+				
+				
 				}
-				
-				
-			}
 			
-		}
+			}
+		}else
+			mainGUI.popUpWarningMessage("No document to save", "Save Error");
 	}
 
 
@@ -91,26 +94,20 @@ public class SaveDocument extends IConstructDocument implements ActionListener{
 				Scanner scanner = new Scanner(docText);
 				
 				linesHashmap = new LinkedHashMap<Line, Integer>();
-				System.out.println("\"An empty HashMap<Line, Integer> has been created\"");
 			
 				String line = null;
 				while (scanner.hasNextLine()) {
 					line = scanner.nextLine();
 	
 					ArrayList<String> wordsList = lineTokenize(line);
-					Line newLineObj = new Line(wordsList);
-					System.out.println("At line {"+lineCounter+"} -> Object Line {"+newLineObj+"} -> ArrayList<String> consists of {"+wordsList.size()+"} words \n");
-					
+					Line newLineObj = new Line(wordsList);					
 					linesHashmap.put(newLineObj,lineCounter);
 					
 					lineCounter++;
 				}
 				
 				newDocument = new Document(linesHashmap);
-				
-				System.out.println("Total number of lines loaded from the file : "+lineCounter+"\n");
-				System.out.println("~~Document Object consists of {"+newDocument.getLineHashmapSize()+"} Line Objects");
-				
+				System.out.println("--> Total number of lines saved to file : "+lineCounter);				
 				
 				scanner.close();
 				

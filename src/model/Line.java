@@ -7,9 +7,6 @@ import java.util.ArrayList;
 
 import encodingstrategies.EncodingStrategy;
 import text2speechapis.TextToSpeechAPI;
-import java.lang.*; 
-import java.io.*; 
-import java.util.*; 
 
 /**
  * @author vaggelisbarb
@@ -88,11 +85,14 @@ public class Line {
 	}
 	
 	public void playEncodedLine() {
-		// TODO
+		String lineTxt = "";
+		for (String word : words)
+			lineTxt +=" " + this.encodingStrategy.encode(word);
+		this.audioManager.play(lineTxt);
 	}
 	
 	public void tuneEncodingStrategy(EncodingStrategy strategy) {
-		// TODO
+		this.encodingStrategy = strategy;
 	}
 	
 	

@@ -37,7 +37,7 @@ public class NewDocument implements ActionListener{
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		System.out.println("\n\t$$$ \"New Document\" command is given");
+		System.out.println("\n\t~~~New Document~~~\n");
 		displayInputMessage();
 	}
 	

@@ -8,7 +8,6 @@ import java.awt.event.ActionListener;
 
 import model.Document;
 import text2speechapis.TextToSpeechAPI;
-import text2speechapis.TextToSpeechAPIFactory;
 import view.MainAppGUI;
 
 /**
@@ -19,7 +18,6 @@ public class TextToSpeech implements ActionListener{
 
 	private MainAppGUI mainGUI;
 	private Document currentDocument;
-	private TextToSpeechAPIFactory textfactory;
 	private TextToSpeechAPI managerAudio; 
 	
 	public TextToSpeech(MainAppGUI mainGUI) {
@@ -44,7 +42,7 @@ public class TextToSpeech implements ActionListener{
 				// Play contents of the document
 				currentDocument.playContents();
 			}else
-				mainGUI.popUpInformMessage("Document is empty !!", "No document");
+				mainGUI.popUpWarningMessage("Document is empty !!", "No document");
 		}else 
 			mainGUI.popUpWarningMessage("None Document is found\nAudio not generated!!", "Audio Error");
 		

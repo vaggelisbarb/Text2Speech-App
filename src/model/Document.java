@@ -5,9 +5,6 @@ package model;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.ListIterator;
-import java.util.Set;
 
 import encodingstrategies.EncodingStrategy;
 import text2speechapis.TextToSpeechAPI;
@@ -126,6 +123,8 @@ public class Document {
 	
 	/**
 	 * Play each Line of the Document
+	 * Iterate the LinkedHashMap of Lines and for each Line object
+	 * call Line.playLine()
 	 */
 	public void playContents(){
 		System.out.println("\n____DOCUMENT TO AUDIO____\n");
@@ -142,9 +141,12 @@ public class Document {
 	
 	/**
 	 * Play reversed each Line Of the Document
+	 * The same code strategy with playContents().
+	 * The iteration starts from the last key of the the LinkedHashmap.
 	 */
 	public void playReverseContents() {
 		System.out.println("\n____REVERSED DOCUMENT TO AUDIO____\n");
+		
 		//create an ArrayList initialized with keys of map
 		ArrayList<Line> lineKeySet = new ArrayList<Line>(contents.keySet());
 		for (int i = lineKeySet.size() - 1; i >= 0; i--) {
@@ -159,7 +161,16 @@ public class Document {
 	}
 	
 	public void playEncodedContents() {
-		// TODO
+		System.out.println("\n____ENCODED DOCUMENT TO AUDIO____\n");
+	
+		//create an ArrayList initialized with keys of map
+		ArrayList<Line> lineKeySet = new ArrayList<Line>(contents.keySet());
+		for (int i = 0; i < lineKeySet.size(); i++) {
+					
+			//get key
+			Line line = (Line) lineKeySet.get(i);
+			line.playEncodedLine();
+		}
 	}
 	
 	public void playLine(int numLine) {
@@ -174,7 +185,14 @@ public class Document {
 		// TODO
 	} 
 	
+	
 	public void tuneEncodingStrategy(EncodingStrategy strategy) {
-		// TODO
+		this.encodingStrategy = strategy;
+		ArrayList<Line> lineKeySet = new ArrayList<Line>(contents.keySet());
+
+		for (int i = 0; i < lineKeySet.size(); i++) {
+			Line line = (Line) lineKeySet.get(i);
+			line.tuneEncodingStrategy(strategy);
+		}
 	}
 }
