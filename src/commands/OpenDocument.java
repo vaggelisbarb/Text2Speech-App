@@ -34,7 +34,7 @@ import view.MainAppGUI;
  * @author vaggelisbarb
  * Class responsible for opening a document file
  */
-public class OpenDocument extends IConstructDocument implements ActionListener{
+public class OpenDocument extends AbstractConstructDocument implements ActionListener{
 	
 	private MainAppGUI mainGUI;
 	private Document currentDocument;

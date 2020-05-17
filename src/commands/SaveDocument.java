@@ -27,7 +27,7 @@ import view.MainAppGUI;
  * @author vaggelisbarb
  * Class responsible for saving a document file
  */
-public class SaveDocument extends IConstructDocument implements ActionListener{
+public class SaveDocument extends AbstractConstructDocument implements ActionListener{
 	
 	private MainAppGUI mainGUI;
 	private File docToFile;

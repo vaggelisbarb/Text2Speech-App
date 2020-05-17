@@ -5,6 +5,8 @@ package model;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Map.Entry;
 
 import encodingstrategies.EncodingStrategy;
 import text2speechapis.TextToSpeechAPI;
@@ -48,19 +50,6 @@ public class Document {
 		this.encodingStrategy = encodingStrategy;
 		this.audioManager = audioManager;
 	}
-	
-	
-	
-	public int checkForDocumentChanges(Document otherDocument) {
-		if (this.contents.size() == otherDocument.contents.size()) {
-			if (this.contents.equals(otherDocument.contents)) {
-				return 1;
-			}
-			return -1;
-		}
-		return 0;
-	}
-	
 	
 	
 	public String getAuthor() {
@@ -121,6 +110,21 @@ public class Document {
 	}
 
 	
+	public int isTextObjectLine(String text) {
+		ArrayList<Line> lineKeySet = new ArrayList<Line>(contents.keySet());
+		for (int i = 0; i < lineKeySet.size(); i++) {
+			
+			Line line = (Line) lineKeySet.get(i);
+			Integer numLine = contents.get(line);
+			String lineInString = line.toDotString();
+			if (text.compareTo(lineInString) == 0) {
+				return numLine;
+			}
+		}
+		return -1;
+	}
+	
+	
 	/**
 	 * Play each Line of the Document
 	 * Iterate the LinkedHashMap of Lines and for each Line object
@@ -174,7 +178,11 @@ public class Document {
 	}
 	
 	public void playLine(int numLine) {
-		// TODO
+		for (Entry<Line, Integer> entry : contents.entrySet()) {
+			if (entry.getValue() == numLine) {
+				entry.getKey().playLine();
+			}
+		}
 	}
 	
 	public void playReverseLine(int numLine) {

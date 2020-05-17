@@ -39,6 +39,8 @@ import java.net.MalformedURLException;
 import javax.swing.text.DefaultHighlighter;
 import javax.swing.text.DefaultHighlighter.DefaultHighlightPainter;
 import javax.swing.text.Highlighter;
+
+
 import javax.swing.JScrollPane;
 import javax.swing.JEditorPane;
 import javax.swing.JTextField;
@@ -51,6 +53,10 @@ import java.awt.BorderLayout;
 import javax.swing.JTextPane;
 import javax.swing.border.LineBorder;
 import javax.swing.border.EtchedBorder;
+import javax.swing.border.SoftBevelBorder;
+import javax.swing.border.BevelBorder;
+import javax.swing.JDesktopPane;
+import java.awt.Choice;
 
 public class MainAppGUI {
 
@@ -114,8 +120,9 @@ public class MainAppGUI {
 	 private JMenuItem text2speech_MenuItem_1;
 	 private JMenu helpMenu;
 	 private JMenuItem mntmTextHighlight_1;
-	 private JMenu mnNewMenu;
+	 private JMenuItem tips;
 	 
+	 private JInternalFrame internalFrame;
 	 
 	 /**
 	 * Launch the application.
@@ -157,6 +164,25 @@ public class MainAppGUI {
 		
 		
 		initialize();
+	}
+	
+	// Check if a line is selected in the document area
+	public String getLineSelected() {
+		if (textArea.getSelectedText() != "") {
+			try {
+				this.getHighlighter();
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			return textArea.getSelectedText();
+		}else
+			return "";
+	}
+	
+	// Set tips frame visible
+	public void enableTipsInternalFrame() {
+		internalFrame.setVisible(true);
 	}
 	
 	// Returns the maingui's strategies factory
@@ -427,6 +453,7 @@ public class MainAppGUI {
 		menuSpeech.add(text2speech_MenuItem);
 		
 		highlight2speech_MenuItem = new JMenuItem("Highlighted text to speech");
+		highlight2speech_MenuItem.addActionListener(commandsfactory.createCommand("HighlightTextToSpeech"));
 		highlight2speech_MenuItem.setBackground(new Color(211, 211, 211));
 		highlight2speech_MenuItem.setForeground(new Color(0, 0, 0));
 		highlight2speech_MenuItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_2, InputEvent.ALT_MASK));
@@ -619,19 +646,13 @@ public class MainAppGUI {
 		helpMenu.setFont(new Font("Ubuntu", Font.PLAIN, 19));
 		menuBar.add(helpMenu);
 		
-		mnNewMenu = new JMenu("Tips");
-		mnNewMenu.setForeground(Color.BLACK);
-		mnNewMenu.setSelectedIcon(new ImageIcon("/home/vaggelisbarb/eclipse-workspace/Text2SpeechEditor/ImageSource/help.png"));
-		mnNewMenu.setFont(new Font("Ubuntu Light", Font.BOLD, 16));
-		helpMenu.add(mnNewMenu);
-		
-		JTextPane txtpnHereIs = new JTextPane();
-		txtpnHereIs.setDragEnabled(true);
-		txtpnHereIs.setText("File : Creation-Saving-Loading a .txt Document.\n\nEdit : Enable document edit & highlighting.\n\nSpeech : Transform document's content/line to audio.\n\nEncoding : Select encoding technique.\n\nSettings : Tune audio parametres & press \"Set\".");
-		txtpnHereIs.setBorder(new EtchedBorder(EtchedBorder.LOWERED, null, null));
-		txtpnHereIs.setBackground(new Color(211, 211, 211));
-		txtpnHereIs.setFont(new Font("Ubuntu Light", Font.BOLD, 15));
-		mnNewMenu.add(txtpnHereIs);
+		tips = new JMenuItem("Tips", KeyEvent.VK_T);
+		tips.addActionListener(commandsfactory.createCommand("Tips"));
+		tips.setIcon(new ImageIcon("ImageSource/tips.png"));
+		tips.setForeground(Color.BLACK);
+		tips.setFont(new Font("Ubuntu Light", Font.BOLD, 16));
+		tips.setBackground(new Color(211, 211, 211));
+		helpMenu.add(tips);
 		
 		mntmTextHighlight_1 = new JMenuItem("Information", KeyEvent.VK_T);
 		mntmTextHighlight_1.setIcon(new ImageIcon("ImageSource/info.png"));
@@ -642,11 +663,12 @@ public class MainAppGUI {
 		
 		scrollPane = new JScrollPane();
 		scrollPane.setVisible(false);
-		scrollPane.setBounds(58, 185, 911, 449);
+		scrollPane.setBounds(58, 186, 911, 449);
 		frmTextToSpeech.getContentPane().add(scrollPane);
 		
 		textArea = new JEditorPane();
-		textArea.setBackground(new Color(245, 255, 250));
+		textArea.setCaretColor(new Color(255, 0, 0));
+		textArea.setBackground(new Color(245, 245, 245));
 		textArea.setForeground(new Color(0, 0, 0));
 		textArea.setSelectedTextColor(new Color(119, 136, 153));
 		textArea.setVisible(false);
@@ -658,15 +680,29 @@ public class MainAppGUI {
 		docDetailsArea.setHorizontalAlignment(SwingConstants.CENTER);
 		docDetailsArea.setBackground(new Color(176, 196, 222));
 		docDetailsArea.setEditable(false);
-		docDetailsArea.setForeground(new Color(255, 0, 0));
-		docDetailsArea.setFont(new Font("Manjari Bold", Font.PLAIN, 18));
+		docDetailsArea.setForeground(new Color(25, 25, 112));
+		docDetailsArea.setFont(new Font("Ubuntu Light", Font.BOLD, 18));
 		scrollPane.setColumnHeaderView(docDetailsArea);
 		docDetailsArea.setColumns(10);
+		
+		internalFrame = new JInternalFrame("Tips");
+		internalFrame.setClosable(true);
+		internalFrame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+		internalFrame.setBorder(new SoftBevelBorder(BevelBorder.RAISED, null, null, null, null));
+		internalFrame.setFrameIcon(new ImageIcon("ImageSource/tips.png"));
+		internalFrame.setBounds(308, 6, 399, 167);
+		frmTextToSpeech.getContentPane().add(internalFrame);
+		internalFrame.getContentPane().setLayout(null);
+		
+		JLabel tips_background = new JLabel("");
+		tips_background.setIcon(new ImageIcon("/home/vaggelisbarb/Επιφάνεια εργασίας/Untitled.png"));
+		tips_background.setBounds(0, 0, 393, 139);
+		internalFrame.getContentPane().add(tips_background);
 
 		
 		JLabel appBackground = new JLabel("");
-		appBackground.setIcon(new ImageIcon("ImageSource/green-red-colors-combination-abstract-pattern-x.jpg"));
-		appBackground.setBounds(-45, -24, 1069, 701);
+		appBackground.setIcon(new ImageIcon("ImageSource/new.png"));
+		appBackground.setBounds(0, -32, 1046, 718);
 		frmTextToSpeech.getContentPane().add(appBackground);
 	}
 }

@@ -57,8 +57,7 @@ public class Line {
 	 */
 	public String toDotString() {
 		String line = "";
-		for (String word : words)
-			line += " "+word;
+		line = String.join(" ", words);
 		return line;
 	}
 
@@ -77,7 +76,7 @@ public class Line {
 	
 
 	public void playLine() {
-		this.audioManager.play(lineToString());
+		this.audioManager.play(this.toDotString());
 	}
 	
 	public void playReverseLine() {
