@@ -57,8 +57,12 @@ public class CommandsFactory {
 			return new AtBashAction(mainGUI);
 		case "EncodeDocument":
 			return new EncodeDocument(mainGUI);
+		case "EncodeLine":
+			return new EncodeLine(mainGUI);
 		case "Tips" :
 			return new ViewTips(mainGUI);
+		case "RemoveDoc":
+			return new RemoveDocument(mainGUI);
 		default:
 			throw new IllegalArgumentException("Unexpected command : " + commandType);
 		}

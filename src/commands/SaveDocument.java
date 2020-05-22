@@ -6,10 +6,14 @@ package commands;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.PrintWriter;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Scanner;
@@ -55,36 +59,53 @@ public class SaveDocument extends AbstractConstructDocument implements ActionLis
 			fileBrowse.addChoosableFileFilter(filter);
 			
 			int userSelection = fileBrowse.showSaveDialog(null);
-			if (userSelection == JFileChooser.APPROVE_OPTION) {
-				
+			if (userSelection == JFileChooser.APPROVE_OPTION) {				
 				int numOfObjLines = constructDocumentObject(fileBrowse);
 				if (numOfObjLines != 0) {
 					docToFile = fileBrowse.getSelectedFile();
-				
+					
 					Path fullPath = Paths.get(fileBrowse.getSelectedFile().getAbsolutePath());
 					Path fileName = fullPath.getFileName();
-					try (PrintWriter out = new PrintWriter(fileBrowse.getSelectedFile())){
-						out.print(mainGUI.getDocumentArea());
 					
+					Document currentdocument = mainGUI.getCurrentDocument();
+					
+					try (PrintWriter out = new PrintWriter(fileBrowse.getSelectedFile())){
+						
+						String savedDate = getCurrentDateTime();
+						currentdocument.setSaveDate(savedDate);
+						
+						out.println("AUTHOR :" + currentdocument.getAuthor());
+						out.println("TITLE :" + currentdocument.getTitle());
+						out.println("CREATION DATE :" + currentdocument.getCreationDate());
+						out.println("SAVED DATE :" + savedDate);
+						out.print(mainGUI.getDocumentArea());
+						
 						System.out.println("*File Path* -> "+fullPath.toString());
 						mainGUI.popUpInformMessage("File : "+fileName.toString()+" saved\n"+"Full path : "+fullPath.toString(), "Save message");
-					
+						
 						mainGUI.setCurrentDocument(newDocument);
 					} catch (Exception e2) {
 						// TODO: handle exception
 					}
-				
-				
+					
+					
 				}
-			
-			}
+			} 
 		}else
 			mainGUI.popUpWarningMessage("No document to save", "Save Error");
 	}
 
+	
+	public String getCurrentDateTime() {
+		SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+		Date currentDate = new Date();
+		
+		return formatter.format(currentDate);
+ 	}
+	
 
 	@Override
-	public int constructDocumentObject(JFileChooser fileBrowse) {
+	public int constructDocumentObject(JFileChooser fileChooser) {
 		int lineCounter = 0;
 		LinkedHashMap<Line, Integer> linesHashmap;
 		

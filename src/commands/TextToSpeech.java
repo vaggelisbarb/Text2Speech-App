@@ -30,6 +30,7 @@ public class TextToSpeech implements ActionListener{
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
+		mainGUI.removeHighlights();
 		currentDocument = mainGUI.getCurrentDocument();
 		
 		// Check if the document we try to use is NULL or empty

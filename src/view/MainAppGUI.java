@@ -33,7 +33,10 @@ import encodingstrategies.StrategiesFactory;
 import java.awt.event.InputEvent;
 import javax.swing.JSlider;
 import java.awt.Dimension;
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import javax.swing.text.DefaultHighlighter;
@@ -57,6 +60,7 @@ import javax.swing.border.SoftBevelBorder;
 import javax.swing.border.BevelBorder;
 import javax.swing.JDesktopPane;
 import java.awt.Choice;
+import javax.swing.Icon;
 
 public class MainAppGUI {
 
@@ -69,7 +73,7 @@ public class MainAppGUI {
 	private JMenu menuEdit;
 	private JMenuItem mntmNewFile;
 	private JMenuItem mntmSaveFile;
-	private JMenuItem mntmSaveFileAs;
+	private JMenuItem removeDocument;
 	private JMenuItem mntmOpenFile;
 	
 	// Menu Buttons of the Speech part
@@ -78,7 +82,7 @@ public class MainAppGUI {
 	private JMenuItem mntmTextHighlight;
 	private JMenuItem highlight2speech_MenuItem;
 	private JMenuItem reverseText2speech_MenuItem;
-	private JMenuItem reverseHighlight2speech_MenuItem_1;
+	private JMenuItem reverseLine2SpeechMenuItem;
 	
 	// Menu buttons for the Encoding part
 	private JMenu menuEncoding; 
@@ -117,7 +121,7 @@ public class MainAppGUI {
 	 private JTextField docDetailsArea;
 	 private JSeparator separator;
 	 private JMenuItem textEncode_MenuItem;
-	 private JMenuItem text2speech_MenuItem_1;
+	 private JMenuItem encodedLine;
 	 private JMenu helpMenu;
 	 private JMenuItem mntmTextHighlight_1;
 	 private JMenuItem tips;
@@ -160,11 +164,18 @@ public class MainAppGUI {
 		managerAudio = textToSpeechAPIFactory.createTTSAPI("TTSAdapter");
 		
 		// Creating the strategiesFactory
-		strategiesFactory = new StrategiesFactory(this);
+		strategiesFactory = new StrategiesFactory();
 		
 		
 		initialize();
 	}
+	
+	
+	// Set the details of the document with the given text
+	public void setDocDetails(String details) {
+		this.docDetailsArea.setText(details);
+	}
+	
 	
 	// Check if a line is selected in the document area
 	public String getLineSelected() {
@@ -178,6 +189,13 @@ public class MainAppGUI {
 			return textArea.getSelectedText();
 		}else
 			return "";
+	}
+	
+	
+	// Remove Document area and set current document -> null
+	public void removeDocumentArea() {
+		this.currentDocument = null;
+		scrollPane.setVisible(false);
 	}
 	
 	// Set tips frame visible
@@ -301,15 +319,47 @@ public class MainAppGUI {
 	
 	/**
 	 * Function to show text on textArea 
-	 * @throws IOException 
-	 * @throws MalformedURLException 
 	 */
 	public void setTextArea(File file) throws MalformedURLException, IOException {
 		this.textArea.setVisible(true);
+		this.delete(file.getAbsolutePath(), 0, 4);
 		textArea.setPage(file.toURI().toURL());
 	}
 
-	
+	void delete(String filename, int startline, int numlines)
+	{
+		try
+		{
+			BufferedReader br=new BufferedReader(new FileReader(filename));
+ 
+			//String buffer to store contents of the file
+			StringBuffer sb=new StringBuffer("");
+ 
+			//Keep track of the line number
+			int linenumber=1;
+			String line;
+ 
+			while((line=br.readLine())!=null)
+			{
+				//Store each valid line in the string buffer
+				if(linenumber<startline||linenumber>=startline+numlines)
+					sb.append(line+"\n");
+				linenumber++;
+			}
+			if(startline+numlines>linenumber)
+				System.out.println("End of file reached.");
+			br.close();
+ 
+			FileWriter fw=new FileWriter(new File(filename));
+			//Write entire string buffer into the file
+			fw.write(sb.toString());
+			fw.close();
+		}
+		catch (Exception e)
+		{
+			System.out.println("Something went horribly wrong: "+e.getMessage());
+		}
+	}
 	
 	/**
 	 * Initialize the contents of the frame.
@@ -374,12 +424,12 @@ public class MainAppGUI {
 		        "This doesn't really do anything");
 		menuFile.add(mntmOpenFile);
 
-		mntmSaveFileAs = new JMenuItem("Save Document as",
-		                         null);
-		mntmSaveFileAs.setForeground(new Color(0, 0, 0));
-		mntmSaveFileAs.setBackground(new Color(211, 211, 211));
-		mntmSaveFileAs.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_A, InputEvent.CTRL_MASK));
-		mntmSaveFileAs.setFont(new Font("Ubuntu Light", Font.BOLD, 16));
+		removeDocument = new JMenuItem("Remove Document", new ImageIcon("ImageSource/delete.png"));
+		removeDocument.addActionListener(commandsfactory.createCommand("RemoveDoc"));
+		removeDocument.setForeground(new Color(0, 0, 0));
+		removeDocument.setBackground(new Color(211, 211, 211));
+		removeDocument.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_A, InputEvent.CTRL_MASK));
+		removeDocument.setFont(new Font("Ubuntu Light", Font.BOLD, 16));
 
 		
 		mntmSaveFile = new JMenuItem(new ImageIcon("ImageSource/saveIcon.png"));
@@ -391,8 +441,8 @@ public class MainAppGUI {
 		mntmSaveFile.setText("Save Document");
 		mntmSaveFile.setMnemonic(KeyEvent.VK_D);
 		menuFile.add(mntmSaveFile);
-		mntmSaveFileAs.setMnemonic(KeyEvent.VK_B);
-		menuFile.add(mntmSaveFileAs);
+		removeDocument.setMnemonic(KeyEvent.VK_B);
+		menuFile.add(removeDocument);
 		mntmOpenFile.setAccelerator(KeyStroke.getKeyStroke(
 		        KeyEvent.VK_4, ActionEvent.ALT_MASK));
 		ButtonGroup group = new ButtonGroup();
@@ -472,13 +522,14 @@ public class MainAppGUI {
 		reverseText2speech_MenuItem.setFont(new Font("Ubuntu Light", Font.BOLD, 16));
 		menuSpeech.add(reverseText2speech_MenuItem);
 		
-		reverseHighlight2speech_MenuItem_1 = new JMenuItem("Reverse highlighted text to speech");
-		reverseHighlight2speech_MenuItem_1.setBackground(new Color(211, 211, 211));
-		reverseHighlight2speech_MenuItem_1.setForeground(new Color(0, 0, 0));
-		reverseHighlight2speech_MenuItem_1.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_4, InputEvent.ALT_MASK));
-		reverseHighlight2speech_MenuItem_1.setIcon(null);
-		reverseHighlight2speech_MenuItem_1.setFont(new Font("Ubuntu Light", Font.BOLD, 16));
-		menuSpeech.add(reverseHighlight2speech_MenuItem_1);
+		reverseLine2SpeechMenuItem = new JMenuItem("Reverse line to speech");
+		reverseLine2SpeechMenuItem.addActionListener(commandsfactory.createCommand("ReversedLineToSpeech"));
+		reverseLine2SpeechMenuItem.setBackground(new Color(211, 211, 211));
+		reverseLine2SpeechMenuItem.setForeground(new Color(0, 0, 0));
+		reverseLine2SpeechMenuItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_4, InputEvent.ALT_MASK));
+		reverseLine2SpeechMenuItem.setIcon(null);
+		reverseLine2SpeechMenuItem.setFont(new Font("Ubuntu Light", Font.BOLD, 16));
+		menuSpeech.add(reverseLine2SpeechMenuItem);
 		
 		menuSpeech.addSeparator();
 		
@@ -490,10 +541,12 @@ public class MainAppGUI {
 		textEncode_MenuItem.setBackground(new Color(211, 211, 211));
 		menuSpeech.add(textEncode_MenuItem);
 		
-		text2speech_MenuItem_1 = new JMenuItem("Highlighted & encoded line to speech");
-		text2speech_MenuItem_1.setFont(new Font("Ubuntu Light", Font.BOLD, 16));
-		text2speech_MenuItem_1.setBackground(new Color(211, 211, 211));
-		menuSpeech.add(text2speech_MenuItem_1);
+		encodedLine = new JMenuItem("Encoded line to speech");
+		encodedLine.addActionListener(commandsfactory.createCommand("EncodeLine"));
+		encodedLine.setForeground(Color.BLACK);
+		encodedLine.setFont(new Font("Ubuntu Light", Font.BOLD, 16));
+		encodedLine.setBackground(new Color(211, 211, 211));
+		menuSpeech.add(encodedLine);
 		
 		
 		// BUILD THE 4TH TOP BAR MENU ELEMENT

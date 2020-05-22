@@ -3,19 +3,15 @@
  */
 package encodingstrategies;
 
-import view.MainAppGUI;
-
 /**
  * @author vaggelisbarb
  *
  */
 public class StrategiesFactory {
 	
-	private MainAppGUI mainGUI;
 	
 	
-	public StrategiesFactory(MainAppGUI mainGUI) {
-		this.mainGUI = mainGUI;
+	public StrategiesFactory() {
 	}
 
 	

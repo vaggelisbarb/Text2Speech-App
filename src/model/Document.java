@@ -5,7 +5,6 @@ package model;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
-import java.util.Map;
 import java.util.Map.Entry;
 
 import encodingstrategies.EncodingStrategy;
@@ -52,6 +51,11 @@ public class Document {
 	}
 	
 	
+	public Document() {
+		// TODO Auto-generated constructor stub
+	}
+
+
 	public String getAuthor() {
 		return author;
 	}
@@ -170,7 +174,7 @@ public class Document {
 		//create an ArrayList initialized with keys of map
 		ArrayList<Line> lineKeySet = new ArrayList<Line>(contents.keySet());
 		for (int i = 0; i < lineKeySet.size(); i++) {
-					
+			
 			//get key
 			Line line = (Line) lineKeySet.get(i);
 			line.playEncodedLine();
@@ -178,6 +182,7 @@ public class Document {
 	}
 	
 	public void playLine(int numLine) {
+		System.out.println("\n____LINE TO AUDIO____\n");
 		for (Entry<Line, Integer> entry : contents.entrySet()) {
 			if (entry.getValue() == numLine) {
 				entry.getKey().playLine();
@@ -186,11 +191,21 @@ public class Document {
 	}
 	
 	public void playReverseLine(int numLine) {
-		// TODO
+		System.out.println("\n____REVERSED LINE TO AUDIO____\n");
+		for (Entry<Line, Integer> entry : contents.entrySet()) {
+			if (entry.getValue() == numLine) {
+				entry.getKey().playReverseLine();
+			}
+		}
 	}
 
 	public void playEncodedLine(int numLine) {
-		// TODO
+		System.out.println("\n____ENCODED LINE TO AUDIO____\n");
+		for (Entry<Line, Integer> entry : contents.entrySet()) {
+			if (entry.getValue() == numLine) {
+				entry.getKey().playEncodedLine();
+			}
+		}
 	} 
 	
 	

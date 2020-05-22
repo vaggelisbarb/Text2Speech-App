@@ -10,6 +10,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.nio.file.Path;
@@ -38,7 +39,9 @@ public class OpenDocument extends AbstractConstructDocument implements ActionLis
 	
 	private MainAppGUI mainGUI;
 	private Document currentDocument;
-	
+	private String authorline;
+	private String titleline;
+	private String createDate;
 	
 	public OpenDocument(MainAppGUI mainGUI) {
 		this.mainGUI = mainGUI;
@@ -65,24 +68,29 @@ public class OpenDocument extends AbstractConstructDocument implements ActionLis
 		
 		int returnValue = fileBrowse.showOpenDialog(null);
 		if (returnValue == JFileChooser.APPROVE_OPTION) {
-			
 			int numObjLines = constructDocumentObject(fileBrowse);
 			if (numObjLines != 0) {
 				try {
 					mainGUI.setDocumentsDetailArea("");
 					mainGUI.setDocAreaVisible();
 					mainGUI.setTextArea(fileBrowse.getSelectedFile());
+					
+					Path fullPath = Paths.get(fileBrowse.getSelectedFile().getAbsolutePath());
+					Path fileName = fullPath.getFileName(); 
+					mainGUI.popUpInformMessage("Load successfully \n"+fileName.toString(), "Load message");
+					
+					mainGUI.setDocDetails(authorline+", "+titleline+ ", "+ createDate);
+					
+					
+					// Set MainGUI currentDocument 
+					mainGUI.setCurrentDocument(currentDocument);
+					
 				} catch (IOException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
-				Path fullPath = Paths.get(fileBrowse.getSelectedFile().getAbsolutePath());
-				Path fileName = fullPath.getFileName(); 
-				mainGUI.popUpInformMessage("Load successfully \n"+fileName.toString(), "Load message");
 				
-				// Set MainGUI currentDocument 
-				mainGUI.setCurrentDocument(currentDocument);
-			}
+			}	
 		}
 	}
 	
@@ -95,17 +103,21 @@ public class OpenDocument extends AbstractConstructDocument implements ActionLis
 	 * @param fileBrowse A JFileChooser component
 	 * @return The # of lines of the file that eventually are loaded
 	 */
-	public int constructDocumentObject(JFileChooser fileBrowse) {
+	public int constructDocumentObject(JFileChooser fileChooser) {
 		int lineCounter = 0;	
 		LinkedHashMap<Line, Integer> linesHashMap;
-		
 		try {
-			FileReader filereader = new FileReader(fileBrowse.getSelectedFile());
+			FileReader filereader = new FileReader(fileChooser.getSelectedFile());
 			BufferedReader buffer = new BufferedReader(filereader);
 			
 			System.out.print("*File loaded for READ MODE*\n");
 			
 			linesHashMap = new LinkedHashMap<Line, Integer>();			
+			
+			authorline = buffer.readLine();
+			titleline = buffer.readLine();
+			createDate = buffer.readLine();
+			
 			
 			String line = null;
 			line = buffer.readLine();
@@ -123,11 +135,11 @@ public class OpenDocument extends AbstractConstructDocument implements ActionLis
 			currentDocument = new Document(linesHashMap);
 			
 			System.out.println("--> Document Object consists of {"+currentDocument.getLineHashmapSize()+"} Line Objects");
-		
-			buffer.close();
-			filereader.close();		
 			
-		} catch (IOException exp) {
+			buffer.close();
+			filereader.close();
+			
+		}catch (IOException exp) {
 			exp.printStackTrace();
 			System.err.println("File not found !!");
 		}
@@ -135,5 +147,7 @@ public class OpenDocument extends AbstractConstructDocument implements ActionLis
 		return currentDocument.getLineHashmapSize();
 	}
 	
+	
+
 
 }

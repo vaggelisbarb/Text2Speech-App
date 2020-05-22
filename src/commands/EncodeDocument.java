@@ -33,6 +33,7 @@ public class EncodeDocument implements ActionListener{
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
+		mainGUI.removeHighlights();
 		if (mainGUI.getCurrentDocument() != null) {
 			if (mainGUI.getCurrentDocument().getLineHashmapSize() != 0) {
 				if (mainGUI.getcurrentEncodingTechnique() != null) {

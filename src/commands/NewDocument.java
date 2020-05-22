@@ -63,7 +63,7 @@ public class NewDocument implements ActionListener{
 				newDocument = new Document(authorField.getText(), titleField.getText(), getCurrentDateTime());
 				mainGUI.setCurrentDocument(newDocument);
 				
-				mainGUI.setDocumentsDetailArea("AUTHOR : "+authorField.getText()+" , TITLE : "+titleField.getText()+" , CREATION : "+getCurrentDateTime());
+				mainGUI.setDocumentsDetailArea("AUTHOR :"+authorField.getText()+" , TITLE :"+titleField.getText()+" , CREATION :"+getCurrentDateTime());
 				mainGUI.setDocAreaVisible();
 				mainGUI.clearTextArea();
 				mainGUI.enableDocEdit();

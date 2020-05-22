@@ -1,5 +1,6 @@
 package commands;
 
+import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
@@ -27,7 +28,7 @@ public abstract class AbstractConstructDocument {
 	}
 	
 	
-	public abstract int constructDocumentObject(JFileChooser fileBrowse);
+	public abstract int constructDocumentObject(JFileChooser fileChooser);
 		
 }
 
