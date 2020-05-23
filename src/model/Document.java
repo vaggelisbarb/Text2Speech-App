@@ -54,7 +54,10 @@ public class Document {
 	public Document() {
 		// TODO Auto-generated constructor stub
 	}
-
+	
+	public String toString() {
+		return ("AUTHOR :"+author+"\nTITLE :"+title+"\nCREATION DATE :"+creationDate+"\n");
+	}
 
 	public String getAuthor() {
 		return author;

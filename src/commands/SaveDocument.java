@@ -6,18 +6,14 @@ package commands;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.PrintWriter;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Scanner;
-import java.util.StringTokenizer;
 
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileNameExtensionFilter;
@@ -74,16 +70,20 @@ public class SaveDocument extends AbstractConstructDocument implements ActionLis
 						String savedDate = getCurrentDateTime();
 						currentdocument.setSaveDate(savedDate);
 						
-						out.println("AUTHOR :" + currentdocument.getAuthor());
-						out.println("TITLE :" + currentdocument.getTitle());
-						out.println("CREATION DATE :" + currentdocument.getCreationDate());
-						out.println("SAVED DATE :" + savedDate);
 						out.print(mainGUI.getDocumentArea());
 						
 						System.out.println("*File Path* -> "+fullPath.toString());
 						mainGUI.popUpInformMessage("File : "+fileName.toString()+" saved\n"+"Full path : "+fullPath.toString(), "Save message");
 						
+						
+						newDocument.setAuthor(currentdocument.getAuthor());
+						newDocument.setTitle(currentdocument.getTitle());
+						newDocument.setCreationDate(currentdocument.getCreationDate());
+						newDocument.setSaveDate(currentdocument.getSaveDate());
+						System.out.println(newDocument.toString());
 						mainGUI.setCurrentDocument(newDocument);
+
+						
 					} catch (Exception e2) {
 						// TODO: handle exception
 					}
@@ -111,15 +111,20 @@ public class SaveDocument extends AbstractConstructDocument implements ActionLis
 		
 		try {
 			String docText = mainGUI.getDocumentArea();
+			mainGUI.setDocumentStringText("SAVED DATE :"+getCurrentDateTime()+"\n"+docText);
+			docText = mainGUI.getDocumentArea();
+			
+			
 			if (!docText.equals("")) {
 				Scanner scanner = new Scanner(docText);
 				
 				linesHashmap = new LinkedHashMap<Line, Integer>();
-			
+				
+				
 				String line = null;
 				while (scanner.hasNextLine()) {
 					line = scanner.nextLine();
-	
+					
 					ArrayList<String> wordsList = lineTokenize(line);
 					Line newLineObj = new Line(wordsList);					
 					linesHashmap.put(newLineObj,lineCounter);

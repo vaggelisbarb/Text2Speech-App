@@ -6,24 +6,14 @@ package commands;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.LinkedHashMap;
-import java.util.Scanner;
-import java.util.StringTokenizer;
 
 import javax.swing.JFileChooser;
-import javax.swing.JMenu;
-import javax.swing.JTextArea;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.filechooser.FileSystemView;
 
@@ -42,6 +32,7 @@ public class OpenDocument extends AbstractConstructDocument implements ActionLis
 	private String authorline;
 	private String titleline;
 	private String createDate;
+	private String saveDate;
 	
 	public OpenDocument(MainAppGUI mainGUI) {
 		this.mainGUI = mainGUI;
@@ -53,12 +44,11 @@ public class OpenDocument extends AbstractConstructDocument implements ActionLis
 	 */
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		
 		System.out.println("\n\t~~~Load Document~~~\n");
 		
 		// Browse through Home Directory
 		JFileChooser fileBrowse = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
-		fileBrowse.setDialogTitle("Load a .txt document  ");
+		fileBrowse.setDialogTitle("Load a .txt document ");
 		
 		// Set a filter for showing only .txt, files only
 		fileBrowse.setFileSelectionMode(JFileChooser.FILES_ONLY);
@@ -71,31 +61,30 @@ public class OpenDocument extends AbstractConstructDocument implements ActionLis
 			int numObjLines = constructDocumentObject(fileBrowse);
 			if (numObjLines != 0) {
 				try {
-					mainGUI.setDocumentsDetailArea("");
+					
 					mainGUI.setDocAreaVisible();
 					mainGUI.setTextArea(fileBrowse.getSelectedFile());
 					
 					Path fullPath = Paths.get(fileBrowse.getSelectedFile().getAbsolutePath());
 					Path fileName = fullPath.getFileName(); 
 					mainGUI.popUpInformMessage("Load successfully \n"+fileName.toString(), "Load message");
-					
-					mainGUI.setDocDetails(authorline+", "+titleline+ ", "+ createDate);
-					
+										
 					
 					// Set MainGUI currentDocument 
-					mainGUI.setCurrentDocument(currentDocument);
+					mainGUI.setCurrentDocument(currentDocument);		
 					
 				} catch (IOException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
+				currentDocument.toString();
 				
 			}	
 		}
 	}
 	
 	
-	
+
 	
 	/**
 	 * Reads a given file line by line and tokenize each of it 
@@ -114,14 +103,22 @@ public class OpenDocument extends AbstractConstructDocument implements ActionLis
 			
 			linesHashMap = new LinkedHashMap<Line, Integer>();			
 			
-			authorline = buffer.readLine();
-			titleline = buffer.readLine();
-			createDate = buffer.readLine();
-			
-			
-			String line = null;
-			line = buffer.readLine();
+			String line = buffer.readLine();
 			while (line != null) {
+				
+				if (line.startsWith("SAVED DATE :")) {
+					saveDate = line;
+				}
+				else if (line.startsWith("AUTHOR :")) {
+					authorline = line;
+				}
+				else if (line.startsWith("TITLE :")) {
+					titleline = line;
+				}
+				else if (line.startsWith("CREATION DATE :")) {
+					createDate = line;
+				}
+				
 				ArrayList<String> wordList = lineTokenize(line);
 				Line newLineObj = new Line(wordList);
 				System.out.println("--> Line {"+lineCounter+"} consists of {"+newLineObj.getNumOfWords()+"} words");
@@ -131,8 +128,14 @@ public class OpenDocument extends AbstractConstructDocument implements ActionLis
 				lineCounter++;
 				line = buffer.readLine();
 			}
+			System.out.println("CONSTRUCT : "+authorline+" "+titleline + " " + createDate + " " + saveDate);
 			
 			currentDocument = new Document(linesHashMap);
+			currentDocument.setSaveDate(saveDate.substring(12));
+			currentDocument.setAuthor(authorline.substring(8));
+			currentDocument.setTitle(titleline.substring(7));
+			currentDocument.setCreationDate(createDate.substring(15));
+
 			
 			System.out.println("--> Document Object consists of {"+currentDocument.getLineHashmapSize()+"} Line Objects");
 			

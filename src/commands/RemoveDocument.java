@@ -6,7 +6,6 @@ package commands;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import model.Document;
 import view.MainAppGUI;
 
 /**
@@ -25,9 +24,11 @@ public class RemoveDocument implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		if (mainGUI.getCurrentDocument() != null)
+		if (mainGUI.getCurrentDocument() != null) {
+			mainGUI.setCurrentDocument(null);
 			mainGUI.removeDocumentArea();
-		else
+			mainGUI.popUpInformMessage("Document has been removed\nNo save occured", "Document Removed");
+		} else
 			mainGUI.popUpWarningMessage("No document to remove", "Null document Error");
 	}
 	

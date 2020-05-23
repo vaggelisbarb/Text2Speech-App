@@ -12,7 +12,6 @@ import java.awt.Font;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
-import java.beans.PropertyVetoException;
 import java.awt.Dialog.ModalExclusionType;
 import java.awt.Color;
 import javax.swing.SwingConstants;
@@ -24,7 +23,6 @@ import javax.swing.KeyStroke;
 import java.awt.Cursor;
 import javax.swing.border.MatteBorder;
 import model.Document;
-import model.Line;
 import text2speechapis.TextToSpeechAPI;
 import text2speechapis.TextToSpeechAPIFactory;
 import commands.CommandsFactory;
@@ -46,21 +44,12 @@ import javax.swing.text.Highlighter;
 
 import javax.swing.JScrollPane;
 import javax.swing.JEditorPane;
-import javax.swing.JTextField;
 import javax.swing.JSeparator;
-import javax.swing.JProgressBar;
-import java.awt.Component;
-import javax.swing.Box;
 import javax.swing.JInternalFrame;
-import java.awt.BorderLayout;
-import javax.swing.JTextPane;
-import javax.swing.border.LineBorder;
-import javax.swing.border.EtchedBorder;
+
 import javax.swing.border.SoftBevelBorder;
 import javax.swing.border.BevelBorder;
-import javax.swing.JDesktopPane;
-import java.awt.Choice;
-import javax.swing.Icon;
+
 
 public class MainAppGUI {
 
@@ -109,7 +98,6 @@ public class MainAppGUI {
 	 // Initializations
 	 private CommandsFactory commandsfactory;
 	 private Document currentDocument;
-	 private Line currentSelectedLine;
 	 private TextToSpeechAPIFactory textToSpeechAPIFactory;
 	 private TextToSpeechAPI managerAudio;
 	 private String currentEncodingStr;
@@ -118,7 +106,6 @@ public class MainAppGUI {
 	 
 	 private JEditorPane textArea;
 	 private JScrollPane scrollPane;
-	 private JTextField docDetailsArea;
 	 private JSeparator separator;
 	 private JMenuItem textEncode_MenuItem;
 	 private JMenuItem encodedLine;
@@ -170,11 +157,6 @@ public class MainAppGUI {
 		initialize();
 	}
 	
-	
-	// Set the details of the document with the given text
-	public void setDocDetails(String details) {
-		this.docDetailsArea.setText(details);
-	}
 	
 	
 	// Check if a line is selected in the document area
@@ -269,10 +251,6 @@ public class MainAppGUI {
 		menuSpeech.setVisible(false);
 	}
 	
-	// Set document's details text
-	public void setDocumentsDetailArea(String details) {
-		docDetailsArea.setText(details);
-	}
 	
 	// Get Document's area text
 	public String getDocumentArea() {
@@ -317,6 +295,10 @@ public class MainAppGUI {
 	}
 	
 	
+	public void setDocumentStringText(String text) {
+		this.textArea.setText(text);
+	}
+	
 	/**
 	 * Function to show text on textArea 
 	 */
@@ -326,6 +308,7 @@ public class MainAppGUI {
 		textArea.setPage(file.toURI().toURL());
 	}
 
+	
 	void delete(String filename, int startline, int numlines)
 	{
 		try
@@ -336,7 +319,7 @@ public class MainAppGUI {
 			StringBuffer sb=new StringBuffer("");
  
 			//Keep track of the line number
-			int linenumber=1;
+			int linenumber=4;
 			String line;
  
 			while((line=br.readLine())!=null)
@@ -729,14 +712,13 @@ public class MainAppGUI {
 		textArea.setEditable(false);
 		scrollPane.setViewportView(textArea);
 		
-		docDetailsArea = new JTextField();
-		docDetailsArea.setHorizontalAlignment(SwingConstants.CENTER);
-		docDetailsArea.setBackground(new Color(176, 196, 222));
-		docDetailsArea.setEditable(false);
-		docDetailsArea.setForeground(new Color(25, 25, 112));
-		docDetailsArea.setFont(new Font("Ubuntu Light", Font.BOLD, 18));
-		scrollPane.setColumnHeaderView(docDetailsArea);
-		docDetailsArea.setColumns(10);
+		JLabel lblDocumentArea = new JLabel("DOCUMENT AREA");
+		lblDocumentArea.setBackground(Color.LIGHT_GRAY);
+		lblDocumentArea.setFont(new Font("Ubuntu", Font.BOLD, 18));
+		lblDocumentArea.setHorizontalTextPosition(SwingConstants.CENTER);
+		lblDocumentArea.setHorizontalAlignment(SwingConstants.CENTER);
+		lblDocumentArea.setForeground(new Color(139, 0, 0));
+		scrollPane.setColumnHeaderView(lblDocumentArea);
 		
 		internalFrame = new JInternalFrame("Tips");
 		internalFrame.setClosable(true);

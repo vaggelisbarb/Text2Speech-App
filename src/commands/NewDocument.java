@@ -7,13 +7,10 @@ import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
-
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-
 import model.Document;
 import view.MainAppGUI;
 import java.text.SimpleDateFormat;
@@ -39,6 +36,7 @@ public class NewDocument implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		System.out.println("\n\t~~~New Document~~~\n");
 		displayInputMessage();
+		mainGUI.setDocumentStringText(newDocument.toString());
 	}
 	
 	
@@ -61,9 +59,12 @@ public class NewDocument implements ActionListener{
 			if (!authorField.getText().equals("") && !titleField.getText().equals("")) {
 				mainGUI.popUpInformMessage("A new document is ready for use\n\n"+"Author : "+authorField.getText()+"\nTitle : "+titleField.getText()+"\n\nCreation time : "+getCurrentDateTime(), "Document's Details");
 				newDocument = new Document(authorField.getText(), titleField.getText(), getCurrentDateTime());
+				
+				newDocument.setAuthor(authorField.getText());
+				newDocument.setTitle(titleField.getText());
+				newDocument.setCreationDate(getCurrentDateTime());
 				mainGUI.setCurrentDocument(newDocument);
 				
-				mainGUI.setDocumentsDetailArea("AUTHOR :"+authorField.getText()+" , TITLE :"+titleField.getText()+" , CREATION :"+getCurrentDateTime());
 				mainGUI.setDocAreaVisible();
 				mainGUI.clearTextArea();
 				mainGUI.enableDocEdit();
