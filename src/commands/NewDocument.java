@@ -35,8 +35,10 @@ public class NewDocument implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		System.out.println("\n\t~~~New Document~~~\n");
-		displayInputMessage();
-		mainGUI.setDocumentStringText(newDocument.toString());
+		if (displayInputMessage() == 2) {
+			mainGUI.setCurrentDocument(null);
+		}else
+			mainGUI.setDocumentStringText(newDocument.toString());
 	}
 	
 	
@@ -70,8 +72,8 @@ public class NewDocument implements ActionListener{
 				mainGUI.enableDocEdit();
 			}else
 				displayInputMessage();
-		
-		return result;
+
+		return result;		
 	}
 	
 	public String getCurrentDateTime() {

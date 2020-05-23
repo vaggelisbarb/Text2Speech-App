@@ -3,16 +3,23 @@
  */
 package text2speechapis;
 
+import java.util.ArrayList;
+
 /**
  * @author vaggelisbarb
  *
  */
 public class FakeTextToSpeechAPI implements TextToSpeechAPI{
 
+	private ArrayList<String> TextToPlay;
+	
+	public FakeTextToSpeechAPI() {
+		TextToPlay = new ArrayList<String>();
+	}
+	
 	@Override
 	public void play(String text) {
-		// TODO Auto-generated method stub
-		
+		TextToPlay.add(text);
 	}
 
 	@Override
@@ -32,5 +39,15 @@ public class FakeTextToSpeechAPI implements TextToSpeechAPI{
 		// TODO Auto-generated method stub
 		
 	}
+
+	public String getTextToPlay() {
+		String fullText = "";
+		for (String line : TextToPlay) {
+			fullText += line;
+		}
+		return fullText;
+	}
+
+	
 	
 }

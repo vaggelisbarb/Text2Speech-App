@@ -46,6 +46,9 @@ public class Line {
 		this.audioManager = audioManager;
 	}
 
+	public TextToSpeechAPI geTextToSpeechAPI() {
+		return this.audioManager;
+	}
 	
 	public int getNumOfWords() {
 		return words.size();

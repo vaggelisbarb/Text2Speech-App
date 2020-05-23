@@ -714,7 +714,7 @@ public class MainAppGUI {
 		
 		JLabel lblDocumentArea = new JLabel("DOCUMENT AREA");
 		lblDocumentArea.setBackground(Color.LIGHT_GRAY);
-		lblDocumentArea.setFont(new Font("Ubuntu", Font.BOLD, 18));
+		lblDocumentArea.setFont(new Font("Ubuntu", Font.BOLD, 20));
 		lblDocumentArea.setHorizontalTextPosition(SwingConstants.CENTER);
 		lblDocumentArea.setHorizontalAlignment(SwingConstants.CENTER);
 		lblDocumentArea.setForeground(new Color(139, 0, 0));
@@ -730,7 +730,7 @@ public class MainAppGUI {
 		internalFrame.getContentPane().setLayout(null);
 		
 		JLabel tips_background = new JLabel("");
-		tips_background.setIcon(new ImageIcon("/home/vaggelisbarb/Επιφάνεια εργασίας/Untitled.png"));
+		tips_background.setIcon(new ImageIcon("ImageSource/Untitled.png"));
 		tips_background.setBounds(0, 0, 393, 139);
 		internalFrame.getContentPane().add(tips_background);
 
