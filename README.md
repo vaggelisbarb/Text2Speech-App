@@ -1,7 +1,12 @@
-# Text2Speech Editor Project
-## *Developer : Vaggelis Barbalias*
+# Text2Speech editor application
 
-#### The objective of this project is to develop a simple editor that allows preparing text documents and transforming them to audio.
+*Contributor : <a href="https://github.com/vaggelisbarb">
+    Evangelos Barbalias
+</a>*
+
+## About
+This project is a desktop application, written entirely in Java.
+The main functions of the application are creating and editing documents, as well as converting them to audio.
 
 >Such an application could be a useful tool for preparing presentations that are automatically played without a physical speaker.
 
